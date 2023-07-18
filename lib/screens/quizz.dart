@@ -99,7 +99,7 @@ class _QuizzState extends State<Quizz> {
     }
 
     ///Beware the number!!
-    if (questionNumber == 2) {
+    if (questionNumber == 13) {
       // Display the result page
       return ResultPage(); // Replace ResultPage with the actual result page widget
     }

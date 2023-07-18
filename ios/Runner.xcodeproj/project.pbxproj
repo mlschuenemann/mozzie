@@ -472,13 +472,13 @@
 				DEVELOPMENT_TEAM = FSK96R9KK9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = musico;
+				INFOPLIST_KEY_CFBundleDisplayName = Mozzie;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.musicEducation;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mozzie-music-education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -662,13 +662,13 @@
 				DEVELOPMENT_TEAM = FSK96R9KK9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = musico;
+				INFOPLIST_KEY_CFBundleDisplayName = Mozzie;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.musicEducation;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mozzie-music-education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -691,13 +691,13 @@
 				DEVELOPMENT_TEAM = FSK96R9KK9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = musico;
+				INFOPLIST_KEY_CFBundleDisplayName = Mozzie;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.musicEducation;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mozzie-music-education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
