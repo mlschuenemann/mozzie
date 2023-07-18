@@ -16,24 +16,26 @@ class LectureProvider with ChangeNotifier {
 
   int get lectureNumber => _lectureNumber;
 
+
   void incrementAndStoreLectureNumber(ProgressPointProvider progressPointProvider) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     int? currentLectureNumber = prefs.getInt('lecture');
 
-    if((currentLectureNumber ?? 0) < 5){
+    if ((currentLectureNumber ?? 1) < 5) {
       // Increment the lecture number by 1
-      int updatedLectureNumber = (currentLectureNumber ?? 0) + 1;
+      int updatedLectureNumber = (currentLectureNumber ?? 1) + 1;
 
       // Store the updated lecture number using SharedPreferences
       await prefs.setInt('lecture', updatedLectureNumber);
+      _lectureNumber = updatedLectureNumber; // Update the local _lectureNumber
       notifyListeners();
     } else {
+      // The lectureNumber is 5, so increment the progressPoint number and reset lectureNumber
       progressPointProvider.incrementAndStoreProgressPointNumber();
       resetLectureNumber();
     }
-
-
   }
+
 
   Future<void> retrieveLectureNumber() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();

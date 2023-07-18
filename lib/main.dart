@@ -146,13 +146,9 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: 10, left: 0),
-                    alignment: Alignment.center,
-                    width: 20,
-                    height: 20,
-                    decoration: BoxDecoration(
-                      color: LILA,
-                      shape: BoxShape.circle,
+                    margin: EdgeInsets.only(right: 20, left: 10),
+                    child: SvgPicture.asset(
+                      "assets/icons/mozart_icon.svg",
                     ),
                   ),
                   Text(
@@ -180,6 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          SizedBox(height: 10,),
           Row(
             children: [
               AchievmentCard(

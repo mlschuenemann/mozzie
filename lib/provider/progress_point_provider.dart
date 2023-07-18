@@ -29,10 +29,11 @@ class ProgressPointProvider with ChangeNotifier {
     int? currentProgressPoint = prefs.getInt('point');
 
     // Increment the lecture number by 1
-    int updatedProgressPoint = (currentProgressPoint ?? 0) + 1;
+    int updatedProgressPoint = (currentProgressPoint ?? 1) + 1;
 
     // Store the updated lecture number using SharedPreferences
     await prefs.setInt('point', updatedProgressPoint);
+    _progressPointNumber = updatedProgressPoint;
     notifyListeners();
   }
 
