@@ -9,6 +9,8 @@ import 'package:provider/provider.dart';
 import 'package:music_education/components/result_answer_sheet.dart';
 import 'package:music_education/data.dart';
 import 'package:music_education/provider/question_provider.dart';
+import 'package:flutter/services.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 enum Card {
   first,
@@ -88,7 +90,13 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
     }
 
     if(answer==correctAnswer){
+      final player = AudioPlayer();
+      await player.setVolume(0.5);
+      await player.play(
+        AssetSource('sounds/success.wav'),
+      );
       await _showBottomSheet(context, true);
+
     } else {
       await _showBottomSheet(context, false);
     }
@@ -150,6 +158,7 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
               children: [
                 GestureDetector(
                   onTap: (){
+                    HapticFeedback.lightImpact();
                     setState(() {
                       selectedCard = Card.first;
                     });
@@ -162,6 +171,7 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
                 ),
                 GestureDetector(
                   onTap: (){
+                    HapticFeedback.lightImpact();
                     setState(() {
                       selectedCard = Card.second;
                     });
@@ -174,6 +184,7 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
                 ),
                 GestureDetector(
                   onTap: (){
+                    HapticFeedback.lightImpact();
                     setState(() {
                       selectedCard = Card.third;
                     });
@@ -186,6 +197,7 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
                 ),
                 GestureDetector(
                   onTap: (){
+                    HapticFeedback.lightImpact();
                     setState(() {
                       selectedCard = Card.fourth;
                     });
@@ -202,6 +214,7 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
           GestureDetector(
             onTap: () async{
               if(selectedCard!=Card.none){
+                HapticFeedback.mediumImpact();
                 await checkAnswer(selectedCard);
                 questionProvider.nextQuestion();
                 resetBordern();}

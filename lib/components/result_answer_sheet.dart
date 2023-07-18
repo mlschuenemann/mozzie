@@ -8,10 +8,12 @@ import 'package:provider/provider.dart';
 import 'package:music_education/provider/question_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
-
+import 'package:flutter/services.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class MyBottomSheet extends StatelessWidget {
-  MyBottomSheet({super.key, required this.result, required this.questionNumber});
+  MyBottomSheet(
+      {super.key, required this.result, required this.questionNumber});
 
   final bool result;
   final int questionNumber;
@@ -35,14 +37,31 @@ class MyBottomSheet extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            result?Text("Ausgezeichnet!", style: CORRECT,):Text("Leider falsch", style: FALSE,),
-
-            result?Text("Du hast die richtige Antwort ausgewählt.",style: CORRECTS,):
-            Text("Die richitge Antwort wäre gewesen: ${data[progressPointNumber]?[lectureNumber]?[questionNumber]?["note"]
-                ?? data[progressPointNumber]?[lectureNumber]?[questionNumber]?["letter"] ?? ""}.",style: FALSES,),
-
+            result
+                ? Text(
+                    "Ausgezeichnet!",
+                    style: CORRECT,
+                  )
+                : Text(
+                    "Leider falsch",
+                    style: FALSE,
+                  ),
+            result
+                ? Text(
+                    "Du hast die richtige Antwort ausgewählt.",
+                    style: CORRECTS,
+                  )
+                : Text(
+                    "Die richitge Antwort wäre gewesen: ${data[progressPointNumber]?[lectureNumber]?[questionNumber]?["note"] ?? data[progressPointNumber]?[lectureNumber]?[questionNumber]?["letter"] ?? ""}.",
+                    style: FALSES,
+                  ),
             GestureDetector(
-              onTap: () {
+              onTap: () async {
+                if(questionNumber==12){
+                final player = AudioPlayer();
+                await player.play(
+                  AssetSource('sounds/fanfare.mp3'),
+                );}
                 Navigator.of(context).pop();
                 result ? scoreProvider.addOneXP() : null;
               },
@@ -51,7 +70,7 @@ class MyBottomSheet extends StatelessWidget {
                 height: 60,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: result?GREEN:Colors.red,
+                  color: result ? GREEN : Colors.red,
                 ),
                 child: const Text(
                   "Weiter",
@@ -65,4 +84,3 @@ class MyBottomSheet extends StatelessWidget {
     );
   }
 }
-

@@ -13,6 +13,7 @@ import 'package:music_education/main.dart';
 import 'package:music_education/provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/streak_provider.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class ResultPage extends StatefulWidget {
   const ResultPage({Key? key}) : super(key: key);

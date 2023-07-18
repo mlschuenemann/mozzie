@@ -12,6 +12,8 @@ import 'package:music_education/components/result_answer_sheet.dart';
 import 'package:music_education/data.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/provider/question_provider.dart';
+import 'package:flutter/services.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 enum Card {
   first,
@@ -86,7 +88,13 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
 
 
     if(answer==correctAnswer){
+      final player = AudioPlayer();
+      await player.setVolume(0.5);
+      await player.play(
+        AssetSource('sounds/success.wav'),
+      );
       await _showBottomSheet(context, true);
+
     } else {
       await _showBottomSheet(context, false);
     }
@@ -146,6 +154,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
             children: [
               GestureDetector(
                 onTap: (){
+                  HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.first;
                   });
@@ -157,6 +166,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
               ),
               GestureDetector(
                 onTap: (){
+                  HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.second;
                   });
@@ -168,6 +178,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
               ),
               GestureDetector(
                 onTap: (){
+                  HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.third;
                   });
@@ -179,6 +190,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
               ),
               GestureDetector(
                 onTap: (){
+                  HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.fourth;
                   });
@@ -193,7 +205,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
         ),
         GestureDetector(
           onTap: () async{
-            if(selectedCard!=Card.none){
+            if(selectedCard!=Card.none){HapticFeedback.mediumImpact();
             await checkAnswer(selectedCard);
             questionProvider.nextQuestion();
             resetBordern();}

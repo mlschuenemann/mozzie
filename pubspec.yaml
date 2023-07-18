@@ -39,7 +39,8 @@ dependencies:
   provider: ^6.0.1
   confetti: ^0.7.0
   shared_preferences: ^2.2.0
-  vibration: ^2.0.0
+  audioplayers: ^4.1.0
+
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +71,7 @@ flutter:
     - assets/note_graphics/notes/
     - assets/instruments/
     - assets/icons/
+    - assets/sounds/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
