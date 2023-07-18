@@ -48,12 +48,10 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   Widget build(BuildContext context) {
-    final questionProvider =
-        Provider.of<QuestionProvider>(context, listen: false);
+    final questionProvider = Provider.of<QuestionProvider>(context, listen: false);
     final lectureProvider = Provider.of<LectureProvider>(context);
     final scoreProvider = Provider.of<ScoreProvider>(context, listen: false);
-    final progressProvider =
-        Provider.of<ProgressPointProvider>(context, listen: false);
+    final progressProvider = Provider.of<ProgressPointProvider>(context, listen: false);
 
     final streakProvider = Provider.of<StreakProvider>(context);
 
