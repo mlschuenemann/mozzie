@@ -5,7 +5,7 @@ import 'package:music_education/constants/textstyle.dart';
 import 'package:music_education/components/choice_cards/note_choice_card.dart';
 import 'package:music_education/components/main_cards/scale_card.dart';
 import 'package:music_education/screens/quizz.dart';
-import 'package:music_education/screens/scale_question.dart';
+import 'package:music_education/screens/question_pages/scale_question.dart';
 import 'package:music_education/components/choice_cards/letter_choice_card.dart';
 import 'package:music_education/components/main_cards/single_note_card.dart';
 import 'package:music_education/components/result_answer_sheet.dart';

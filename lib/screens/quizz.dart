@@ -9,9 +9,9 @@ import 'package:music_education/components/main_cards/note_name_card.dart';
 import 'package:music_education/components/choice_cards/note_choice_card.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/screens/quizz.dart';
-import 'package:music_education/screens/scale_question.dart';
-import 'package:music_education/screens/single_letter_question.dart';
-import 'package:music_education/screens/single_note_question.dart';
+import 'package:music_education/screens/question_pages/scale_question.dart';
+import 'package:music_education/screens/question_pages/single_letter_question.dart';
+import 'package:music_education/screens/question_pages/single_note_question.dart';
 import 'package:music_education/data.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
@@ -99,7 +99,7 @@ class _QuizzState extends State<Quizz> {
     }
 
     ///Beware the number!!
-    if (questionNumber == 2) {
+    if (questionNumber == 13) {
       // Display the result page
       return ResultPage(); // Replace ResultPage with the actual result page widget
     }

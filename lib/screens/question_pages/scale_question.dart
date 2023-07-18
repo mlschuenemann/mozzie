@@ -130,8 +130,9 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
                 height: 100,
                 width: 200,
                 child: const Text(
-                  'G, A, H ... G, A, H',
+                  'Tipp: Beachte die Notenlinien',
                   style: PAR1,
+                  textAlign: TextAlign.center,
                 ),
               ),
             ],

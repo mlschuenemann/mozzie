@@ -13,9 +13,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 class ScoreProvider with ChangeNotifier {
 
   // XP Points are the globally collected points over many lectures
-  int? _xpPoints;
+  int _xpPoints = 0;
 
-  int? get xpPoints => _xpPoints;
+  int get xpPoints => _xpPoints;
 
   Future<void> updateXpPoints(int score) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -34,7 +34,7 @@ class ScoreProvider with ChangeNotifier {
   // Retrieve the score value using SharedPreferences
   Future<void> retrieveScore() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-    _xpPoints = prefs.getInt('score');
+    _xpPoints = prefs.getInt('score') ?? 0;
     notifyListeners();
   }
 

@@ -16,6 +16,7 @@ import 'package:music_education/provider/question_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/components/level_card.dart';
 import 'package:music_education/components/achievement_card.dart';
+import 'package:music_education/screens/settings_page.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -54,6 +55,7 @@ class MyApp extends StatelessWidget {
           "home": (context) => MyHomePage(),
           "quizz": (context) => Quizz(),
           "result": (context) => ResultPage(),
+          "settings": (context) => Settings(),
         },
         home: const MyHomePage(),
       ),
@@ -123,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.only(
               left: 15,
               right: 15,
-              top: 60,
+              top: 40,
               bottom: 20,
             ),
             child: Row(
@@ -147,10 +149,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ],
                 ),
-                Icon(
-                  Icons.settings,
-                  color: Colors.white,
+                IconButton(
+                  icon: Icon(
+                    Icons.settings,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "settings");
+                  },
                 ),
+
               ],
             ),
           ),
