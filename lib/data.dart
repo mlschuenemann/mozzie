@@ -3,34 +3,34 @@ import 'package:flutter/material.dart';
 Map<int,Map<int,Map<int,Map<String,String>>>> data = {
   1: { //Progress Point
     1: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "cello"
-      },
-
-      3: {"questionType": "scale",
+      1: {"questionType": "scale",
         "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
         "firstChoice": "G",
         "secondChoice": "A",
         "thirdChoice": "c",
         "fourthChoice": "H",
         "instrument": "piano"
+      },
+
+      2: {"questionType": "single_note",
+        "note": "H",
+        "firstChoice": "c",
+        "secondChoice": "H",
+        "thirdChoice": "G",
+        "fourthChoice": "A",
+        "instrument": "sax"
+      },
+
+      3: {"questionType": "single_letter",
+        "letter": "H",
+        "firstChoice": "H",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "G",
+        "instrument": "cello"
       },
 
       4: {"questionType": "scale",

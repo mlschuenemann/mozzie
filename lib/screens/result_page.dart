@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:music_education/components/achievement_card.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/provider/question_provider.dart';
 import 'package:flutter/material.dart';
@@ -47,13 +48,14 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   Widget build(BuildContext context) {
-    final questionProvider = Provider.of<QuestionProvider>(context, listen: false);
+    final questionProvider =
+        Provider.of<QuestionProvider>(context, listen: false);
     final lectureProvider = Provider.of<LectureProvider>(context);
     final scoreProvider = Provider.of<ScoreProvider>(context, listen: false);
-    final progressProvider = Provider.of<ProgressPointProvider>(context, listen: false);
+    final progressProvider =
+        Provider.of<ProgressPointProvider>(context, listen: false);
 
     final streakProvider = Provider.of<StreakProvider>(context);
-
 
     return Scaffold(
       backgroundColor: BACKGROUND,
@@ -62,15 +64,15 @@ class _ResultPageState extends State<ResultPage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Expanded(child: SizedBox()),
+          SvgPicture.asset("assets/instruments/group.svg"),
           ConfettiWidget(
             confettiController: _controller,
             //blastDirection: pi/2,
             gravity: 0.2,
             blastDirectionality: BlastDirectionality.explosive,
-            emissionFrequency: 0.02,
+            emissionFrequency: 0.15,
             minBlastForce: 18,
           ),
-          SvgPicture.asset("assets/instruments/piano.svg"),
           SizedBox(
             height: 30,
           ),
@@ -81,17 +83,25 @@ class _ResultPageState extends State<ResultPage> {
           SizedBox(
             height: 30,
           ),
-          Text(
-            "Du hast ${scoreProvider.score} XP verdient!",
-            style: PAR1,
-          ),
-          ConfettiWidget(
-            confettiController: _controller,
-            //blastDirection: pi/2,
-            gravity: 0.3,
-            blastDirectionality: BlastDirectionality.explosive,
-            emissionFrequency: 0.02,
-            minBlastForce: 15,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              AchievmentCard(
+                imagePath: "assets/icons/XP_icon.svg",
+                text: "+ ${scoreProvider.score}",
+                border: true,
+              ),
+              AchievmentCard(
+                imagePath: "assets/icons/heart_icon.svg",
+                text: "∞",
+                border: true,
+              ),
+              AchievmentCard(
+                imagePath: "assets/icons/flame_icon.svg",
+                text: "${streakProvider.currentStreak}",
+                border: true,
+              ),
+            ],
           ),
           Expanded(child: SizedBox()),
           GestureDetector(
@@ -103,7 +113,8 @@ class _ResultPageState extends State<ResultPage> {
               scoreProvider.resetScore();
 
               DateTime now = DateTime.now();
-              streakProvider.addActivity(DateTime(now.year, now.month, now.day));
+              streakProvider
+                  .addActivity(DateTime(now.year, now.month, now.day));
             },
             child: Container(
               margin: const EdgeInsets.only(left: 15, right: 15, bottom: 20),

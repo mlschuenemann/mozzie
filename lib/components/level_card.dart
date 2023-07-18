@@ -30,7 +30,7 @@ class LevelCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(left: 15, right: 15),
-      margin: EdgeInsets.only(top: 30, bottom: 30),
+      margin: EdgeInsets.only(top: 10, bottom: 10),
       height: 80,
       decoration: BoxDecoration(
         color: SECONDARY,

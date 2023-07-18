@@ -24,37 +24,21 @@ class Settings extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: BACKGROUND,
+      appBar: AppBar(
+        title: Text('Einstellungen'),
+        elevation: 0.0,
+        backgroundColor: BACKGROUND,// Remove the shadow from AppBar
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(top: 70, bottom: 20),
-            child: Row(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.arrow_back_ios,),
-                  color: Colors.white,
-                  onPressed: () {
-                    // Navigate back to the previous screen
-                    Navigator.pop(context);
-                  },
-                ),
-                Text(
-                  'Einstellungen',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          Expanded(child: SizedBox()),
           Divider(color: Colors.white),
           InkWell(
             onTap: () {
               // Handle the 'Support' item click
+              Navigator.pushNamed(context, "support");
             },
             child: ListTile(
               title: Text(
@@ -70,6 +54,7 @@ class Settings extends StatelessWidget {
           Divider(color: Colors.white), // Horizontal divider will be added here
           InkWell(
             onTap: () {
+              Navigator.pushNamed(context, "privacy");
               // Handle the 'Datenschutz' item click
             },
             child: ListTile(
@@ -87,6 +72,7 @@ class Settings extends StatelessWidget {
           InkWell(
             onTap: () {
               // Handle the 'Impressum' item click
+              Navigator.pushNamed(context, "impressum");
             },
             child: ListTile(
               title: Text(
@@ -100,13 +86,14 @@ class Settings extends StatelessWidget {
             ),
           ),
           Divider(color: Colors.white),
+          Expanded(child: SizedBox()),
         ],
       ),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.only(left: 16, right: 16, top: 16 ,bottom: 40),
         color: Colors.grey[800],
         child: Text(
-          '© ${DateTime.now().year} Your Company Name. All rights reserved.',
+          '© ${DateTime.now().year} Martin Schünemann. All rights reserved.',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,

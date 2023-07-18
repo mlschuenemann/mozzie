@@ -18,11 +18,13 @@ class AchievmentCard extends StatelessWidget {
   const AchievmentCard({
     required this.imagePath,
     required this.text,
+    required this.border,
     super.key,
   });
 
   final String text;
   final String imagePath;
+  final bool border;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,13 @@ class AchievmentCard extends StatelessWidget {
         height: 40,
         margin: EdgeInsets.only(left: 15, bottom: 10),
         decoration: BoxDecoration(
-            color: SECONDARY, borderRadius: BorderRadius.circular(10)),
+            color: SECONDARY, borderRadius: BorderRadius.circular(10),
+          border: border ? Border.all(
+            color: LIGHTBLUE,
+            width: 2,
+          ) : null,
+
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

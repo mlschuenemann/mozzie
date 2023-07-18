@@ -6,6 +6,7 @@ import 'package:music_education/components/main_cards/note_name_card.dart';
 import 'package:music_education/components/choice_cards/note_choice_card.dart';
 import 'package:music_education/screens/quizz.dart';
 import 'package:music_education/provider/streak_provider.dart';
+import 'package:music_education/screens/support.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -17,6 +18,8 @@ import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/components/level_card.dart';
 import 'package:music_education/components/achievement_card.dart';
 import 'package:music_education/screens/settings_page.dart';
+import 'package:music_education/screens/impressum.dart';
+import 'package:music_education/screens/privacy.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -56,6 +59,9 @@ class MyApp extends StatelessWidget {
           "quizz": (context) => Quizz(),
           "result": (context) => ResultPage(),
           "settings": (context) => Settings(),
+          "impressum": (context) => ImpressumPage(),
+          "privacy" : (context) => PrivacyPage(),
+          "support" : (context) => SupportPage(),
         },
         home: const MyHomePage(),
       ),
@@ -116,65 +122,80 @@ class _MyHomePageState extends State<MyHomePage> {
 
     int statusBarValue = lectureNumber;
 
+
+   /* IconButton(
+      icon: Icon(
+        Icons.settings,
+        color: Colors.white,
+      ),
+      onPressed: () {
+        Navigator.pushNamed(context, "settings");
+      },
+    ),*/
+
     return Scaffold(
       backgroundColor: BACKGROUND,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: AppBar(
+          backgroundColor: BACKGROUND,
+          elevation: 0.0,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(right: 10, left: 0),
+                    alignment: Alignment.center,
+                    width: 20,
+                    height: 20,
+                    decoration: BoxDecoration(
+                      color: LILA,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                  Text(
+                    "Noten lesen",
+                    style: HEADING2,
+                    textAlign: TextAlign.left,
+                  ),
+                ],
+              ),
+
+              IconButton(
+                icon: Icon(
+                  Icons.settings,
+                  color: Colors.white,
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, "settings");
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
-            padding: const EdgeInsets.only(
-              left: 15,
-              right: 15,
-              top: 40,
-              bottom: 20,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 10),
-                      alignment: Alignment.center,
-                      width: 20,
-                      height: 20,
-                      decoration: BoxDecoration(
-                        color: LILA,
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    Text(
-                      "Noten lesen",
-                      style: HEADING2,
-                    ),
-                  ],
-                ),
-                IconButton(
-                  icon: Icon(
-                    Icons.settings,
-                    color: Colors.white,
-                  ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, "settings");
-                  },
-                ),
-
-              ],
-            ),
-          ),
           Row(
             children: [
               AchievmentCard(
                 imagePath: "assets/icons/flame_icon.svg",
                 text: "${streakProvider.currentStreak} Tage",
+                border: false,
               ),
               AchievmentCard(
                 imagePath: "assets/icons/heart_icon.svg",
                 text: "∞",
+                border: false,
               ),
               AchievmentCard(
                 imagePath: "assets/icons/XP_icon.svg",
                 text: "$currentScore",
+                border: false,
               ),
 
             ],
@@ -182,6 +203,12 @@ class _MyHomePageState extends State<MyHomePage> {
           Expanded(
             child: ListView(
               children: [
+
+                LevelCard(
+                  levelText: "Level 1",
+                  subText: "Lerne deine ersten Noten",
+                ),
+                SizedBox(height: 20,),
                 ProgressPoint(
                   number: 1,
                   marginLeft: 0,
@@ -224,10 +251,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   marginRight: 0,
                   statusBarValue: statusBarValue,
                 ),
+                SizedBox(height: 20,),
                 LevelCard(
                   levelText: "Level 2",
                   subText: "Lerne Vorzeichen und noch mehr Noten",
                 ),
+                SizedBox(height: 20,),
                 ProgressPoint(
                   number: 5,
                   marginLeft: 0,
