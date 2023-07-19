@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Provider.of<StreakProvider>(context, listen: false).init();
 
     lectureProvider = Provider.of<LectureProvider>(context, listen: false);
-    //lectureProvider.resetLectureNumber();
+    lectureProvider.resetLectureNumber();
 
     progressPointProvider = Provider.of<ProgressPointProvider>(context, listen:false);
     //progressPointProvider.resetProgressPointNumber();
@@ -239,7 +239,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SvgPicture.asset(
                   "assets/graphics/vector_2.svg",
-                  colorFilter: progressPointNumber <= 3
+                  colorFilter: progressPointNumber <= 4
                       ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
                       : null,
                 ),

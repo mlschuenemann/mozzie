@@ -1,10 +1,11 @@
-import 'package:flutter/material.dart';
-
-Map<int,Map<int,Map<int,Map<String,String>>>> data = {
-  1: { //Progress Point
-    1: { //Lecture Number
-      1: {"questionType": "scale",
-        "note":"H",
+Map<int, Map<int, Map<int, Map<String, String>>>> data = {
+  1: {
+    //Progress Point
+    1: {
+      //Lecture Number
+      1: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -15,7 +16,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_note",
+      2: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "H",
@@ -24,7 +26,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "sax"
       },
 
-      3: {"questionType": "single_letter",
+      3: {
+        "questionType": "single_letter",
         "letter": "H",
         "firstChoice": "H",
         "secondChoice": "A",
@@ -33,8 +36,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "cello"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -45,8 +49,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -57,17 +62,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      7: {"questionType": "scale",
-        "note":"c",
+      6: {
+        "questionType": "scale",
+        "note": "c",
         "firstNote": "A",
         "secondNote": "H",
         "thirdNote": "empty",
@@ -78,7 +75,18 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "sax"
       },
 
-      8: {"questionType": "single_note",
+      7: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      8: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -87,8 +95,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "cello"
       },
 
-      9: {"questionType": "scale",
-        "note":"A",
+      9: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "G",
         "secondNote": "empty",
         "thirdNote": "H",
@@ -99,7 +108,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_letter",
+      10: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -108,7 +118,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_letter",
+      11: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -117,7 +128,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -125,53 +137,22 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "fourthChoice": "H",
         "instrument": "piano"
       },
-
     },
-    2: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
+    2: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
+        "note": "H",
+        "firstChoice": "c",
+        "secondChoice": "H",
+        "thirdChoice": "G",
+        "fourthChoice": "A",
+        "instrument": "sax"
       },
 
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
-        "firstNote": "empty",
-        "secondNote": "H",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      5: {"questionType": "scale",
-        "note":"H",
+      2: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -182,104 +163,19 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
+      3: {
+        "questionType": "single_letter",
+        "letter": "H",
+        "firstChoice": "H",
         "secondChoice": "A",
         "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
+        "fourthChoice": "G",
+        "instrument": "cello"
       },
 
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
+      4: {
+        "questionType": "scale",
         "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
-        "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-    },
-
-    3: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -290,8 +186,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -302,7 +199,18 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_note",
+        "note": "c",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "cello"
+      },
+
+      7: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -311,52 +219,44 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
+      8: {
+        "questionType": "scale",
+        "note": "c",
+        "firstNote": "A",
+        "secondNote": "H",
+        "thirdNote": "empty",
+        "firstChoice": "G",
         "secondChoice": "A",
-        "thirdChoice": "G",
+        "thirdChoice": "c",
         "fourthChoice": "H",
-        "instrument": "piano"
+        "instrument": "sax"
       },
 
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
+      9: {
+        "questionType": "scale",
         "note": "A",
-        "firstChoice": "c",
+        "firstNote": "G",
+        "secondNote": "empty",
+        "thirdNote": "H",
+        "firstChoice": "G",
         "secondChoice": "A",
-        "thirdChoice": "G",
+        "thirdChoice": "c",
         "fourthChoice": "H",
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
+      10: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
         "secondChoice": "A",
-        "thirdChoice": "G",
+        "thirdChoice": "c",
         "fourthChoice": "H",
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -364,19 +264,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "fourthChoice": "H",
         "instrument": "piano"
       },
-    },
 
-    4: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
+      12: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -384,12 +274,15 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "fourthChoice": "H",
         "instrument": "piano"
       },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
+    },
+    3: {
+      //Lecture Number
+      1: {
+        "questionType": "scale",
+        "note": "G",
+        "firstNote": "empty",
+        "secondNote": "A",
+        "thirdNote": "H",
         "firstChoice": "G",
         "secondChoice": "A",
         "thirdChoice": "c",
@@ -397,8 +290,29 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      2: {
+        "questionType": "single_letter",
+        "letter": "G",
+        "firstChoice": "c",
+        "secondChoice": "H",
+        "thirdChoice": "G",
+        "fourthChoice": "A",
+        "instrument": "sax"
+      },
+
+      3: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "cello"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -409,8 +323,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -421,7 +336,18 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      7: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -430,82 +356,52 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
+      8: {
+        "questionType": "scale",
         "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-    },
-
-    5: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
+        "firstNote": "A",
+        "secondNote": "H",
+        "thirdNote": "empty",
         "firstChoice": "G",
         "secondChoice": "A",
         "thirdChoice": "c",
         "fourthChoice": "H",
+        "instrument": "sax"
+      },
+
+      9: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "H",
+        "fourthChoice": "G",
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      10: {
+        "questionType": "single_letter",
+        "letter": "G",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "cello"
+      },
+
+      11: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
         "thirdChoice": "c",
         "fourthChoice": "H",
-        "instrument": "piano"
+        "instrument": "sax"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      12: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -515,9 +411,172 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "fourthChoice": "H",
         "instrument": "piano"
       },
+    },
 
-      4: {"questionType": "scale",
-        "note":"A",
+    4: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "sax",
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "cello",
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano",
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano",
+      },
+      5: {
+        "questionType": "scale",
+        "note": "G",
+        "firstNote": "empty",
+        "secondNote": "A",
+        "thirdNote": "H",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano",
+      },
+      6: {
+        "questionType": "scale",
+        "note": "A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano",
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "H",
+        "fourthChoice": "G",
+        "instrument": "piano",
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "G",
+        "firstChoice": "c",
+        "secondChoice": "H",
+        "thirdChoice": "G",
+        "fourthChoice": "A",
+        "instrument": "sax",
+      },
+      9: {
+        "questionType": "single_letter",
+        "letter": "G",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "cello",
+      },
+      10: {
+        "questionType": "scale",
+        "note": "c",
+        "firstNote": "A",
+        "secondNote": "H",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "sax",
+      },
+      11: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano",
+      },
+      12: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano",
+      },
+    },
+
+    5: {
+      //Lecture Number
+      1: {
+        "questionType": "scale",
+        "note": "F",
+        "firstNote": "empty",
+        "secondNote": "G",
+        "thirdNote": "A",
+        "firstChoice": "G",
+        "secondChoice": "F",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      2: {
+        "questionType": "single_letter",
+        "letter": "F",
+        "firstChoice": "F",
+        "secondChoice": "H",
+        "thirdChoice": "G",
+        "fourthChoice": "A",
+        "instrument": "sax"
+      },
+
+      3: {
+        "questionType": "single_note",
+        "note": "F",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "F",
+        "fourthChoice": "H",
+        "instrument": "cello"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -528,8 +587,150 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "sax"
+      },
+
+      6: {
+        "questionType": "single_note",
+        "note": "F",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "F",
+        "instrument": "piano"
+      },
+
+      7: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      8: {
+        "questionType": "scale",
+        "note": "F",
+        "firstNote": "E",
+        "secondNote": "empty",
+        "thirdNote": "G",
+        "firstChoice": "F",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "sax"
+      },
+
+      9: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "H",
+        "fourthChoice": "G",
+        "instrument": "piano"
+      },
+
+      10: {
+        "questionType": "single_letter",
+        "letter": "G",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "cello"
+      },
+
+      11: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "sax"
+      },
+
+      12: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+    },
+  },
+
+  2: {
+    //Progress Point
+    1: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      2: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      3: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -540,7 +741,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -549,7 +751,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -558,7 +761,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -567,7 +771,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -576,7 +781,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -585,7 +791,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -594,7 +801,535 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
+        "note": "c",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+    },
+    2: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      2: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      3: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      5: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      6: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      7: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      8: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      9: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      10: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      11: {
+        "questionType": "single_note",
+        "note": "H",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      12: {
+        "questionType": "single_note",
+        "note": "c",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+    },
+
+    3: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      2: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      3: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      5: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      6: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      7: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      8: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      9: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      10: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      11: {
+        "questionType": "single_note",
+        "note": "H",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      12: {
+        "questionType": "single_note",
+        "note": "c",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+    },
+
+    4: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      2: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      3: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      5: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      6: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      7: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      8: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      9: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      10: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      11: {
+        "questionType": "single_note",
+        "note": "H",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      12: {
+        "questionType": "single_note",
+        "note": "c",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+    },
+
+    5: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      2: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      3: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      5: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      6: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      7: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      8: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      9: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      10: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      11: {
+        "questionType": "single_note",
+        "note": "H",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -604,10 +1339,12 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
   },
-
-  2: { //Progress Point
-    1: { //Lecture Number
-      1: {"questionType": "single_note",
+  3: {
+    //Progress Point
+    1: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -616,7 +1353,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -625,8 +1363,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -637,8 +1376,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -649,8 +1389,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -661,7 +1402,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -670,7 +1412,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -679,7 +1422,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -688,7 +1432,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -697,7 +1442,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -706,7 +1452,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -715,7 +1462,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -723,10 +1471,11 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "fourthChoice": "H",
         "instrument": "piano"
       },
-
     },
-    2: { //Lecture Number
-      1: {"questionType": "single_note",
+    2: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -735,7 +1484,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -744,8 +1494,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -756,8 +1507,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -768,8 +1520,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -780,7 +1533,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -789,7 +1543,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -798,7 +1553,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -807,7 +1563,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -816,7 +1573,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -825,7 +1583,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -834,127 +1593,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
-        "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-    },
-
-    3: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
-        "firstNote": "empty",
-        "secondNote": "H",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      5: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "G",
-        "secondNote": "A",
-        "thirdNote": "empty",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -964,8 +1604,10 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
 
-    4: { //Lecture Number
-      1: {"questionType": "single_note",
+    3: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -974,7 +1616,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -983,8 +1626,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -995,8 +1639,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -1007,8 +1652,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -1019,7 +1665,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1028,7 +1675,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1037,7 +1685,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1046,7 +1695,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1055,7 +1705,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1064,7 +1715,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1073,7 +1725,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1083,8 +1736,10 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
 
-    5: { //Lecture Number
-      1: {"questionType": "single_note",
+    4: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1093,7 +1748,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1102,8 +1758,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -1114,8 +1771,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -1126,8 +1784,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -1138,7 +1797,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1147,7 +1807,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1156,7 +1817,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1165,7 +1827,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1174,7 +1837,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1183,7 +1847,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1192,367 +1857,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
-        "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-    },
-  },
-
-  3: { //Progress Point
-    1: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
-        "firstNote": "empty",
-        "secondNote": "H",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      5: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "G",
-        "secondNote": "A",
-        "thirdNote": "empty",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
-        "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-    },
-    2: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
-        "firstNote": "empty",
-        "secondNote": "H",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      5: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "G",
-        "secondNote": "A",
-        "thirdNote": "empty",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
-        "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-    },
-
-    3: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
-        "firstNote": "empty",
-        "secondNote": "H",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      5: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "G",
-        "secondNote": "A",
-        "thirdNote": "empty",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1562,8 +1868,10 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
 
-    4: { //Lecture Number
-      1: {"questionType": "single_note",
+    5: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1572,7 +1880,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1581,8 +1890,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -1593,8 +1903,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -1605,8 +1916,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -1617,7 +1929,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1626,7 +1939,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1635,7 +1949,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1644,7 +1959,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1653,7 +1969,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1662,7 +1979,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1671,126 +1989,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
-        "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-    },
-
-    5: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
-        "firstNote": "empty",
-        "secondNote": "H",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      5: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "G",
-        "secondNote": "A",
-        "thirdNote": "empty",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1800,10 +2000,12 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
   },
-
-  4: { //Progress Point
-    1: { //Lecture Number
-      1: {"questionType": "single_note",
+  4: {
+    //Progress Point
+    1: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1812,7 +2014,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1821,8 +2024,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -1833,8 +2037,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -1845,8 +2050,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -1857,7 +2063,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1866,7 +2073,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1875,7 +2083,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1884,7 +2093,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1893,7 +2103,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1902,7 +2113,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1911,7 +2123,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1919,10 +2132,11 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "fourthChoice": "H",
         "instrument": "piano"
       },
-
     },
-    2: { //Lecture Number
-      1: {"questionType": "single_note",
+    2: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1931,7 +2145,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1940,8 +2155,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -1952,8 +2168,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -1964,8 +2181,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -1976,7 +2194,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -1985,7 +2204,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -1994,7 +2214,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2003,7 +2224,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2012,7 +2234,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2021,7 +2244,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2030,127 +2254,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
-        "note": "c",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-    },
-
-    3: { //Lecture Number
-      1: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      2: {"questionType": "single_letter",
-        "letter": "A",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      3: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "A",
-        "secondNote": "empty",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      4: {"questionType": "scale",
-        "note":"A",
-        "firstNote": "empty",
-        "secondNote": "H",
-        "thirdNote": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      5: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "G",
-        "secondNote": "A",
-        "thirdNote": "empty",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      6: {"questionType": "single_letter",
-        "letter": "c",
-        "firstChoice": "G",
-        "secondChoice": "A",
-        "thirdChoice": "c",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      7: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      8: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      9: {"questionType": "single_note",
-        "note": "G",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      10: {"questionType": "single_note",
-        "note": "A",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      11: {"questionType": "single_note",
-        "note": "H",
-        "firstChoice": "c",
-        "secondChoice": "A",
-        "thirdChoice": "G",
-        "fourthChoice": "H",
-        "instrument": "piano"
-      },
-
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2160,8 +2265,10 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
 
-    4: { //Lecture Number
-      1: {"questionType": "single_note",
+    3: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -2170,7 +2277,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -2179,8 +2287,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -2191,8 +2300,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -2203,8 +2313,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -2215,7 +2326,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -2224,7 +2336,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2233,7 +2346,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2242,7 +2356,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2251,7 +2366,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2260,7 +2376,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2269,7 +2386,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2279,8 +2397,10 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
 
-    5: { //Lecture Number
-      1: {"questionType": "single_note",
+    4: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -2289,7 +2409,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      2: {"questionType": "single_letter",
+      2: {
+        "questionType": "single_letter",
         "letter": "A",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -2298,8 +2419,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      3: {"questionType": "scale",
-        "note":"H",
+      3: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "A",
         "secondNote": "empty",
         "thirdNote": "c",
@@ -2310,8 +2432,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      4: {"questionType": "scale",
-        "note":"A",
+      4: {
+        "questionType": "scale",
+        "note": "A",
         "firstNote": "empty",
         "secondNote": "H",
         "thirdNote": "c",
@@ -2322,8 +2445,9 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      5: {"questionType": "scale",
-        "note":"H",
+      5: {
+        "questionType": "scale",
+        "note": "H",
         "firstNote": "G",
         "secondNote": "A",
         "thirdNote": "empty",
@@ -2334,7 +2458,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      6: {"questionType": "single_letter",
+      6: {
+        "questionType": "single_letter",
         "letter": "c",
         "firstChoice": "G",
         "secondChoice": "A",
@@ -2343,7 +2468,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      7: {"questionType": "single_note",
+      7: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2352,7 +2478,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      8: {"questionType": "single_note",
+      8: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2361,7 +2488,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      9: {"questionType": "single_note",
+      9: {
+        "questionType": "single_note",
         "note": "G",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2370,7 +2498,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      10: {"questionType": "single_note",
+      10: {
+        "questionType": "single_note",
         "note": "A",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2379,7 +2508,8 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      11: {"questionType": "single_note",
+      11: {
+        "questionType": "single_note",
         "note": "H",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2388,7 +2518,140 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
         "instrument": "piano"
       },
 
-      12: {"questionType": "single_note",
+      12: {
+        "questionType": "single_note",
+        "note": "c",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+    },
+
+    5: {
+      //Lecture Number
+      1: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      2: {
+        "questionType": "single_letter",
+        "letter": "A",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      3: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "A",
+        "secondNote": "empty",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      4: {
+        "questionType": "scale",
+        "note": "A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      5: {
+        "questionType": "scale",
+        "note": "H",
+        "firstNote": "G",
+        "secondNote": "A",
+        "thirdNote": "empty",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      6: {
+        "questionType": "single_letter",
+        "letter": "c",
+        "firstChoice": "G",
+        "secondChoice": "A",
+        "thirdChoice": "c",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      7: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      8: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      9: {
+        "questionType": "single_note",
+        "note": "G",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      10: {
+        "questionType": "single_note",
+        "note": "A",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      11: {
+        "questionType": "single_note",
+        "note": "H",
+        "firstChoice": "c",
+        "secondChoice": "A",
+        "thirdChoice": "G",
+        "fourthChoice": "H",
+        "instrument": "piano"
+      },
+
+      12: {
+        "questionType": "single_note",
         "note": "c",
         "firstChoice": "c",
         "secondChoice": "A",
@@ -2398,5 +2661,4 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
       },
     },
   },
-
 };
