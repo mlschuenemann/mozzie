@@ -119,19 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     final streakProvider = Provider.of<StreakProvider>(context);
 
-
     int statusBarValue = lectureNumber;
-
-
-   /* IconButton(
-      icon: Icon(
-        Icons.settings,
-        color: Colors.white,
-      ),
-      onPressed: () {
-        Navigator.pushNamed(context, "settings");
-      },
-    ),*/
 
     return Scaffold(
       backgroundColor: BACKGROUND,
@@ -203,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 LevelCard(
                   levelText: "Level 1",
-                  subText: "Lerne deine ersten Noten",
+                  subText: "Lerne deine ersten Noten (C bis c)",
                 ),
                 SizedBox(height: 20,),
                 ProgressPoint(
@@ -236,24 +224,26 @@ class _MyHomePageState extends State<MyHomePage> {
                   marginRight: 220,
                   statusBarValue: statusBarValue,
                 ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 3
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
+                SizedBox(height: 20,),
+                LevelCard(
+                  levelText: "Level 2",
+                  subText: "Lerne über zwei Oktaven und erste Vorzeichen",
                 ),
+                SizedBox(height: 20,),
+
                 ProgressPoint(
                   number: 4,
                   marginLeft: 220,
                   marginRight: 0,
                   statusBarValue: statusBarValue,
                 ),
-                SizedBox(height: 20,),
-                LevelCard(
-                  levelText: "Level 2",
-                  subText: "Lerne Vorzeichen und noch mehr Noten",
+                SvgPicture.asset(
+                  "assets/graphics/vector_2.svg",
+                  colorFilter: progressPointNumber <= 3
+                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
+                      : null,
                 ),
-                SizedBox(height: 20,),
+
                 ProgressPoint(
                   number: 5,
                   marginLeft: 0,
@@ -299,7 +289,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(height: 20,),
                 LevelCard(
                   levelText: "Level 3",
-                  subText: "Lerne den Violinschlüssel",
+                  subText: "Lerne alle Vorzeichen",
                 ),
                 SizedBox(height: 20,),
                 ProgressPoint(
@@ -340,6 +330,54 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ProgressPoint(
                   number: 12,
+                  marginLeft: 220,
+                  marginRight: 0,
+                  statusBarValue: statusBarValue,
+                ),
+                SizedBox(height: 20,),
+                LevelCard(
+                  levelText: "Level 4",
+                  subText: "Trainiere bist du Profi bist",
+                ),
+                SizedBox(height: 20,),
+                ProgressPoint(
+                  number: 13,
+                  marginLeft: 0,
+                  marginRight: 220,
+                  statusBarValue: statusBarValue,
+                ),
+                SvgPicture.asset(
+                  "assets/graphics/vector_1.svg",
+                  colorFilter: progressPointNumber <= 13
+                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
+                      : null,
+                ),
+                ProgressPoint(
+                  number: 14,
+                  marginLeft: 220,
+                  marginRight: 0,
+                  statusBarValue: statusBarValue,
+                ),
+                SvgPicture.asset(
+                  "assets/graphics/vector_2.svg",
+                  colorFilter: progressPointNumber <= 14
+                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
+                      : null,
+                ),
+                ProgressPoint(
+                  number: 15,
+                  marginLeft: 0,
+                  marginRight: 220,
+                  statusBarValue: statusBarValue,
+                ),
+                SvgPicture.asset(
+                  "assets/graphics/vector_1.svg",
+                  colorFilter: progressPointNumber <= 15
+                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
+                      : null,
+                ),
+                ProgressPoint(
+                  number: 16,
                   marginLeft: 220,
                   marginRight: 0,
                   statusBarValue: statusBarValue,
