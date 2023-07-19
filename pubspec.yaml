@@ -69,6 +69,7 @@ flutter:
     - assets/graphics/
     - assets/note_graphics/lines/
     - assets/note_graphics/notes/
+    - assets/note_graphics/notes/small/
     - assets/instruments/
     - assets/icons/
     - assets/sounds/

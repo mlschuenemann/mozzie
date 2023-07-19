@@ -135,7 +135,7 @@ class _SingleLetterQuestionState extends State<SingleLetterQuestion> {
                 color: SECONDARY,
                 borderRadius: BorderRadius.circular(20),
               ),
-              height: 100,
+              height: 70,
               width: 200,
               child: const Text(
                 'G, A, H ... G, A, H',

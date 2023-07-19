@@ -16,6 +16,34 @@ class NoteChoiceCard extends StatelessWidget {
   final bool displayNoteName;
   final Color borderColor;
 
+  String notePath(String note) {
+    List<String> upNotes = ["F", "G", "A", "H", "c"];
+    List<String> downNotes = ["d", "e", "f", "g", "a", "h"];
+
+    switch (note) {
+      case "C":
+        return "assets/note_graphics/notes/small/note_up_small_on_line_2.svg";
+      case "D":
+        return "assets/note_graphics/notes/small/note_up_small_below_line_1.svg";
+      case "E":
+        return "assets/note_graphics/notes/small/note_up_small_on_line_1.svg";
+      case "c'":
+        return "assets/note_graphics/notes/small/note_down_small_on_line_1.svg";
+      case "d\'":
+        return "assets/note_graphics/notes/small/note_down_small_above_line_1.svg";
+      case "e\'":
+        return "assets/note_graphics/notes/small/note_down_small_on_line_2.svg";
+      default:
+        if (upNotes.contains(note)) {
+          return "assets/note_graphics/notes/small/note_up_small.svg";
+        } else if (downNotes.contains(note)) {
+          return "assets/note_graphics/notes/small/note_down_small.svg";
+        } else {
+          return "";
+        }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,13 +72,13 @@ class NoteChoiceCard extends StatelessWidget {
             Positioned(
               top: positionChoiceCard[noteChoice],
               child: SvgPicture.asset(
-                "assets/note_graphics/notes/note_up_small.svg",
+                notePath(noteChoice),
               ),
             ),
             Positioned(
                 top: 90,
                 child: Visibility(
-                  visible: displayNoteName,
+                  visible: displayNoteName && !["C", "D", "E", "F"].contains(noteChoice),
                   child: Text(
                     noteChoice,
                     style: PAR2,

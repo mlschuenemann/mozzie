@@ -1,16 +1,40 @@
 import 'package:flutter/material.dart';
 
 Map<String, double> positionChoiceCard = {
+  "C":59,
+  "D":54,
+  "E":48,
+  "F": 42,
   "G": 36,
   "A": 30,
   "H": 23,
-  "c": 17
+  "c": 17,
+  "d":49,
+  "e":43,
+  "f":37,
+  "g":30,
+  "a":23,
+  "h":17,
+  "c\'":12,
+  "d\'":7,
+  "e\'":2,
 };
 
 Map<String, double> positionCard = {
-  "empty": 10,
-  "G": 40,
-  "A": 27,
-  "H": 15,
-  "c":3,
+  "empty": 34,
+  "C":108,
+  "D":96,
+  "E": 89,
+  "F":77,
+  "G": 65,
+  "A": 53,
+  "H": 41,
+  "c":29,
+  "d":17,
+  "e":5,
+  "f":-8,
+  "g":-20,
+  "a":-33,
+  "h":-44,
+  "c\'":-58,
 };

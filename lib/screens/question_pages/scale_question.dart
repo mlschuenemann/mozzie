@@ -135,7 +135,7 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
                   color: SECONDARY,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                height: 100,
+                height: 70,
                 width: 200,
                 child: const Text(
                   'Tipp: Beachte die Notenlinien',

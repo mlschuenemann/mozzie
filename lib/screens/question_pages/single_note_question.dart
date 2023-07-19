@@ -134,7 +134,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
                 color: SECONDARY,
                 borderRadius: BorderRadius.circular(20),
               ),
-              height: 100,
+              height: 70,
               width: 200,
               child: const Text(
                 'G, A, H ... G, A, H',
@@ -143,7 +143,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
             ),
           ],
         ),
-        SingleChoiceCard(
+        SingleNoteCard(
           note: widget.note,
         ),
         const Expanded(flex: 1, child: SizedBox()),

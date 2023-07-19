@@ -4,10 +4,10 @@ Map<int,Map<int,Map<int,Map<String,String>>>> data = {
   1: { //Progress Point
     1: { //Lecture Number
       1: {"questionType": "scale",
-        "note":"H",
-        "firstNote": "G",
-        "secondNote": "A",
-        "thirdNote": "empty",
+        "note":"A",
+        "firstNote": "empty",
+        "secondNote": "H",
+        "thirdNote": "c",
         "firstChoice": "G",
         "secondChoice": "A",
         "thirdChoice": "c",

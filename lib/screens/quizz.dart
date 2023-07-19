@@ -116,13 +116,13 @@ class _QuizzState extends State<Quizz> {
               final greyContainerWidth = constraints.maxWidth;
               if (questionNumber <= 12) {
                 greenContainerWidth =
-                    (questionNumber / 16) * greyContainerWidth;
+                    (questionNumber / 18) * greyContainerWidth;
               } else {
                 greenContainerWidth = greyContainerWidth;
               }
               return Container(
                 padding: const EdgeInsets.only(
-                    left: 15, right: 15, top: 50, bottom: 20),
+                    left: 15, right: 45, top: 50, bottom: 20),
                 child: Row(
                   children: [
                     IconButton(

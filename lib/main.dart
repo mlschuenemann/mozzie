@@ -296,10 +296,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   marginRight: 0,
                   statusBarValue: statusBarValue,
                 ),
+                SizedBox(height: 20,),
                 LevelCard(
                   levelText: "Level 3",
                   subText: "Lerne den Violinschlüssel",
                 ),
+                SizedBox(height: 20,),
                 ProgressPoint(
                   number: 9,
                   marginLeft: 0,
