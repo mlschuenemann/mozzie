@@ -1,26 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:music_education/constants/colors.dart';
+import 'package:provider/provider.dart';
+import 'package:music_education/provider/progress_point_provider.dart';
+import 'package:music_education/provider/lecture_provider.dart';
 
 import '../constants/textstyle.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-
 class FastForwardButton extends StatefulWidget {
   @override
   _FastForwardButtonState createState() => _FastForwardButtonState();
+
+  // Constructor for FastForwardButton
+  FastForwardButton({
+    Key? key,
+    this.animationDuration = const Duration(seconds: 2),
+    required this.resetValue,
+  }) : super(key: key);
+
+  var resetValue;
+  final Duration animationDuration;
 }
 
 class _FastForwardButtonState extends State<FastForwardButton>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
+
+
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 2),
+      duration: widget.animationDuration, // Use the duration from the constructor
     )..repeat(reverse: true); // Animates the container up and down indefinitely.
   }
 
@@ -32,6 +46,10 @@ class _FastForwardButtonState extends State<FastForwardButton>
 
   @override
   Widget build(BuildContext context) {
+    final lectureProvider = Provider.of<LectureProvider>(context, listen: false);
+    final progressPointProvider = Provider.of<ProgressPointProvider>(context, listen:false);
+
+
     return AnimatedBuilder(
       animation: _controller,
       builder: (context, child) {
@@ -41,26 +59,29 @@ class _FastForwardButtonState extends State<FastForwardButton>
           child: child!,
         );
       },
-      child: Container(
-        alignment: Alignment.center,
-        padding: EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          //color: SECONDARY,
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: LILA, width: 2),
-        ),
-        child: Row(
-          children: [
-            Icon(Icons.fast_forward_rounded, color: Colors.white),
-            Text(
-              "Hierhin springen",
-              style: PAR2,
-            ),
-          ],
+      child: GestureDetector(
+        onTap: (){
+          progressPointProvider.resetProgressPointNumber(widget.resetValue);
+          lectureProvider.resetLectureNumber();
+        },
+        child: Container(
+          alignment: Alignment.center,
+          padding: EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: LILA, width: 2),
+          ),
+          child: Row(
+            children: [
+              Icon(Icons.fast_forward_rounded, color: Colors.white),
+              Text(
+                "Hierhin springen",
+                style: PAR2,
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
-
-

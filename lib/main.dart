@@ -183,237 +183,68 @@ class _MyHomePageState extends State<MyHomePage> {
                 text: "$currentScore",
                 border: false,
               ),
-
             ],
           ),
+
           Expanded(
             child: ListView(
               children: [
 
-                LevelCard(
-                  levelText: "Level 1",
-                  subText: "Lerne deine ersten Noten (C bis c)",
-                ),
-                SizedBox(height: 20,),
-                ProgressPoint(
-                  number: 1,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 1
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 2,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_2.svg",
-                  colorFilter: progressPointNumber <= 2
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 3,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
-                ),
-                SizedBox(height: 20,),
-                LevelCard(
-                  levelText: "Level 2",
-                  subText: "Lerne über zwei Oktaven und erste Vorzeichen",
-                ),
-                SizedBox(height: 20,),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    GestureDetector(
-                      onTap:(){
-                        progressPointProvider.resetProgressPointNumber(4);
-                        lectureProvider.resetLectureNumber();
-                      },
-                        child: FastForwardButton()),
-                    ProgressPoint(
-                      number: 4,
-                      marginLeft: 30,
-                      marginRight: progressPointNumber==4?36:46,
-                      statusBarValue: statusBarValue,
+                    Container(
+                      height: 30,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20)
+                      ),
+                      child: Text(
+                        "Bass", style: PAR1,
+                      ),
+                    ),
+                    Container(
+                      height: 30,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20)
+                      ),
+                      child: Text(
+                        "Bass", style: PAR1,
+                      ),
+                    ),
+                    Container(
+                      height: 30,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20)
+                      ),
+                      child: Text(
+                        "Bass", style: PAR1,
+                      ),
                     ),
                   ],
                 ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_2.svg",
-                  colorFilter: progressPointNumber <= 4
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 5,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 5
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 6,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_2.svg",
-                  colorFilter: progressPointNumber <= 6
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 7,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 7
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 8,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
-                ),
+
+                buildLevelCard("Level 1", "Lerne deine ersten Noten (C bis c)"),
                 SizedBox(height: 20,),
-                LevelCard(
-                  levelText: "Level 3",
-                  subText: "Lerne alle Vorzeichen",
-                ),
+                buildProgressPointList(startPoint: 1,statusBarValue: statusBarValue,
+                itemCount: 3,progressPointNumber: progressPointNumber),
                 SizedBox(height: 20,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    ProgressPoint(
-                      number: 9,
-                      marginLeft: progressPointNumber==9?36:46,
-                      marginRight: 30,
-                      statusBarValue: statusBarValue,
-                    ),
-                    GestureDetector(
-                        onTap: (){
-                          progressPointProvider.resetProgressPointNumber(9);
-                          lectureProvider.resetLectureNumber();
-                        },
-                        child: FastForwardButton()),
-                  ],
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 9
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 10,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_2.svg",
-                  colorFilter: progressPointNumber <= 10
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 11,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 11
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 12,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
-                ),
+                buildLevelCard("Level 2", "Lerne über zwei Oktaven und erste Vorzeichen"),
                 SizedBox(height: 20,),
-                LevelCard(
-                  levelText: "Level 4",
-                  subText: "Trainiere bist du Profi bist",
-                ),
+                buildProgressPointList(startPoint: 4,statusBarValue: statusBarValue,
+                    itemCount: 5,progressPointNumber: progressPointNumber),
                 SizedBox(height: 20,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    ProgressPoint(
-                      number: 13,
-                      marginLeft: progressPointNumber==13?36:46,
-                      marginRight: 30,
-                      statusBarValue: statusBarValue,
-                    ),
-                    GestureDetector(
-                        onTap: (){
-                          progressPointProvider.resetProgressPointNumber(13);
-                          lectureProvider.resetLectureNumber();
-                        },
-                        child: FastForwardButton()),
-                  ],
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 13
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 14,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_2.svg",
-                  colorFilter: progressPointNumber <= 14
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 15,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
-                ),
-                SvgPicture.asset(
-                  "assets/graphics/vector_1.svg",
-                  colorFilter: progressPointNumber <= 15
-                      ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                      : null,
-                ),
-                ProgressPoint(
-                  number: 16,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
-                ),
+                buildLevelCard("Level 3", "Lerne alle Vorzeichen"),
+                SizedBox(height: 20,),
+                buildProgressPointList(startPoint: 9,statusBarValue: statusBarValue,
+                    itemCount: 4,progressPointNumber: progressPointNumber),
+                SizedBox(height: 20,),
+                buildLevelCard("Level 4", "Trainiere bis du Profi bist"),
+                SizedBox(height: 20,),
+                buildProgressPointList(startPoint: 13,statusBarValue: statusBarValue,
+                    itemCount: 4,progressPointNumber: progressPointNumber),
               ],
             ),
           ),
@@ -421,4 +252,61 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}
+
+Widget buildProgressPointList(
+    {required int startPoint,
+      required int statusBarValue,
+      required int itemCount,
+      required int progressPointNumber,
+    }) {
+
+  return ListView.builder(
+    shrinkWrap: true,
+    physics: NeverScrollableScrollPhysics(),
+    itemCount: itemCount,
+    itemBuilder: (context, index) {
+      final point = startPoint + index;
+      return Column(
+        children: [
+          if(point == startPoint && startPoint != 1)
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                ProgressPoint(
+                  number: point,
+                  marginLeft: progressPointNumber == point ? 36 : 46,
+                  marginRight: 30,
+                  statusBarValue: statusBarValue,
+                ),
+                FastForwardButton(resetValue: startPoint)
+              ],
+            ),
+          if(point != startPoint || startPoint ==1)
+            ProgressPoint(
+              number: point,
+              marginLeft: index % 2 == 0 ? 0 : 220,
+              marginRight: index % 2 == 0 ? 220 : 0,
+              statusBarValue: statusBarValue,
+            ),
+          if(index < itemCount-1)
+            SvgPicture.asset(
+              index % 2 == 0
+                  ? "assets/graphics/vector_1.svg"
+                  : "assets/graphics/vector_2.svg",
+              colorFilter: progressPointNumber <= point
+                  ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
+                  : null,
+            ),
+        ],
+      );
+    },
+  );
+}
+
+Widget buildLevelCard(String levelText, String subText) {
+  return LevelCard(
+    levelText: levelText,
+    subText: subText,
+  );
 }

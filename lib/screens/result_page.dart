@@ -9,8 +9,6 @@ import 'package:music_education/constants/textstyle.dart';
 import 'package:music_education/screens/quizz.dart';
 import 'package:provider/provider.dart';
 import 'package:confetti/confetti.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:music_education/main.dart';
 import 'package:music_education/provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/streak_provider.dart';
