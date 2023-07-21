@@ -84,7 +84,7 @@ class ScaleCard extends StatelessWidget {
           Positioned(
             top: 180,
             left: 125,
-            child: firstNote == "empty" || ["C", "D", "E"].contains(firstNote)
+            child: firstNote == "empty" || ["C", "D", "E", "F"].contains(firstNote)
                 ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
               firstNote,

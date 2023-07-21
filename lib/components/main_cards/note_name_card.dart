@@ -15,7 +15,7 @@ class NoteNameCard extends StatelessWidget {
     return Container(
         alignment: Alignment.center,
         margin: const EdgeInsets.only(left: 15, right: 15),
-        height: 200,
+        height: 220,
         decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(
             side: const BorderSide(width: 1.50, color: SECONDARY),

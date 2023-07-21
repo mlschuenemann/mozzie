@@ -10,6 +10,7 @@ import 'package:music_education/screens/support.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'components/fast_forward_button.dart';
 import 'provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/components/progress_point.dart';
@@ -100,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
     //lectureProvider.resetLectureNumber();
 
     progressPointProvider = Provider.of<ProgressPointProvider>(context, listen:false);
-    //progressPointProvider.resetProgressPointNumber();
+    //progressPointProvider.resetProgressPointNumber(1);
   }
 
   @override
@@ -230,12 +231,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   subText: "Lerne über zwei Oktaven und erste Vorzeichen",
                 ),
                 SizedBox(height: 20,),
-
-                ProgressPoint(
-                  number: 4,
-                  marginLeft: 220,
-                  marginRight: 0,
-                  statusBarValue: statusBarValue,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    GestureDetector(
+                      onTap:(){
+                        progressPointProvider.resetProgressPointNumber(4);
+                        lectureProvider.resetLectureNumber();
+                      },
+                        child: FastForwardButton()),
+                    ProgressPoint(
+                      number: 4,
+                      marginLeft: 30,
+                      marginRight: progressPointNumber==4?36:46,
+                      statusBarValue: statusBarValue,
+                    ),
+                  ],
                 ),
                 SvgPicture.asset(
                   "assets/graphics/vector_2.svg",
@@ -243,7 +254,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
                       : null,
                 ),
-
                 ProgressPoint(
                   number: 5,
                   marginLeft: 0,
@@ -292,11 +302,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   subText: "Lerne alle Vorzeichen",
                 ),
                 SizedBox(height: 20,),
-                ProgressPoint(
-                  number: 9,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    ProgressPoint(
+                      number: 9,
+                      marginLeft: progressPointNumber==9?36:46,
+                      marginRight: 30,
+                      statusBarValue: statusBarValue,
+                    ),
+                    GestureDetector(
+                        onTap: (){
+                          progressPointProvider.resetProgressPointNumber(9);
+                          lectureProvider.resetLectureNumber();
+                        },
+                        child: FastForwardButton()),
+                  ],
                 ),
                 SvgPicture.asset(
                   "assets/graphics/vector_1.svg",
@@ -312,7 +333,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SvgPicture.asset(
                   "assets/graphics/vector_2.svg",
-                  colorFilter: progressPointNumber <= 6
+                  colorFilter: progressPointNumber <= 10
                       ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
                       : null,
                 ),
@@ -340,11 +361,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   subText: "Trainiere bist du Profi bist",
                 ),
                 SizedBox(height: 20,),
-                ProgressPoint(
-                  number: 13,
-                  marginLeft: 0,
-                  marginRight: 220,
-                  statusBarValue: statusBarValue,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    ProgressPoint(
+                      number: 13,
+                      marginLeft: progressPointNumber==13?36:46,
+                      marginRight: 30,
+                      statusBarValue: statusBarValue,
+                    ),
+                    GestureDetector(
+                        onTap: (){
+                          progressPointProvider.resetProgressPointNumber(13);
+                          lectureProvider.resetLectureNumber();
+                        },
+                        child: FastForwardButton()),
+                  ],
                 ),
                 SvgPicture.asset(
                   "assets/graphics/vector_1.svg",

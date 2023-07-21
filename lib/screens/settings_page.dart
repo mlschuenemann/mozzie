@@ -9,6 +9,7 @@ import 'package:music_education/provider/streak_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../components/streak_animation.dart';
 import '../provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/components/progress_point.dart';

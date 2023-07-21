@@ -3,36 +3,49 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/positions.dart';
 class SingleNoteCard extends StatelessWidget {
-  const SingleNoteCard({required this.note, super.key,});
+   SingleNoteCard({required this.note, super.key,});
 
   final String note;
 
   String NotePath() {
-    List<String> upNotes = ["F", "G", "A", "H", "c"];
-    List<String> downNotes = ["d", "e", "f", "g", "a", "h"];
+    List<String> upNotes = ["F", "Fes", "G", "Gis", "A","Ais", "H","His", "c", "cis"];
+    List<String> downNotes = ["d","dis", "e","eis", "f","fis", "g","gis", "a","ais", "h", "his"];
 
     if (upNotes.contains(note)) {
       return "assets/note_graphics/notes/note_up.svg";
     } else if (downNotes.contains(note)){
       return "assets/note_graphics/notes/note_down.svg";
-    } else if (note=="C"){
+    } else if (note=="C" || note=="Cis"){
       return "assets/note_graphics/notes/note_up_on_line_2.svg";
-    } else if (note=="D"){
+    } else if (note=="D" || note=="Dis"){
       return "assets/note_graphics/notes/note_up_below_line_1.svg";
-    } else if (note=="E"){
+    } else if (note=="E"|| note=="Eis"){
       return "assets/note_graphics/notes/note_up_on_line_1.svg";
     }
 
-    else if (note=="c\'"){
+    else if (note=="c\'"|| note=="cis\'"){
       return "assets/note_graphics/notes/note_down_on_line_1.svg";
-    } else if (note=="d\'"){
+    } else if (note=="d\'"|| note=="dis\'"){
       return "assets/note_graphics/notes/note_down_above_line_1.svg";
-    } else if (note=="e\'"){
+    } else if (note=="e\'" || note=="eis\'"){
       return "assets/note_graphics/notes/note_down_on_line_2.svg";
     } else {
       return "";
     }
   }
+
+  List<String> sharp = ["Gis", "His", "Ais", "cis", "Fis", "Eis", "Dis", "Cis", "dis", "eis", "fis", "gis", "ais", "his", "cis\'", "dis\'"];
+  List<String> flat = ["Ges", "B", "As", "ces", "Fes", "Es", "Des", "Ces", "des", "es", "fes", "ges", "as", "b", "ces\'", "des\'"];
+
+   String getNoteAssetPath(String note) {
+     if (sharp.contains(note)) {
+       return "assets/note_graphics/signs/kreuz.svg";
+     } else if (flat.contains(note)) {
+       return "assets/note_graphics/signs/b.svg";
+     } else {
+       return ""; // Return an empty string or default asset path if needed
+     }
+   }
 
 
   @override
@@ -59,6 +72,16 @@ class SingleNoteCard extends StatelessWidget {
             left: 160, // Adjust this value if needed
             child: SvgPicture.asset(
               NotePath(),
+            ),
+          ),
+          Visibility(
+            visible: sharp.contains(note) || flat.contains(note) ? true : false,
+            child: Positioned(
+              top: (positionCard[note] ?? 0) + 55, // Adjust this value if needed
+              left: 150, // Adjust this value if needed
+              child: SvgPicture.asset(
+                getNoteAssetPath(note)
+              ),
             ),
           ),
         ],

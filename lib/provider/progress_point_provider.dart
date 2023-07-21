@@ -43,10 +43,10 @@ class ProgressPointProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> resetProgressPointNumber() async {
+  Future<void> resetProgressPointNumber(int resetValue) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    int reset = 1;
+    int reset = resetValue;
 
     await prefs.setInt('point', reset);
     _progressPointNumber = reset;
