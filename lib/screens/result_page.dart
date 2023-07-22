@@ -87,11 +87,13 @@ class _ResultPageState extends State<ResultPage> {
                 text: "+ ${scoreProvider.score}",
                 border: true,
               ),
+              SizedBox(width: 10,),
               AchievmentCard(
                 imagePath: "assets/icons/heart_icon.svg",
                 text: "∞",
                 border: true,
               ),
+              SizedBox(width: 10,),
               AchievmentCard(
                 imagePath: "assets/icons/flame_icon.svg",
                 text: "${streakProvider.currentStreak}",

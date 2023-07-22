@@ -17,10 +17,17 @@ class FastForwardButton extends StatefulWidget {
     Key? key,
     this.animationDuration = const Duration(seconds: 2),
     required this.resetValue,
+    required this.text,
+    required this.icon,
+    required this.borderColor,
+
   }) : super(key: key);
 
   var resetValue;
   final Duration animationDuration;
+  final String text;
+  final IconData icon;
+  final Color borderColor;
 }
 
 class _FastForwardButtonState extends State<FastForwardButton>
@@ -69,13 +76,13 @@ class _FastForwardButtonState extends State<FastForwardButton>
           padding: EdgeInsets.all(16),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: LILA, width: 2),
+            border: Border.all(color: widget.borderColor, width: 2),
           ),
           child: Row(
             children: [
-              Icon(Icons.fast_forward_rounded, color: Colors.white),
+              Icon(widget.icon, color: Colors.white),
               Text(
-                "Hierhin springen",
+                widget.text,
                 style: PAR2,
               ),
             ],

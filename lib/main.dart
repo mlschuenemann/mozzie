@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:music_education/components/progress_list.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
 import 'package:music_education/components/main_cards/note_name_card.dart';
@@ -11,6 +12,7 @@ import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'components/fast_forward_button.dart';
+import 'components/key_choice_sheet.dart';
 import 'provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/components/progress_point.dart';
@@ -61,8 +63,8 @@ class MyApp extends StatelessWidget {
           "result": (context) => ResultPage(),
           "settings": (context) => Settings(),
           "impressum": (context) => ImpressumPage(),
-          "privacy" : (context) => PrivacyPage(),
-          "support" : (context) => SupportPage(),
+          "privacy": (context) => PrivacyPage(),
+          "support": (context) => SupportPage(),
         },
         home: const MyHomePage(),
       ),
@@ -70,13 +72,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-enum Point {
-  first,
-  second,
-  third,
-  fourth,
-  fifth,
-}
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -93,14 +88,15 @@ class _MyHomePageState extends State<MyHomePage> {
   late ProgressPointProvider progressPointProvider;
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     Provider.of<StreakProvider>(context, listen: false).init();
 
     lectureProvider = Provider.of<LectureProvider>(context, listen: false);
     //lectureProvider.resetLectureNumber();
 
-    progressPointProvider = Provider.of<ProgressPointProvider>(context, listen:false);
+    progressPointProvider =
+        Provider.of<ProgressPointProvider>(context, listen: false);
     //progressPointProvider.resetProgressPointNumber(1);
   }
 
@@ -128,6 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: AppBar(
           backgroundColor: BACKGROUND,
+          surfaceTintColor: Colors.white,
           elevation: 0.0,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -147,7 +144,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-
               IconButton(
                 icon: Icon(
                   Icons.settings,
@@ -161,13 +157,40 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              GestureDetector(
+                onTap: () {
+                  key_choice_sheet(context);
+                },
+                child: Container(
+                  padding: EdgeInsets.only(right: 10, left: 10),
+                  height: 40,
+                  margin: EdgeInsets.only(bottom: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SvgPicture.asset(
+                          "assets/note_graphics/signs/bass_key.svg"),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(Icons.arrow_drop_down)
+                    ],
+                  ),
+                ),
+              ),
               AchievmentCard(
                 imagePath: "assets/icons/flame_icon.svg",
                 text: "${streakProvider.currentStreak} Tage",
@@ -185,66 +208,55 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-
           Expanded(
             child: ListView(
               children: [
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      height: 30,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20)
-                      ),
-                      child: Text(
-                        "Bass", style: PAR1,
-                      ),
-                    ),
-                    Container(
-                      height: 30,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20)
-                      ),
-                      child: Text(
-                        "Bass", style: PAR1,
-                      ),
-                    ),
-                    Container(
-                      height: 30,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20)
-                      ),
-                      child: Text(
-                        "Bass", style: PAR1,
-                      ),
-                    ),
-                  ],
-                ),
-
                 buildLevelCard("Level 1", "Lerne deine ersten Noten (C bis c)"),
-                SizedBox(height: 20,),
-                buildProgressPointList(startPoint: 1,statusBarValue: statusBarValue,
-                itemCount: 3,progressPointNumber: progressPointNumber),
-                SizedBox(height: 20,),
-                buildLevelCard("Level 2", "Lerne über zwei Oktaven und erste Vorzeichen"),
-                SizedBox(height: 20,),
-                buildProgressPointList(startPoint: 4,statusBarValue: statusBarValue,
-                    itemCount: 5,progressPointNumber: progressPointNumber),
-                SizedBox(height: 20,),
+                SizedBox(
+                  height: 20,
+                ),
+                buildProgressPointList(
+                    startPoint: 1,
+                    statusBarValue: statusBarValue,
+                    itemCount: 3,
+                    progressPointNumber: progressPointNumber),
+                SizedBox(
+                  height: 20,
+                ),
+                buildLevelCard(
+                    "Level 2", "Lerne über zwei Oktaven und erste Vorzeichen"),
+                SizedBox(
+                  height: 20,
+                ),
+                buildProgressPointList(
+                    startPoint: 4,
+                    statusBarValue: statusBarValue,
+                    itemCount: 5,
+                    progressPointNumber: progressPointNumber),
+                SizedBox(
+                  height: 20,
+                ),
                 buildLevelCard("Level 3", "Lerne alle Vorzeichen"),
-                SizedBox(height: 20,),
-                buildProgressPointList(startPoint: 9,statusBarValue: statusBarValue,
-                    itemCount: 4,progressPointNumber: progressPointNumber),
-                SizedBox(height: 20,),
+                SizedBox(
+                  height: 20,
+                ),
+                buildProgressPointList(
+                    startPoint: 9,
+                    statusBarValue: statusBarValue,
+                    itemCount: 4,
+                    progressPointNumber: progressPointNumber),
+                SizedBox(
+                  height: 20,
+                ),
                 buildLevelCard("Level 4", "Trainiere bis du Profi bist"),
-                SizedBox(height: 20,),
-                buildProgressPointList(startPoint: 13,statusBarValue: statusBarValue,
-                    itemCount: 4,progressPointNumber: progressPointNumber),
+                SizedBox(
+                  height: 20,
+                ),
+                buildProgressPointList(
+                    startPoint: 13,
+                    statusBarValue: statusBarValue,
+                    itemCount: 4,
+                    progressPointNumber: progressPointNumber),
               ],
             ),
           ),
@@ -254,59 +266,3 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-Widget buildProgressPointList(
-    {required int startPoint,
-      required int statusBarValue,
-      required int itemCount,
-      required int progressPointNumber,
-    }) {
-
-  return ListView.builder(
-    shrinkWrap: true,
-    physics: NeverScrollableScrollPhysics(),
-    itemCount: itemCount,
-    itemBuilder: (context, index) {
-      final point = startPoint + index;
-      return Column(
-        children: [
-          if(point == startPoint && startPoint != 1)
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                ProgressPoint(
-                  number: point,
-                  marginLeft: progressPointNumber == point ? 36 : 46,
-                  marginRight: 30,
-                  statusBarValue: statusBarValue,
-                ),
-                FastForwardButton(resetValue: startPoint)
-              ],
-            ),
-          if(point != startPoint || startPoint ==1)
-            ProgressPoint(
-              number: point,
-              marginLeft: index % 2 == 0 ? 0 : 220,
-              marginRight: index % 2 == 0 ? 220 : 0,
-              statusBarValue: statusBarValue,
-            ),
-          if(index < itemCount-1)
-            SvgPicture.asset(
-              index % 2 == 0
-                  ? "assets/graphics/vector_1.svg"
-                  : "assets/graphics/vector_2.svg",
-              colorFilter: progressPointNumber <= point
-                  ? ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                  : null,
-            ),
-        ],
-      );
-    },
-  );
-}
-
-Widget buildLevelCard(String levelText, String subText) {
-  return LevelCard(
-    levelText: levelText,
-    subText: subText,
-  );
-}

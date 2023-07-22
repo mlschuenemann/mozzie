@@ -31,7 +31,7 @@ class AchievmentCard extends StatelessWidget {
     return Container(
         padding: EdgeInsets.only(right: 10, left: 10),
         height: 40,
-        margin: EdgeInsets.only(left: 15, bottom: 10),
+        margin: EdgeInsets.only(bottom: 10,),
         decoration: BoxDecoration(
             color: SECONDARY, borderRadius: BorderRadius.circular(10),
           border: border ? Border.all(
