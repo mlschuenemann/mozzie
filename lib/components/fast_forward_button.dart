@@ -60,7 +60,7 @@ class _FastForwardButtonState extends State<FastForwardButton>
     return AnimatedBuilder(
       animation: _controller,
       builder: (context, child) {
-        double offset = math.sin(_controller.value * 0.8 * math.pi) * 5.0;
+        double offset = math.sin(_controller.value * 2 * math.pi) * 4.0;
         return Transform.translate(
           offset: Offset(0, offset),
           child: child!,

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
+import 'package:music_education/provider/key_provider.dart';
+import 'package:provider/provider.dart';
 
 enum Card {
   first,
@@ -11,12 +13,14 @@ enum Card {
 
 var selectedCard = Card.first;
 
+
 void key_choice_sheet(BuildContext context) {
   showModalBottomSheet(
     context: context,
     isScrollControlled: true,
     backgroundColor: Colors.transparent,
     builder: (BuildContext context) {
+      final keyProvider = Provider.of<KeyProvider>(context);
       return StatefulBuilder(
         builder: (BuildContext context, StateSetter setState) {
           return Container(
@@ -36,6 +40,8 @@ void key_choice_sheet(BuildContext context) {
                       onTap: () {
                         setState(() {
                           selectedCard = Card.first;
+                          keyProvider.changeKey("bass");
+                          Navigator.pop(context);
                         });
                       },
                       child: KeyChoiceCard(
@@ -52,6 +58,8 @@ void key_choice_sheet(BuildContext context) {
                       onTap: () {
                         setState(() {
                           selectedCard = Card.second;
+                          keyProvider.changeKey("violin");
+                          Navigator.pop(context);
                         });
                       },
                       child: KeyChoiceCard(
@@ -67,7 +75,7 @@ void key_choice_sheet(BuildContext context) {
                     ),
                   ],
                 ),
-              ));
+              ),);
         },
       );
     },

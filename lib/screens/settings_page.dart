@@ -2,21 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
-import 'package:music_education/components/main_cards/note_name_card.dart';
-import 'package:music_education/components/choice_cards/note_choice_card.dart';
-import 'package:music_education/screens/quizz.dart';
-import 'package:music_education/provider/streak_provider.dart';
-import 'package:provider/provider.dart';
-import 'package:music_education/screens/result_page.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import '../components/streak_animation.dart';
-import '../provider/score_provider.dart';
-import 'package:music_education/provider/lecture_provider.dart';
-import 'package:music_education/components/progress_point.dart';
-import 'package:music_education/provider/question_provider.dart';
-import 'package:music_education/provider/progress_point_provider.dart';
-import 'package:music_education/components/level_card.dart';
-import 'package:music_education/components/achievement_card.dart';
+import 'package:rive/rive.dart';
 
 class Settings extends StatelessWidget {
   const Settings({Key? key}) : super(key: key);

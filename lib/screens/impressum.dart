@@ -20,7 +20,7 @@ class ImpressumPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Firmenname',
+              'Mozzie',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,
@@ -29,7 +29,7 @@ class ImpressumPage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              'Adresse: Ihre Firmenadresse, Stadt, Land',
+              'Adresse: xxx',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
@@ -38,7 +38,7 @@ class ImpressumPage extends StatelessWidget {
             ),
             SizedBox(height: 8),
             Text(
-              'E-Mail: kontakt@example.com',
+              'E-Mail: ml.schuene@t-online.de',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
@@ -56,16 +56,7 @@ class ImpressumPage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              'Registernummer: Ihre Firmenregisternummer',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.w300, // Thinner font-weight
-              ),
-            ),
-            SizedBox(height: 16),
-            Text(
-              'Geschäftsführer: Ihr CEO-Name',
+              'Verantwortlicher: Martin Schünemann',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
@@ -112,10 +103,10 @@ class ImpressumPage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.only(left: 16, right: 16, top: 16 ,bottom: 40),
         color: Colors.grey[800],
         child: Text(
-          '© ${DateTime.now().year} Ihr Firmenname. Alle Rechte vorbehalten.',
+          '© ${DateTime.now().year} Martin Schünemann. Alle Rechte vorbehalten.',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,

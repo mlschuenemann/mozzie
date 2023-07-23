@@ -23,6 +23,7 @@ import 'package:music_education/components/achievement_card.dart';
 import 'package:music_education/screens/settings_page.dart';
 import 'package:music_education/screens/impressum.dart';
 import 'package:music_education/screens/privacy.dart';
+import 'package:music_education/provider/key_provider.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -49,6 +50,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (_) => StreakProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => KeyProvider(),
         ),
       ],
       child: MaterialApp(
@@ -115,6 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final int? currentScore = scoreProvider.xpPoints;
 
     final streakProvider = Provider.of<StreakProvider>(context);
+    final keyProvider = Provider.of<KeyProvider>(context);
 
     int statusBarValue = lectureNumber;
 
@@ -171,7 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   key_choice_sheet(context);
                 },
                 child: Container(
-                  padding: EdgeInsets.only(right: 10, left: 10),
+                  padding: EdgeInsets.only(right: 10, left: 10, top: 5, bottom: 5),
                   height: 40,
                   margin: EdgeInsets.only(bottom: 10),
                   decoration: BoxDecoration(
@@ -182,7 +187,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SvgPicture.asset(
-                          "assets/note_graphics/signs/bass_key.svg"),
+                          "assets/note_graphics/signs/${keyProvider.key}_key.svg"),
                       SizedBox(
                         width: 5,
                       ),
