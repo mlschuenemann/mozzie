@@ -27,8 +27,6 @@ class ProgressPoint extends StatelessWidget {
   final int number;
 
 
-
-
   @override
   Widget build(BuildContext context) {
 
@@ -37,43 +35,36 @@ class ProgressPoint extends StatelessWidget {
 
     return Container(
       margin: EdgeInsets.only(right: marginRight, left: marginLeft),
-      child: GestureDetector(
-        onTap: (){
-          if(progressPointNumber==number){
-            Navigator.pushNamed(context, 'quizz');
-          }
-        },
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Container(
-              alignment: Alignment.center,
-              width: 75,
-              height: 75,
-              decoration: BoxDecoration(
-                color: progressPointNumber >= number ? LILA : SECONDARY,
-                shape: BoxShape.circle,
-              ),
-              child: Text(
-                number.toString(),
-                style: HEADING2,
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Container(
+            alignment: Alignment.center,
+            width: 75,
+            height: 75,
+            decoration: BoxDecoration(
+              color: progressPointNumber >= number ? LILA : SECONDARY,
+              shape: BoxShape.circle,
+            ),
+            child: Text(
+              number.toString(),
+              style: progressPointNumber >= number ? HEADING2 : INACTIVE,
+            ),
+          ),
+          Offstage(
+            offstage: progressPointNumber == number ? false : true,
+            child: Container(
+              width: 100,
+              height: 100,
+              child: CircularProgressIndicator(
+                value: statusBarValue / 5 - 1 / 5,
+                color: LILA,
+                backgroundColor: SECONDARY,
+                strokeWidth: 10,
               ),
             ),
-            Offstage(
-              offstage: progressPointNumber == number ? false : true,
-              child: Container(
-                width: 100,
-                height: 100,
-                child: CircularProgressIndicator(
-                  value: statusBarValue / 5 - 1 / 5,
-                  color: LILA,
-                  backgroundColor: SECONDARY,
-                  strokeWidth: 10,
-                ),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

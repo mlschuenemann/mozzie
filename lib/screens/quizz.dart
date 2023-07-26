@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/data.dart';
@@ -28,6 +29,11 @@ class Quizz extends StatefulWidget {
   State<Quizz> createState() => _QuizzState();
 }
 
+void playFanfare() async {
+  final player = AudioPlayer();
+  await player.play(AssetSource('sounds/fanfare.mp3'));
+}
+
 class _QuizzState extends State<Quizz> {
   @override
   Widget build(BuildContext context) {
@@ -40,7 +46,8 @@ class _QuizzState extends State<Quizz> {
     final progressPointProvider = Provider.of<ProgressPointProvider>(context);
     final progressPointNumber = progressPointProvider.progressPointNumber;
 
-    final questionData = data[progressPointNumber]?[lectureNumber]?[questionNumber];
+    final questionData =
+        data[progressPointNumber]?[lectureNumber]?[questionNumber];
 
     final questionType = questionData?["questionType"] ?? "";
     final note = questionData?["note"] ?? "";
@@ -99,9 +106,15 @@ class _QuizzState extends State<Quizz> {
     }
 
     ///Beware the number!!
-    if (questionNumber == 13) {
+    if (questionNumber >= 13 && questionProvider.incorrectQuestions.isEmpty) {
+      questionProvider.deactivateRevisionMode();
       // Display the result page
       return ResultPage(); // Replace ResultPage with the actual result page widget
+    } else if (questionNumber >= 13 &&
+        questionProvider.incorrectQuestions.isNotEmpty) {
+      questionProvider.activateRevisionMode();
+      questionProvider.setToIncorrectQuestion();
+      questionProvider.removeIncorrectQuestion();
     }
 
     double greenContainerWidth = 0.0;
@@ -126,35 +139,54 @@ class _QuizzState extends State<Quizz> {
                 child: Row(
                   children: [
                     IconButton(
-                        icon: Icon(Icons.close),
+                        icon: questionProvider.revisionMode == false
+                            ? Icon(Icons.close)
+                            : Icon(Icons.refresh_rounded, color: Colors.yellow),
                         onPressed: () {
-                          Navigator.of(context).pop();
+                          questionProvider.revisionMode == false
+                              ? Navigator.of(context).pop()
+                              : null;
                         },
                         color: Color(0xFF888D8F)),
                     const SizedBox(width: 15),
-                    Expanded(
-                      child: Stack(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: SECONDARY,
+                    if (questionProvider.revisionMode == false)
+                      Expanded(
+                        child: Stack(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: SECONDARY,
+                              ),
+                              height: 25,
                             ),
-                            height: 25,
-                          ),
-                          AnimatedContainer(
-                            duration: Duration(milliseconds: 500),
-                            curve: Curves.easeInOut,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: GREEN,
+                            AnimatedContainer(
+                              duration: Duration(milliseconds: 500),
+                              curve: Curves.easeInOut,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: GREEN,
+                              ),
+                              height: 25,
+                              width: greenContainerWidth,
                             ),
-                            height: 25,
-                            width: greenContainerWidth,
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
+                    if (questionProvider.revisionMode == true)
+                      Expanded(
+                        child: Container(
+                          alignment: Alignment.center,
+                          height: 25,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.yellow),
+                          child: Text(
+                            "Wiederhole die falschen Antworten",
+                            style: HEADING3,
+                          ),
+                        ),
+                      ),
                   ],
                 ),
               );

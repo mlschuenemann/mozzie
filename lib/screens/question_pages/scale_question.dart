@@ -99,6 +99,7 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
 
     } else {
       await _showBottomSheet(context, false);
+      Provider.of<QuestionProvider>(context, listen: false).addIncorrectQuestion(widget.questionNumber);
     }
   }
 
@@ -214,10 +215,19 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
           GestureDetector(
             onTap: () async{
               if(selectedCard!=Card.none){
+                if(questionProvider.revisionMode==false){
                 HapticFeedback.mediumImpact();
                 await checkAnswer(selectedCard);
                 questionProvider.nextQuestion();
-                resetBordern();}
+                resetBordern();
+                }else{
+                  HapticFeedback.mediumImpact();
+                  await checkAnswer(selectedCard);
+                  questionProvider.setQuestionNumber(13);
+                  resetBordern();
+                }
+
+              }
             },
             child: Container(
               margin: const EdgeInsets.only(left: 15, right: 15, bottom: 20),

@@ -35,5 +35,40 @@ class QuestionProvider with ChangeNotifier {
     notifyListeners();
   }
 
+  List<int> _incorrectQuestions = [];
 
+  List<int> get incorrectQuestions => _incorrectQuestions;
+
+  bool _revisionMode = false;
+  bool get revisionMode => _revisionMode;
+
+  void activateRevisionMode() {
+    _revisionMode = true;
+    //notifyListeners();
+  }
+
+  void deactivateRevisionMode() {
+    _revisionMode = false;
+    //notifyListeners();
+  }
+
+  void addIncorrectQuestion(int questionNumber) {
+    _incorrectQuestions.add(questionNumber);
+    notifyListeners();
+  }
+
+  void removeIncorrectQuestion() {
+    _incorrectQuestions.remove(incorrectQuestions.first);
+    //notifyListeners();
+  }
+
+  void setToIncorrectQuestion() {
+    int incorrectQuestion = _incorrectQuestions.first;
+    _questionNumber = incorrectQuestion;
+  }
+
+  void setQuestionNumber(int questionNumber){
+    _questionNumber = questionNumber;
+    notifyListeners();
+  }
 }

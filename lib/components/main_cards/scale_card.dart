@@ -47,7 +47,7 @@ class ScaleCard extends StatelessWidget {
     return Container(
       //alignment: Alignment.center,
       margin: const EdgeInsets.only(left: 15, right: 15),
-      height: 220,
+      height: 240,
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
           side: const BorderSide(width: 1.50, color: SECONDARY),
@@ -59,32 +59,36 @@ class ScaleCard extends StatelessWidget {
         children: [
           SvgPicture.asset(
             "assets/note_graphics/lines/bass_lines.svg",
+            height: 130,
           ),
           Positioned(
-            top: positionCard[firstNote],
-            left: firstNote == "empty" ? 110 : 90,
+            top: positionScaleCard[firstNote],
+            left: firstNote == "empty" ? 130 : 110,
             child: SvgPicture.asset(
               notePath(firstNote),
+              height: firstNote == "empty" ? 90: 140,
             ),
           ),
           Positioned(
-            top: positionCard[secondNote],
+            top: positionScaleCard[secondNote],
             left: secondNote == "empty" ? 180 : 160,
             child: SvgPicture.asset(
               notePath(secondNote),
+              height: secondNote == "empty" ? 90: 140,
             ),
           ),
           Positioned(
-            top: positionCard[thirdNote],
-            left: thirdNote == "empty" ? 250 : 230,
+            top: positionScaleCard[thirdNote],
+            left: thirdNote == "empty" ? 230 : 210,
             child: SvgPicture.asset(
              notePath(thirdNote),
+              height: thirdNote == "empty" ? 90: 140,
             ),
           ),
           Positioned(
-            top: 180,
-            left: 125,
-            child: firstNote == "empty" || ["C", "D", "E", "F"].contains(firstNote)
+            top: 205,
+            left: 140,
+            child: firstNote == "empty"
                 ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
               firstNote,
@@ -92,9 +96,9 @@ class ScaleCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 180,
-            left: 200,
-            child: secondNote == "empty" || ["C", "D", "E"].contains(secondNote)
+            top: 205,
+            left: 190,
+            child: secondNote == "empty"
                 ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
               secondNote,
@@ -102,9 +106,9 @@ class ScaleCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 180,
-            left: 270,
-            child: thirdNote == "empty" || ["C", "D", "E"].contains(thirdNote)
+            top: 205,
+            left: 240,
+            child: thirdNote == "empty"
                 ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
               thirdNote,

@@ -65,22 +65,25 @@ class SingleNoteCard extends StatelessWidget {
           // Positioned.fill() ensures the SVG takes up the entire container
           SvgPicture.asset(
             "assets/note_graphics/lines/bass_lines.svg",
+            height: 130,
           ),
           // Make sure positionCard[note] is within the bounds of the Container
           Positioned(
-            top: positionCard[note], // Adjust this value if needed
+            top: (positionScaleCard[note]?? 0) - 9, // Adjust this value if needed
             left: 160, // Adjust this value if needed
             child: SvgPicture.asset(
               NotePath(),
+              height: 140,
             ),
           ),
           Visibility(
             visible: sharp.contains(note) || flat.contains(note) ? true : false,
             child: Positioned(
-              top: (positionCard[note] ?? 0) + 55, // Adjust this value if needed
+              top: (positionScaleCard[note] ?? 0) + 41, // Adjust this value if needed
               left: 150, // Adjust this value if needed
               child: SvgPicture.asset(
-                getNoteAssetPath(note)
+                getNoteAssetPath(note),
+                height: 40,
               ),
             ),
           ),

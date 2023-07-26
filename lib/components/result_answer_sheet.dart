@@ -23,6 +23,7 @@ class MyBottomSheet extends StatelessWidget {
     final scoreProvider = Provider.of<ScoreProvider>(context);
     final progressPointProvider = Provider.of<ProgressPointProvider>(context);
     final lectureProvider = Provider.of<LectureProvider>(context);
+    final questionProvider = Provider.of<QuestionProvider>(context);
 
     final progressPointNumber = progressPointProvider.progressPointNumber;
     final lectureNumber = lectureProvider.lectureNumber;
@@ -57,7 +58,9 @@ class MyBottomSheet extends StatelessWidget {
                   ),
             GestureDetector(
               onTap: () async {
-                if(questionNumber==12){
+                if((questionNumber==12 && questionProvider.incorrectQuestions.isEmpty) ||
+                    (questionProvider.revisionMode && questionProvider.incorrectQuestions.isEmpty)
+                ){
                 final player = AudioPlayer();
                 await player.play(
                   AssetSource('sounds/fanfare.mp3'),

@@ -50,56 +50,60 @@ class SingleNoteQuestion extends StatefulWidget {
   @override
   State<SingleNoteQuestion> createState() => _SingleNoteQuestionState();
 }
-class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
 
+class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
   void resetBordern() {
     selectedCard = Card.none;
   }
 
   Card selectedCard = Card.none;
 
-  Future<void> _showBottomSheet(BuildContext context, bool result)async{
+  Future<void> _showBottomSheet(BuildContext context, bool result) async {
     await showModalBottomSheet(
       context: context,
-        builder: (BuildContext context) {
-          return FractionallySizedBox(
-            heightFactor: 0.42, // Adjust the height factor as per your preference
-            child: MyBottomSheet(result: result,questionNumber: widget.questionNumber,),
-          );},
+      builder: (BuildContext context) {
+        return FractionallySizedBox(
+          heightFactor: 0.42, // Adjust the height factor as per your preference
+          child: MyBottomSheet(
+            result: result,
+            questionNumber: widget.questionNumber,
+          ),
+        );
+      },
     );
   }
 
-  Future<void> checkAnswer(Card userPickedAnswer)async{
-    final questionData = data[widget.progressPointNumber]?[widget.lectureNumber]?[widget.questionNumber];
+  Future<void> checkAnswer(Card userPickedAnswer) async {
+    final questionData = data[widget.progressPointNumber]?[widget.lectureNumber]
+        ?[widget.questionNumber];
 
-    String correctAnswer = questionData?["note"] ?? questionData?["letter"] ?? "";
+    String correctAnswer =
+        questionData?["note"] ?? questionData?["letter"] ?? "";
 
     late String answer;
 
-    if (userPickedAnswer==Card.first){
-    answer = questionData?["firstChoice"] ?? "";
-    } else if (userPickedAnswer==Card.second){
+    if (userPickedAnswer == Card.first) {
+      answer = questionData?["firstChoice"] ?? "";
+    } else if (userPickedAnswer == Card.second) {
       answer = questionData?["secondChoice"] ?? "";
-    } else if (userPickedAnswer==Card.third){
+    } else if (userPickedAnswer == Card.third) {
       answer = questionData?["thirdChoice"] ?? "";
     } else {
       answer = questionData?["fourthChoice"] ?? "";
     }
 
-
-    if(answer==correctAnswer){
+    if (answer == correctAnswer) {
       final player = AudioPlayer();
       await player.setVolume(0.5);
       await player.play(
         AssetSource('sounds/success.wav'),
       );
       await _showBottomSheet(context, true);
-
     } else {
       await _showBottomSheet(context, false);
+      Provider.of<QuestionProvider>(context, listen: false).addIncorrectQuestion(widget.questionNumber);
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -153,7 +157,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.first;
@@ -161,11 +165,11 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
                 },
                 child: LetterChoiceCard(
                   letter: widget.firstChoice,
-                  borderColor: selectedCard==Card.first ? GREEN : SECONDARY,
+                  borderColor: selectedCard == Card.first ? GREEN : SECONDARY,
                 ),
               ),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.second;
@@ -173,11 +177,11 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
                 },
                 child: LetterChoiceCard(
                   letter: widget.secondChoice,
-                  borderColor: selectedCard==Card.second ? GREEN : SECONDARY,
+                  borderColor: selectedCard == Card.second ? GREEN : SECONDARY,
                 ),
               ),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.third;
@@ -185,11 +189,11 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
                 },
                 child: LetterChoiceCard(
                   letter: widget.thirdChoice,
-                  borderColor: selectedCard==Card.third? GREEN : SECONDARY,
+                  borderColor: selectedCard == Card.third ? GREEN : SECONDARY,
                 ),
               ),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   HapticFeedback.lightImpact();
                   setState(() {
                     selectedCard = Card.fourth;
@@ -197,18 +201,28 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
                 },
                 child: LetterChoiceCard(
                   letter: widget.fourthChoice,
-                  borderColor: selectedCard==Card.fourth ? GREEN : SECONDARY,
+                  borderColor: selectedCard == Card.fourth ? GREEN : SECONDARY,
                 ),
               ),
             ],
           ),
         ),
         GestureDetector(
-          onTap: () async{
-            if(selectedCard!=Card.none){HapticFeedback.mediumImpact();
-            await checkAnswer(selectedCard);
-            questionProvider.nextQuestion();
-            resetBordern();}
+          onTap: () async {
+            if (selectedCard != Card.none) {
+              if (questionProvider.revisionMode == false) {
+                HapticFeedback.mediumImpact();
+                await checkAnswer(selectedCard);
+                questionProvider.nextQuestion();
+                resetBordern();
+              }else{
+                HapticFeedback.mediumImpact();
+                await checkAnswer(selectedCard);
+                questionProvider.setQuestionNumber(13);
+                resetBordern();
+              }
+
+            }
           },
           child: Container(
             margin: const EdgeInsets.only(left: 15, right: 15, bottom: 20),
@@ -216,7 +230,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
             height: 60,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: selectedCard==Card.none ? SECONDARY : GREEN,
+              color: selectedCard == Card.none ? SECONDARY : GREEN,
             ),
             child: const Text(
               "Weiter",

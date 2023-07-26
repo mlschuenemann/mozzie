@@ -8,6 +8,20 @@ const HEADING2 = TextStyle(
   fontWeight: FontWeight.w700,
 );
 
+const HEADING3 = TextStyle(
+  color: BACKGROUND,
+  fontSize: 12,
+  fontFamily: 'Quicksand',
+  fontWeight: FontWeight.w700,
+);
+
+const INACTIVE = TextStyle(
+  color: Colors.grey,
+  fontSize: 22,
+  fontFamily: 'Quicksand',
+  fontWeight: FontWeight.w700,
+);
+
 const PAR1 = TextStyle(
   color: Colors.white,
   fontSize: 16,

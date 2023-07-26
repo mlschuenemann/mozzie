@@ -20,15 +20,22 @@ Widget buildProgressPointList({
       final point = startPoint + index;
       return Column(
         children: [
-          if (point == startPoint && startPoint != 1)
+          if (point == startPoint)
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                ProgressPoint(
-                  number: point,
-                  marginLeft: progressPointNumber == point ? 36 : 46,
-                  marginRight: 30,
-                  statusBarValue: statusBarValue,
+                GestureDetector(
+                  onTap: (){
+                    if(progressPointNumber==point){
+                      Navigator.pushNamed(context, 'quizz');
+                    }
+                  },
+                  child: ProgressPoint(
+                    number: point,
+                    marginLeft: progressPointNumber == point ? 36 : 46,
+                    marginRight: 30,
+                    statusBarValue: statusBarValue,
+                  ),
                 ),
                 Visibility(
                   visible: point == progressPointNumber ? false : true,
@@ -45,12 +52,19 @@ Widget buildProgressPointList({
                 ),
               ],
             ),
-          if (point != startPoint || startPoint == 1)
-            ProgressPoint(
-              number: point,
-              marginLeft: index % 2 == 0 ? 0 : 220,
-              marginRight: index % 2 == 0 ? 220 : 0,
-              statusBarValue: statusBarValue,
+          if (point != startPoint )
+            GestureDetector(
+              onTap: (){
+                if(progressPointNumber==point){
+                  Navigator.pushNamed(context, 'quizz');
+                }
+              },
+              child: ProgressPoint(
+                number: point,
+                marginLeft: index % 2 == 0 ? 0 : 220,
+                marginRight: index % 2 == 0 ? 220 : 0,
+                statusBarValue: statusBarValue,
+              ),
             ),
           if (index < itemCount - 1)
             SvgPicture.asset(

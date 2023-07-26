@@ -73,9 +73,9 @@ class _FastForwardButtonState extends State<FastForwardButton>
         },
         child: Container(
           alignment: Alignment.center,
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(15),
             border: Border.all(color: widget.borderColor, width: 2),
           ),
           child: Row(

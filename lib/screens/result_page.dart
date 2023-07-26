@@ -104,11 +104,22 @@ class _ResultPageState extends State<ResultPage> {
           Expanded(child: SizedBox()),
           GestureDetector(
             onTap: () async {
-              scoreProvider.updateXpPoints(scoreProvider.score);
-              Navigator.of(context).pop();
-              questionProvider.resetQuestionNumber();
-              lectureProvider.incrementAndStoreLectureNumber(progressProvider);
-              scoreProvider.resetScore();
+              final temporaryProgressNumber = progressProvider.progressPointNumber;
+              progressProvider.retrieveProgressPointNumber();
+              final realProgressNumber = progressProvider.progressPointNumber;
+
+              if(temporaryProgressNumber != realProgressNumber){
+                Navigator.of(context).pop();
+                scoreProvider.updateXpPoints(scoreProvider.score);
+                questionProvider.resetQuestionNumber();
+                scoreProvider.resetScore();
+              } else {
+                scoreProvider.updateXpPoints(scoreProvider.score);
+                Navigator.of(context).pop();
+                questionProvider.resetQuestionNumber();
+                lectureProvider.incrementAndStoreLectureNumber(progressProvider);
+                scoreProvider.resetScore();
+              }
 
               DateTime now = DateTime.now();
               streakProvider
