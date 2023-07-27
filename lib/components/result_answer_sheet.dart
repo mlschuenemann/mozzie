@@ -69,6 +69,7 @@ class MyBottomSheet extends StatelessWidget {
                 result ? scoreProvider.addOneXP() : null;
               },
               child: Container(
+                margin: EdgeInsets.only(bottom: 10),
                 alignment: Alignment.center,
                 height: 60,
                 decoration: BoxDecoration(

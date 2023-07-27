@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 
-Map<String, double> positionChoiceCard = {
+//bass
+
+Map<String, double> bassPositionChoiceCard = {
   "C":59,
   "D":54,
   "E":48,
@@ -15,12 +16,16 @@ Map<String, double> positionChoiceCard = {
   "g":30,
   "a":23,
   "h":17,
-  "c\'":12,
-  "d\'":7,
-  "e\'":2,
+  "c'":12,
+  "d'":7,
+  "e'":2,
 };
 
-Map<String, double> positionCard = {
+
+
+
+
+Map<String, double> bassPositionCard = {
   "empty": 34,
   "C":108,
   "D":96,
@@ -36,9 +41,9 @@ Map<String, double> positionCard = {
   "g":-20,
   "a":-33,
   "h":-44,
-  "c\'":-58,
-  "d\'":-70,
-  "e\'":-82,
+  "c'":-58,
+  "d'":-70,
+  "e'":-82,
 
   "Cis":108,
   "Dis":96,
@@ -54,9 +59,9 @@ Map<String, double> positionCard = {
   "gis":-20,
   "ais":-33,
   "his":-44,
-  "cis\'":-58,
-  "dis\'":-70,
-  "eis\'":-82,
+  "cis'":-58,
+  "dis'":-70,
+  "eis'":-82,
 
   "Ces":108,
   "Des":96,
@@ -72,12 +77,12 @@ Map<String, double> positionCard = {
   "ges":-20,
   "as":-33,
   "b":-44,
-  "ces\'":-58,
-  "des\'":-70,
-  "es\'":-82,
+  "ces'":-58,
+  "des'":-70,
+  "es'":-82,
 };
 
-Map<String, double> positionScaleCard = {
+Map<String, double> bassPositionScaleCard = {
   "empty":71,
   "C":121,
   "D":112,
@@ -93,9 +98,9 @@ Map<String, double> positionScaleCard = {
   "g":18,
   "a":9,
   "h":0,
-  "c\'":-9,
-  "d\'":-18,
-  "e\'":-27,
+  "c'":-9,
+  "d'":-18,
+  "e'":-27,
 
   "Cis":121,
   "Dis":112,
@@ -132,6 +137,142 @@ Map<String, double> positionScaleCard = {
   "ces'":-9,
   "des'":-18,
   "es'":-27,
+};
+
+//violin
+
+Map<String, double> violinPositionChoiceCard = {
+  "a": 59,
+  "h": 54,
+  "c'": 48,
+  "d'": 42,
+  "e'": 36,
+  "f'": 30,
+  "g'": 23,
+  "a'": 17,
+  "h'": 49,
+  "c''": 43,
+  "d''": 37,
+  "e''": 30,
+  "f''": 23,
+  "g''": 17,
+  "a''": 12,
+  "h''": 7,
+  "c'''": 2,
+};
+
+Map<String, double> violinPositionCard = {
+  "empty": 34,
+  "a":108,
+  "h":96,
+  "c'": 89,
+  "d'":77,
+  "e'": 65,
+  "f'": 53,
+  "g'": 41,
+  "a'":29,
+  "h'":17,
+  "c''":5,
+  "d''":-8,
+  "e''":-20,
+  "f''":-33,
+  "g''":-44,
+  "a''":-58,
+  "h''":-70,
+  "c'''":-82,
+
+  "ais":108,
+  "his":96,
+  "cis'": 89,
+  "dis'":77,
+  "eis'": 65,
+  "fis'": 53,
+  "gis'": 41,
+  "ais'":29,
+  "his'":17,
+  "cis''":5,
+  "dis''":-8,
+  "eis''":-20,
+  "fis''":-33,
+  "gis''":-44,
+  "ais''":-58,
+  "his''":-70,
+  "cis'''":-82,
+
+  "as":108,
+  "n":96,
+  "ces'": 89,
+  "des'":77,
+  "es'": 65,
+  "fes'": 53,
+  "ges'": 41,
+  "as'":29,
+  "b'":17,
+  "ces''":5,
+  "des''":-8,
+  "es''":-20,
+  "fes''":-33,
+  "ges''":-44,
+  "as''":-58,
+  "b''":-70,
+  "ces'''":-82,
+};
+
+Map<String, double> violinPositionScaleCard = {
+
+  "empty":71,
+  "a":121,
+  "h":112,
+  "c'":103,
+  "d'":94,
+  "e'":85,
+  "f'":75,
+  "g'":66,
+  "a'":56,
+  "h'":47,
+  "c''":37,
+  "d''":28,
+  "e''":18,
+  "f''":9,
+  "g''":0,
+  "a''":-9,
+  "h''":-18,
+  "c'''":-27,
+
+  "ais":121,
+  "his":112,
+  "cis'":103,
+  "dis'":94,
+  "eis'":85,
+  "fis'":75,
+  "gis'":66,
+  "ais'":56,
+  "his'":47,
+  "cis''":37,
+  "dis''":28,
+  "eis''":18,
+  "fis''":9,
+  "gis''":0,
+  "ais''":-9,
+  "his''":-18,
+  "cis'''":-27,
 
 
+  "as":121,
+  "b":112,
+  "ces'":103,
+  "des'":94,
+  "es'":85,
+  "fes'":75,
+  "ges'":66,
+  "as'":56,
+  "b'":47,
+  "ces''":37,
+  "des''":28,
+  "es''":18,
+  "fes''":9,
+  "ges''":0,
+  "as''":-9,
+  "b''":-18,
+  "ces'''":-27,
 };

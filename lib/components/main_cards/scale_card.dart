@@ -3,6 +3,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/positions.dart';
 import 'package:music_education/constants/textstyle.dart';
+import 'package:provider/provider.dart';
+
+import '../../provider/key_provider.dart';
 
 
 class ScaleCard extends StatelessWidget {
@@ -44,6 +47,7 @@ class ScaleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final keyProvider = Provider.of<KeyProvider>(context);
     return Container(
       //alignment: Alignment.center,
       margin: const EdgeInsets.only(left: 15, right: 15),
@@ -58,11 +62,11 @@ class ScaleCard extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           SvgPicture.asset(
-            "assets/note_graphics/lines/bass_lines.svg",
+            "assets/note_graphics/lines/${keyProvider.key}_lines.svg",
             height: 130,
           ),
           Positioned(
-            top: positionScaleCard[firstNote],
+            top: bassPositionScaleCard[firstNote],
             left: firstNote == "empty" ? 130 : 110,
             child: SvgPicture.asset(
               notePath(firstNote),
@@ -70,7 +74,7 @@ class ScaleCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: positionScaleCard[secondNote],
+            top: bassPositionScaleCard[secondNote],
             left: secondNote == "empty" ? 180 : 160,
             child: SvgPicture.asset(
               notePath(secondNote),
@@ -78,7 +82,7 @@ class ScaleCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: positionScaleCard[thirdNote],
+            top: bassPositionScaleCard[thirdNote],
             left: thirdNote == "empty" ? 230 : 210,
             child: SvgPicture.asset(
              notePath(thirdNote),

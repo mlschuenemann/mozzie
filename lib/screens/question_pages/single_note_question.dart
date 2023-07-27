@@ -225,7 +225,7 @@ class _SingleNoteQuestionState extends State<SingleNoteQuestion> {
             }
           },
           child: Container(
-            margin: const EdgeInsets.only(left: 15, right: 15, bottom: 20),
+            margin: const EdgeInsets.only(left: 15, right: 15, bottom: 30),
             alignment: Alignment.center,
             height: 60,
             decoration: BoxDecoration(

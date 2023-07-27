@@ -71,4 +71,17 @@ class QuestionProvider with ChangeNotifier {
     _questionNumber = questionNumber;
     notifyListeners();
   }
+
+  bool _hasShownRevisionPage = false;
+  bool get hasShownRevisionPage => _hasShownRevisionPage;
+
+  void shownRevisionPage(){
+    _hasShownRevisionPage = true;
+  }
+
+  void notShownRevisionPage(){
+    _hasShownRevisionPage = false;
+  }
+
+
 }

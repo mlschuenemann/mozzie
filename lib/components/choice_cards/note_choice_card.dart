@@ -70,7 +70,7 @@ class NoteChoiceCard extends StatelessWidget {
               "assets/note_graphics/lines/note_lines_small.svg",
             ),
             Positioned(
-              top: positionChoiceCard[noteChoice],
+              top: bassPositionChoiceCard[noteChoice],
               child: SvgPicture.asset(
                 notePath(noteChoice),
               ),

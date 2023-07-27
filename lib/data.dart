@@ -3907,13 +3907,13 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       //Lecture Number
       1: {
         "questionType": "scale",
-        "note": "c\'",
+        "note": "c'",
         "firstNote": "a",
         "secondNote": "h",
         "thirdNote": "empty",
         "firstChoice": "e",
         "secondChoice": "h",
-        "thirdChoice": "c\'",
+        "thirdChoice": "c'",
         "fourthChoice": "g",
         "instrument": "piano"
       },
@@ -3943,8 +3943,8 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       4: {
         "questionType": "single_letter",
-        "letter": "c\'",
-        "firstChoice": "c\'",
+        "letter": "c'",
+        "firstChoice": "c'",
         "secondChoice": "g",
         "thirdChoice": "a",
         "fourthChoice": "f",
@@ -3953,11 +3953,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       5: {
         "questionType": "single_note",
-        "note": "c\'",
+        "note": "c'",
         "firstChoice": "a",
         "secondChoice": "h",
         "thirdChoice": "e",
-        "fourthChoice": "c\'",
+        "fourthChoice": "c'",
         "instrument": "piano"
       },
 
@@ -4016,7 +4016,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
         "note": "h",
         "firstNote": "a",
         "secondNote": "empty",
-        "thirdNote": "c\'",
+        "thirdNote": "c'",
         "firstChoice": "g",
         "secondChoice": "d",
         "thirdChoice": "c",
@@ -4102,10 +4102,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       6: {
         "questionType": "single_note",
-        "note": "cis\'",
-        "firstChoice": "dis\'",
+        "note": "cis'",
+        "firstChoice": "dis'",
         "secondChoice": "g",
-        "thirdChoice": "cis\'",
+        "thirdChoice": "cis'",
         "fourthChoice": "a",
         "instrument": "piano"
       },
@@ -4158,11 +4158,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       11: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "dis",
         "secondChoice": "Ais",
         "thirdChoice": "gis",
-        "fourthChoice": "cis\'",
+        "fourthChoice": "cis'",
         "instrument": "piano"
       },
 
@@ -4318,10 +4318,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       //Lecture Number
       1: {
         "questionType": "single_note",
-        "note": "d\'",
-        "firstChoice": "c\'",
+        "note": "d'",
+        "firstChoice": "c'",
         "secondChoice": "a",
-        "thirdChoice": "d\'",
+        "thirdChoice": "d'",
         "fourthChoice": "h",
         "instrument": "piano"
       },
@@ -4338,14 +4338,14 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       3: {
         "questionType": "scale",
-        "note": "d\'",
+        "note": "d'",
         "firstNote": "h",
-        "secondNote": "c\'",
+        "secondNote": "c'",
         "thirdNote": "empty",
         "firstChoice": "g",
         "secondChoice": "h",
         "thirdChoice": "c",
-        "fourthChoice": "d\'",
+        "fourthChoice": "d'",
         "instrument": "piano"
       },
 
@@ -4355,7 +4355,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
         "firstChoice": "h",
         "secondChoice": "c",
         "thirdChoice": "e",
-        "fourthChoice": "c\'",
+        "fourthChoice": "c'",
         "instrument": "piano"
       },
 
@@ -4381,9 +4381,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       7: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "f",
-        "secondChoice": "cis\'",
+        "secondChoice": "cis'",
         "thirdChoice": "fis",
         "fourthChoice": "h",
         "instrument": "piano"
@@ -4777,10 +4777,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       6: {
         "questionType": "single_note",
-        "note": "cis\'",
-        "firstChoice": "dis\'",
+        "note": "cis'",
+        "firstChoice": "dis'",
         "secondChoice": "g",
-        "thirdChoice": "cis\'",
+        "thirdChoice": "cis'",
         "fourthChoice": "a",
         "instrument": "piano"
       },
@@ -4833,11 +4833,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       11: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "dis",
         "secondChoice": "Ais",
         "thirdChoice": "gis",
-        "fourthChoice": "cis\'",
+        "fourthChoice": "cis'",
         "instrument": "piano"
       },
 
@@ -4993,10 +4993,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       //Lecture Number
       1: {
         "questionType": "single_note",
-        "note": "d\'",
-        "firstChoice": "c\'",
+        "note": "d'",
+        "firstChoice": "c'",
         "secondChoice": "a",
-        "thirdChoice": "d\'",
+        "thirdChoice": "d'",
         "fourthChoice": "h",
         "instrument": "piano"
       },
@@ -5013,14 +5013,14 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       3: {
         "questionType": "scale",
-        "note": "d\'",
+        "note": "d'",
         "firstNote": "h",
-        "secondNote": "c\'",
+        "secondNote": "c'",
         "thirdNote": "empty",
         "firstChoice": "g",
         "secondChoice": "h",
         "thirdChoice": "c",
-        "fourthChoice": "d\'",
+        "fourthChoice": "d'",
         "instrument": "piano"
       },
 
@@ -5030,7 +5030,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
         "firstChoice": "h",
         "secondChoice": "c",
         "thirdChoice": "e",
-        "fourthChoice": "c\'",
+        "fourthChoice": "c'",
         "instrument": "piano"
       },
 
@@ -5056,9 +5056,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       7: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "f",
-        "secondChoice": "cis\'",
+        "secondChoice": "cis'",
         "thirdChoice": "fis",
         "fourthChoice": "h",
         "instrument": "piano"
@@ -5453,7 +5453,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       6: {
         "questionType": "single_note",
         "note": "HIS",
-        "firstChoice": "dis\'",
+        "firstChoice": "dis'",
         "secondChoice": "g",
         "thirdChoice": "HIS",
         "fourthChoice": "AIS",
@@ -5508,11 +5508,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       11: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "dis",
         "secondChoice": "Ais",
         "thirdChoice": "gis",
-        "fourthChoice": "cis\'",
+        "fourthChoice": "cis'",
         "instrument": "piano"
       },
 
@@ -5667,10 +5667,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       //Lecture Number
       1: {
         "questionType": "single_note",
-        "note": "d\'",
-        "firstChoice": "c\'",
+        "note": "d'",
+        "firstChoice": "c'",
         "secondChoice": "a",
-        "thirdChoice": "d\'",
+        "thirdChoice": "d'",
         "fourthChoice": "h",
         "instrument": "piano"
       },
@@ -5687,14 +5687,14 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       3: {
         "questionType": "scale",
-        "note": "d\'",
+        "note": "d'",
         "firstNote": "h",
-        "secondNote": "c\'",
+        "secondNote": "c'",
         "thirdNote": "empty",
         "firstChoice": "g",
         "secondChoice": "h",
         "thirdChoice": "c",
-        "fourthChoice": "d\'",
+        "fourthChoice": "d'",
         "instrument": "piano"
       },
 
@@ -5704,7 +5704,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
         "firstChoice": "h",
         "secondChoice": "c",
         "thirdChoice": "e",
-        "fourthChoice": "c\'",
+        "fourthChoice": "c'",
         "instrument": "piano"
       },
 
@@ -5730,9 +5730,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       7: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "f",
-        "secondChoice": "cis\'",
+        "secondChoice": "cis'",
         "thirdChoice": "fis",
         "fourthChoice": "h",
         "instrument": "piano"
@@ -6128,7 +6128,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       6: {
         "questionType": "single_note",
         "note": "HIS",
-        "firstChoice": "dis\'",
+        "firstChoice": "dis'",
         "secondChoice": "g",
         "thirdChoice": "HIS",
         "fourthChoice": "AIS",
@@ -6183,11 +6183,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       11: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "dis",
         "secondChoice": "Ais",
         "thirdChoice": "gis",
-        "fourthChoice": "cis\'",
+        "fourthChoice": "cis'",
         "instrument": "piano"
       },
 
@@ -6342,10 +6342,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       //Lecture Number
       1: {
         "questionType": "single_note",
-        "note": "d\'",
-        "firstChoice": "c\'",
+        "note": "d'",
+        "firstChoice": "c'",
         "secondChoice": "a",
-        "thirdChoice": "d\'",
+        "thirdChoice": "d'",
         "fourthChoice": "h",
         "instrument": "piano"
       },
@@ -6362,14 +6362,14 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       3: {
         "questionType": "scale",
-        "note": "d\'",
+        "note": "d'",
         "firstNote": "h",
-        "secondNote": "c\'",
+        "secondNote": "c'",
         "thirdNote": "empty",
         "firstChoice": "g",
         "secondChoice": "h",
         "thirdChoice": "c",
-        "fourthChoice": "d\'",
+        "fourthChoice": "d'",
         "instrument": "piano"
       },
 
@@ -6379,7 +6379,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
         "firstChoice": "h",
         "secondChoice": "c",
         "thirdChoice": "e",
-        "fourthChoice": "c\'",
+        "fourthChoice": "c'",
         "instrument": "piano"
       },
 
@@ -6405,9 +6405,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
       7: {
         "questionType": "single_note",
-        "note": "cis\'",
+        "note": "cis'",
         "firstChoice": "f",
-        "secondChoice": "cis\'",
+        "secondChoice": "cis'",
         "thirdChoice": "fis",
         "fourthChoice": "h",
         "instrument": "piano"

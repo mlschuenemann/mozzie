@@ -3,10 +3,11 @@ import 'package:music_education/constants/colors.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
-
 import '../constants/textstyle.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
+
+import '../provider/key_provider.dart';
 
 class FastForwardButton extends StatefulWidget {
   @override
@@ -55,7 +56,7 @@ class _FastForwardButtonState extends State<FastForwardButton>
   Widget build(BuildContext context) {
     final lectureProvider = Provider.of<LectureProvider>(context, listen: false);
     final progressPointProvider = Provider.of<ProgressPointProvider>(context, listen:false);
-
+    final keyProvider = Provider.of<KeyProvider>(context);
 
     return AnimatedBuilder(
       animation: _controller,
@@ -68,8 +69,8 @@ class _FastForwardButtonState extends State<FastForwardButton>
       },
       child: GestureDetector(
         onTap: (){
-          progressPointProvider.resetProgressPointNumber(widget.resetValue);
-          lectureProvider.resetLectureNumber();
+          progressPointProvider.resetProgressPointNumber(widget.resetValue, keyProvider.key);
+          lectureProvider.resetLectureNumber(keyProvider.key);
         },
         child: Container(
           alignment: Alignment.center,

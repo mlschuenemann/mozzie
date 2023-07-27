@@ -4,6 +4,8 @@ import 'package:music_education/components/fast_forward_button.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/components/progress_point.dart';
 import 'package:music_education/components/level_card.dart';
+import 'package:provider/provider.dart';
+import '../provider/key_provider.dart';
 
 
 Widget buildProgressPointList({
@@ -17,6 +19,7 @@ Widget buildProgressPointList({
     physics: const NeverScrollableScrollPhysics(),
     itemCount: itemCount,
     itemBuilder: (context, index) {
+      final keyProvider = Provider.of<KeyProvider>(context);
       final point = startPoint + index;
       return Column(
         children: [
@@ -47,7 +50,7 @@ Widget buildProgressPointList({
                     text: point > progressPointNumber
                         ? "Hierhin springen"
                         : "Zurück springen",
-                    borderColor: point > progressPointNumber ? LILA : SECONDARY,
+                    borderColor: point > progressPointNumber ? keyProvider.getKeyColor() : SECONDARY,
                   ),
                 ),
               ],
@@ -73,7 +76,7 @@ Widget buildProgressPointList({
                   : "assets/graphics/vector_2.svg",
               colorFilter: progressPointNumber <= point
                   ? const ColorFilter.mode(SECONDARY, BlendMode.srcIn)
-                  : null,
+                  : ColorFilter.mode(keyProvider.getKeyColor(), BlendMode.srcIn),
             ),
         ],
       );

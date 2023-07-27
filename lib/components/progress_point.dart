@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
@@ -10,6 +11,8 @@ import 'package:music_education/screens/result_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
+
+import '../provider/key_provider.dart';
 
 
 class ProgressPoint extends StatelessWidget {
@@ -32,6 +35,9 @@ class ProgressPoint extends StatelessWidget {
 
     final progressPointProvider = Provider.of<ProgressPointProvider>(context);
     final progressPointNumber = progressPointProvider.progressPointNumber;
+    final keyProvider = Provider.of<KeyProvider>(context);
+
+
 
     return Container(
       margin: EdgeInsets.only(right: marginRight, left: marginLeft),
@@ -43,7 +49,7 @@ class ProgressPoint extends StatelessWidget {
             width: 75,
             height: 75,
             decoration: BoxDecoration(
-              color: progressPointNumber >= number ? LILA : SECONDARY,
+              color: progressPointNumber >= number ? keyProvider.getKeyColor() : SECONDARY,
               shape: BoxShape.circle,
             ),
             child: Text(
@@ -58,7 +64,7 @@ class ProgressPoint extends StatelessWidget {
               height: 100,
               child: CircularProgressIndicator(
                 value: statusBarValue / 5 - 1 / 5,
-                color: LILA,
+                color: keyProvider.getKeyColor(),
                 backgroundColor: SECONDARY,
                 strokeWidth: 10,
               ),

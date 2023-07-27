@@ -29,6 +29,13 @@ const PAR1 = TextStyle(
   fontWeight: FontWeight.w700,
 );
 
+const PAR1BLACK = TextStyle(
+  color: BACKGROUND,
+  fontSize: 16,
+  fontFamily: 'Quicksand',
+  fontWeight: FontWeight.w700,
+);
+
 const PAR2 = TextStyle(
   color: Colors.white,
   fontSize: 14,

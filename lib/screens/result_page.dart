@@ -14,6 +14,8 @@ import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/streak_provider.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+import '../provider/key_provider.dart';
+
 class ResultPage extends StatefulWidget {
   const ResultPage({Key? key}) : super(key: key);
 
@@ -52,6 +54,7 @@ class _ResultPageState extends State<ResultPage> {
     final progressProvider = Provider.of<ProgressPointProvider>(context, listen: false);
 
     final streakProvider = Provider.of<StreakProvider>(context);
+    final keyProvider = Provider.of<KeyProvider>(context);
 
     return Scaffold(
       backgroundColor: BACKGROUND,
@@ -104,29 +107,19 @@ class _ResultPageState extends State<ResultPage> {
           Expanded(child: SizedBox()),
           GestureDetector(
             onTap: () async {
-              final temporaryProgressNumber = progressProvider.progressPointNumber;
-              progressProvider.retrieveProgressPointNumber();
-              final realProgressNumber = progressProvider.progressPointNumber;
-
-              if(temporaryProgressNumber != realProgressNumber){
-                Navigator.of(context).pop();
-                scoreProvider.updateXpPoints(scoreProvider.score);
-                questionProvider.resetQuestionNumber();
-                scoreProvider.resetScore();
-              } else {
                 scoreProvider.updateXpPoints(scoreProvider.score);
                 Navigator.of(context).pop();
                 questionProvider.resetQuestionNumber();
-                lectureProvider.incrementAndStoreLectureNumber(progressProvider);
+                lectureProvider.incrementAndStoreLectureNumber(progressProvider, keyProvider.key);
                 scoreProvider.resetScore();
-              }
+                questionProvider.notShownRevisionPage();
 
               DateTime now = DateTime.now();
               streakProvider
                   .addActivity(DateTime(now.year, now.month, now.day));
             },
             child: Container(
-              margin: const EdgeInsets.only(left: 15, right: 15, bottom: 20),
+              margin: const EdgeInsets.only(left: 15, right: 15, bottom: 30),
               alignment: Alignment.center,
               height: 60,
               decoration: BoxDecoration(

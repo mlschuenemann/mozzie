@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/positions.dart';
+import 'package:provider/provider.dart';
+
+import '../../provider/key_provider.dart';
 class SingleNoteCard extends StatelessWidget {
    SingleNoteCard({required this.note, super.key,});
 
@@ -50,6 +53,7 @@ class SingleNoteCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final keyProvider = Provider.of<KeyProvider>(context);
     return Container(
       margin: const EdgeInsets.only(left: 15, right: 15),
       height: 220,
@@ -64,12 +68,12 @@ class SingleNoteCard extends StatelessWidget {
         children: [
           // Positioned.fill() ensures the SVG takes up the entire container
           SvgPicture.asset(
-            "assets/note_graphics/lines/bass_lines.svg",
+            "assets/note_graphics/lines/${keyProvider.key}_lines.svg",
             height: 130,
           ),
           // Make sure positionCard[note] is within the bounds of the Container
           Positioned(
-            top: (positionScaleCard[note]?? 0) - 9, // Adjust this value if needed
+            top: (bassPositionScaleCard[note]?? 0) - 9, // Adjust this value if needed
             left: 160, // Adjust this value if needed
             child: SvgPicture.asset(
               NotePath(),
@@ -79,7 +83,7 @@ class SingleNoteCard extends StatelessWidget {
           Visibility(
             visible: sharp.contains(note) || flat.contains(note) ? true : false,
             child: Positioned(
-              top: (positionScaleCard[note] ?? 0) + 41, // Adjust this value if needed
+              top: (bassPositionScaleCard[note] ?? 0) + 41, // Adjust this value if needed
               left: 150, // Adjust this value if needed
               child: SvgPicture.asset(
                 getNoteAssetPath(note),

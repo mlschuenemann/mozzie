@@ -7,12 +7,14 @@ import 'package:music_education/components/main_cards/note_name_card.dart';
 import 'package:music_education/components/choice_cards/note_choice_card.dart';
 import 'package:music_education/screens/quizz.dart';
 import 'package:music_education/provider/streak_provider.dart';
+import 'package:music_education/screens/revision_page.dart';
 import 'package:music_education/screens/support.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'components/fast_forward_button.dart';
 import 'components/key_choice_sheet.dart';
+import 'data.dart';
 import 'provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/components/progress_point.dart';
@@ -24,6 +26,8 @@ import 'package:music_education/screens/settings_page.dart';
 import 'package:music_education/screens/impressum.dart';
 import 'package:music_education/screens/privacy.dart';
 import 'package:music_education/provider/key_provider.dart';
+import 'dart:convert';
+
 
 void main() async {
   runApp(const MyApp());
@@ -69,6 +73,7 @@ class MyApp extends StatelessWidget {
           "impressum": (context) => ImpressumPage(),
           "privacy": (context) => PrivacyPage(),
           "support": (context) => SupportPage(),
+          "revision": (context) => RevisionPage(),
         },
         home: const MyHomePage(),
       ),
@@ -94,6 +99,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
+    json.encode(data);
+
     Provider.of<StreakProvider>(context, listen: false).init();
 
     lectureProvider = Provider.of<LectureProvider>(context, listen: false);
@@ -106,12 +113,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final keyProvider = Provider.of<KeyProvider>(context);
+
     final progressPointProvider = Provider.of<ProgressPointProvider>(context);
-    progressPointProvider.retrieveProgressPointNumber();
+    progressPointProvider.retrieveProgressPointNumber(keyProvider.key);
     final progressPointNumber = progressPointProvider.progressPointNumber;
 
     lectureProvider = Provider.of<LectureProvider>(context);
-    lectureProvider.retrieveLectureNumber();
+    lectureProvider.retrieveLectureNumber(keyProvider.key);
     final lectureNumber = lectureProvider.lectureNumber;
 
     scoreProvider = Provider.of<ScoreProvider>(context);
@@ -119,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final int? currentScore = scoreProvider.xpPoints;
 
     final streakProvider = Provider.of<StreakProvider>(context);
-    final keyProvider = Provider.of<KeyProvider>(context);
+
 
     int statusBarValue = lectureNumber;
 

@@ -24,31 +24,31 @@ class ProgressPointProvider with ChangeNotifier {
   int _progressPointNumber = 1;
   int get progressPointNumber => _progressPointNumber;
 
-  void incrementAndStoreProgressPointNumber() async {
+  void incrementAndStoreProgressPointNumber(String keyOfPoint) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int? currentProgressPoint = prefs.getInt('point');
+    int? currentProgressPoint = prefs.getInt('${keyOfPoint}Point');
 
     // Increment the lecture number by 1
     int updatedProgressPoint = (currentProgressPoint ?? 1) + 1;
 
     // Store the updated lecture number using SharedPreferences
-    await prefs.setInt('point', updatedProgressPoint);
+    await prefs.setInt('${keyOfPoint}Point', updatedProgressPoint);
     _progressPointNumber = updatedProgressPoint;
     notifyListeners();
   }
 
-  Future<void> retrieveProgressPointNumber() async {
+  Future<void> retrieveProgressPointNumber(String keyOfPoint) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-    _progressPointNumber = prefs.getInt('point') ?? 1;
+    _progressPointNumber = prefs.getInt('${keyOfPoint}Point') ?? 1;
     notifyListeners();
   }
 
-  Future<void> resetProgressPointNumber(int resetValue) async {
+  Future<void> resetProgressPointNumber(int resetValue, String keyOfPoint) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
     int reset = resetValue;
 
-    await prefs.setInt('point', reset);
+    await prefs.setInt('${keyOfPoint}Point', reset);
     _progressPointNumber = reset;
     notifyListeners();
   }

@@ -14,6 +14,7 @@ import 'package:music_education/screens/question_pages/scale_question.dart';
 import 'package:music_education/screens/question_pages/single_letter_question.dart';
 import 'package:music_education/screens/question_pages/single_note_question.dart';
 import 'package:music_education/data.dart';
+import 'package:music_education/screens/revision_page.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:flutter/foundation.dart';
@@ -35,6 +36,8 @@ void playFanfare() async {
 }
 
 class _QuizzState extends State<Quizz> {
+  bool hasShownRevisionPage = false;
+
   @override
   Widget build(BuildContext context) {
     final questionProvider = Provider.of<QuestionProvider>(context);
@@ -112,9 +115,15 @@ class _QuizzState extends State<Quizz> {
       return ResultPage(); // Replace ResultPage with the actual result page widget
     } else if (questionNumber >= 13 &&
         questionProvider.incorrectQuestions.isNotEmpty) {
-      questionProvider.activateRevisionMode();
-      questionProvider.setToIncorrectQuestion();
-      questionProvider.removeIncorrectQuestion();
+
+      if (questionProvider.hasShownRevisionPage==false) {
+        return RevisionPage();
+
+      }else{
+        questionProvider.activateRevisionMode();
+        questionProvider.setToIncorrectQuestion();
+        questionProvider.removeIncorrectQuestion();
+      }
     }
 
     double greenContainerWidth = 0.0;
@@ -141,7 +150,7 @@ class _QuizzState extends State<Quizz> {
                     IconButton(
                         icon: questionProvider.revisionMode == false
                             ? Icon(Icons.close)
-                            : Icon(Icons.refresh_rounded, color: Colors.yellow),
+                            : Icon(Icons.refresh_rounded, color: Colors.yellow, size: 30,),
                         onPressed: () {
                           questionProvider.revisionMode == false
                               ? Navigator.of(context).pop()
@@ -182,7 +191,7 @@ class _QuizzState extends State<Quizz> {
                               borderRadius: BorderRadius.circular(20),
                               color: Colors.yellow),
                           child: Text(
-                            "Wiederhole die falschen Antworten",
+                            "Wiederholung",
                             style: HEADING3,
                           ),
                         ),

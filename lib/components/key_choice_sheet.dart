@@ -46,7 +46,7 @@ void key_choice_sheet(BuildContext context) {
                       },
                       child: KeyChoiceCard(
                         borderColor:
-                            selectedCard == Card.first ? LILA : SECONDARY,
+                            selectedCard == Card.first ? keyProvider.getKeyColor() : SECONDARY,
                         keyImage: "assets/note_graphics/signs/bass_key.svg",
                         keyName: "BASSSCHLÜSSEL",
                       ),
@@ -64,7 +64,7 @@ void key_choice_sheet(BuildContext context) {
                       },
                       child: KeyChoiceCard(
                         borderColor:
-                            selectedCard == Card.second ? LILA : SECONDARY,
+                            selectedCard == Card.second ? keyProvider.getKeyColor() : SECONDARY,
                         keyImage: "assets/note_graphics/signs/violin_key.svg",
                         keyName: "VIOLINSCHLÜSSEL",
                       ),
@@ -73,6 +73,26 @@ void key_choice_sheet(BuildContext context) {
                     SizedBox(
                       width: 20,
                     ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedCard = Card.third;
+                          keyProvider.changeKey("tenor");
+                          Navigator.pop(context);
+                        });
+                      },
+                      child: KeyChoiceCard(
+                        borderColor:
+                        selectedCard == Card.third ? keyProvider.getKeyColor() : SECONDARY,
+                        keyImage: "assets/note_graphics/signs/tenor_key.svg",
+                        keyName: "TENORSCHLÜSSEL",
+                      ),
+                    ),
+
+                    SizedBox(
+                      width: 20,
+                    ),
+
                   ],
                 ),
               ),);
