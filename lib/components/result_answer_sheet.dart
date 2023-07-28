@@ -11,6 +11,10 @@ import 'package:music_education/provider/lecture_provider.dart';
 import 'package:flutter/services.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+import '../provider/key_provider.dart';
+import '../screens/violinData.dart';
+import '../tenorData.dart';
+
 class MyBottomSheet extends StatelessWidget {
   MyBottomSheet(
       {super.key, required this.result, required this.questionNumber});
@@ -27,6 +31,20 @@ class MyBottomSheet extends StatelessWidget {
 
     final progressPointNumber = progressPointProvider.progressPointNumber;
     final lectureNumber = lectureProvider.lectureNumber;
+
+    final keyProvider = Provider.of<KeyProvider>(context);
+
+    Map<String, String>? questionData;
+    if(keyProvider.key=="bass"){
+      questionData =
+      bassData[progressPointNumber]?[lectureNumber]?[questionNumber];
+    } else if(keyProvider.key=="violin"){
+      questionData =
+      violinData[progressPointNumber]?[lectureNumber]?[questionNumber];
+    } else if(keyProvider.key=="tenor"){
+      questionData =
+      tenorData[progressPointNumber]?[lectureNumber]?[questionNumber];
+    }
 
     return Container(
       decoration: BoxDecoration(
@@ -53,7 +71,7 @@ class MyBottomSheet extends StatelessWidget {
                     style: CORRECTS,
                   )
                 : Text(
-                    "Die richitge Antwort wäre gewesen: ${data[progressPointNumber]?[lectureNumber]?[questionNumber]?["note"] ?? data[progressPointNumber]?[lectureNumber]?[questionNumber]?["letter"] ?? ""}.",
+                    "Die richitge Antwort wäre gewesen: ${questionData?["note"] ?? questionData?["letter"] ?? ""}.",
                     style: FALSES,
                   ),
             GestureDetector(

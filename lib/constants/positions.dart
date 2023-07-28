@@ -23,8 +23,6 @@ Map<String, double> bassPositionChoiceCard = {
 
 
 
-
-
 Map<String, double> bassPositionCard = {
   "empty": 34,
   "C":108,
@@ -166,6 +164,146 @@ Map<String, double> violinPositionCard = {
   "a":108,
   "h":96,
   "c'": 89,
+  "d'":95,
+  "e'": 87,
+  "f'": 76,
+  "g'": 65,
+  "a'":55,
+  "h'":45,
+  "c''":35,
+  "d''":25,
+  "e''":14,
+  "f''":4,
+  "g''":-6,
+  "a''":-16,
+  "h''":-25,
+  "c'''":-35,
+
+  "ais":108,
+  "his":96,
+  "cis'": 89,
+  "dis'":77,
+  "eis'": 65,
+  "fis'": 53,
+  "gis'": 41,
+  "ais'":29,
+  "his'":17,
+  "cis''":5,
+  "dis''":-8,
+  "eis''":-20,
+  "fis''":-33,
+  "gis''":-44,
+  "ais''":-58,
+  "his''":-70,
+  "cis'''":-82,
+
+  "as":108,
+  "n":96,
+  "ces'": 89,
+  "des'":77,
+  "es'": 65,
+  "fes'": 53,
+  "ges'": 41,
+  "as'":29,
+  "b'":17,
+  "ces''":5,
+  "des''":-8,
+  "es''":-20,
+  "fes''":-33,
+  "ges''":-44,
+  "as''":-58,
+  "b''":-70,
+  "ces'''":-82,
+};
+
+Map<String, double> violinPositionScaleCard = {
+
+  "empty":71,
+  "a":121,
+  "h":112,
+  "c'":103,
+  "d'":94,
+  "e'":85,
+  "f'":77,
+  "g'":66,
+  "a'":56,
+  "h'":47,
+  "c''":37,
+  "d''":28,
+  "e''":18,
+  "f''":9,
+  "g''":0,
+  "a''":-9,
+  "h''":-18,
+  "c'''":-27,
+
+  "ais":121,
+  "his":112,
+  "cis'":103,
+  "dis'":94,
+  "eis'":85,
+  "fis'":75,
+  "gis'":66,
+  "ais'":56,
+  "his'":47,
+  "cis''":37,
+  "dis''":28,
+  "eis''":18,
+  "fis''":9,
+  "gis''":0,
+  "ais''":-9,
+  "his''":-18,
+  "cis'''":-27,
+
+
+  "as":121,
+  "b":112,
+  "ces'":103,
+  "des'":94,
+  "es'":85,
+  "fes'":75,
+  "ges'":66,
+  "as'":56,
+  "b'":47,
+  "ces''":37,
+  "des''":28,
+  "es''":18,
+  "fes''":9,
+  "ges''":0,
+  "as''":-9,
+  "b''":-18,
+  "ces'''":-27,
+};
+
+
+///TODO: Tenor!
+//tenor
+
+Map<String, double> tenorPositionChoiceCard = {
+  "a": 59,
+  "h": 54,
+  "c'": 48,
+  "d'": 42,
+  "e'": 36,
+  "f'": 30,
+  "g'": 23,
+  "a'": 17,
+  "h'": 49,
+  "c''": 43,
+  "d''": 37,
+  "e''": 30,
+  "f''": 23,
+  "g''": 17,
+  "a''": 12,
+  "h''": 7,
+  "c'''": 2,
+};
+
+Map<String, double> tenorPositionCard = {
+  "empty": 34,
+  "a":108,
+  "h":96,
+  "c'": 89,
   "d'":77,
   "e'": 65,
   "f'": 53,
@@ -218,7 +356,7 @@ Map<String, double> violinPositionCard = {
   "ces'''":-82,
 };
 
-Map<String, double> violinPositionScaleCard = {
+Map<String, double> tenorPositionScaleCard = {
 
   "empty":71,
   "a":121,

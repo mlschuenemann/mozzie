@@ -15,6 +15,7 @@ import 'package:music_education/screens/question_pages/single_letter_question.da
 import 'package:music_education/screens/question_pages/single_note_question.dart';
 import 'package:music_education/data.dart';
 import 'package:music_education/screens/revision_page.dart';
+import 'package:music_education/screens/violinData.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:flutter/foundation.dart';
@@ -23,16 +24,14 @@ import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/question_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 
+import '../provider/key_provider.dart';
+import '../tenorData.dart';
+
 class Quizz extends StatefulWidget {
   Quizz({Key? key}) : super(key: key);
 
   @override
   State<Quizz> createState() => _QuizzState();
-}
-
-void playFanfare() async {
-  final player = AudioPlayer();
-  await player.play(AssetSource('sounds/fanfare.mp3'));
 }
 
 class _QuizzState extends State<Quizz> {
@@ -49,8 +48,20 @@ class _QuizzState extends State<Quizz> {
     final progressPointProvider = Provider.of<ProgressPointProvider>(context);
     final progressPointNumber = progressPointProvider.progressPointNumber;
 
-    final questionData =
-        data[progressPointNumber]?[lectureNumber]?[questionNumber];
+    final keyProvider = Provider.of<KeyProvider>(context);
+
+    Map<String, String>? questionData;
+    if(keyProvider.key=="bass"){
+      questionData =
+      bassData[progressPointNumber]?[lectureNumber]?[questionNumber];
+    } else if(keyProvider.key=="violin"){
+      questionData =
+      violinData[progressPointNumber]?[lectureNumber]?[questionNumber];
+    } else if(keyProvider.key=="tenor"){
+      questionData =
+      tenorData[progressPointNumber]?[lectureNumber]?[questionNumber];
+    }
+
 
     final questionType = questionData?["questionType"] ?? "";
     final note = questionData?["note"] ?? "";

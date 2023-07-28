@@ -1,8 +1,6 @@
-Map<int, Map<int, Map<int, Map<String, String>>>> data = {
+Map<int, Map<int, Map<int, Map<String, String>>>> bassData = {
   1: {
-    //Progress Point
     1: {
-      //Lecture Number
       1: {
         "questionType": "scale",
         "note": "H",
@@ -139,7 +137,6 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       },
     },
     2: {
-      //Lecture Number
       1: {
         "questionType": "single_note",
         "note": "H",
@@ -276,7 +273,6 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       },
     },
     3: {
-      //Lecture Number
       1: {
         "questionType": "scale",
         "note": "G",
@@ -413,8 +409,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       },
     },
 
-    4: { //Lecture Number
-
+    4: {
       1: {
         "questionType": "single_note",
         "note": "F",
@@ -555,7 +550,6 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
       1: {
         "questionType": "scale",
         "note": "H",
@@ -618,7 +612,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
         "firstChoice": "F",
         "secondChoice": "A",
         "thirdChoice": "c",
-        "fourthChoice": "H",
+        "fourthChoice": "E",
         "instrument": "sax"
       },
 
@@ -690,9 +684,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
   },
   2: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "c",
@@ -817,7 +811,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
         "instrument": "cello",
       },
     },
-    2: { //Lecture Number
+    2: {
 
       1: {
         "questionType": "scale",
@@ -954,7 +948,6 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
 
       1: {
         "questionType": "single_note",
@@ -1079,7 +1072,6 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
       1: {
         "questionType": "scale",
         "note": "D",
@@ -1217,7 +1209,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "F",
@@ -1344,9 +1336,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
   },
   3: {
-    //Progress Point
     1: {
-      //Lecture Number
       1: {
         "questionType": "scale",
         "note": "D",
@@ -1472,7 +1462,6 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       },
     },
     2: {
-      //Lecture Number
       1: {
         "questionType": "single_note",
         "note": "A",
@@ -1604,7 +1593,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "A",
@@ -1736,7 +1725,6 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
       1: {
         "questionType": "single_note",
         "note": "A",
@@ -1868,7 +1856,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "A",
@@ -2001,9 +1989,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
   },
 
   4: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "d",
@@ -2141,7 +2129,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     2: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "H",
@@ -2279,7 +2267,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "e",
@@ -2416,7 +2404,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
       },
     },
 
-    4: { //Lecture Number
+    4: {
 
       1: {
         "questionType": "scale",
@@ -2555,7 +2543,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "f",
@@ -2691,9 +2679,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
   },
 
   5: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "F",
@@ -2828,7 +2816,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     2: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "fis",
@@ -2960,7 +2948,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "fis",
@@ -3092,7 +3080,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "g",
@@ -3230,7 +3218,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "d",
@@ -3366,9 +3354,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
   },
 
   6: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "G",
@@ -3503,7 +3491,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     2: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "g",
@@ -3640,7 +3628,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "fis",
@@ -3772,7 +3760,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "g",
@@ -3904,7 +3892,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "c'",
@@ -4041,9 +4029,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
 
   7: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "c",
@@ -4178,7 +4166,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     2: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "f",
@@ -4315,7 +4303,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "d'",
@@ -4447,7 +4435,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "h",
@@ -4579,7 +4567,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "H",
@@ -4716,9 +4704,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
 
   8: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "c",
@@ -4853,7 +4841,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     2: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "f",
@@ -4990,7 +4978,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "d'",
@@ -5122,7 +5110,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "h",
@@ -5254,7 +5242,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "H",
@@ -5391,9 +5379,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
 
   9: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "GIS",
@@ -5528,7 +5516,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     2: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "f",
@@ -5664,7 +5652,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "d'",
@@ -5797,7 +5785,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "h",
@@ -5929,7 +5917,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "H",
@@ -6066,9 +6054,9 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
 
 
   10: {
-    //Progress Point
+
     1: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "GIS",
@@ -6203,7 +6191,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     2: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "f",
@@ -6339,7 +6327,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     3: {
-      //Lecture Number
+
       1: {
         "questionType": "single_note",
         "note": "d'",
@@ -6472,7 +6460,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     4: {
-      //Lecture Number
+
       1: {
         "questionType": "single_letter",
         "letter": "h",
@@ -6604,7 +6592,7 @@ Map<int, Map<int, Map<int, Map<String, String>>>> data = {
     },
 
     5: {
-      //Lecture Number
+
       1: {
         "questionType": "scale",
         "note": "H",

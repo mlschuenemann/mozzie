@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/components/progress_list.dart';
@@ -29,7 +31,9 @@ import 'package:music_education/provider/key_provider.dart';
 import 'dart:convert';
 
 
+
 void main() async {
+
   runApp(const MyApp());
 }
 
@@ -99,7 +103,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    json.encode(data);
 
     Provider.of<StreakProvider>(context, listen: false).init();
 

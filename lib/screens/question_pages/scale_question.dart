@@ -12,6 +12,10 @@ import 'package:music_education/provider/question_provider.dart';
 import 'package:flutter/services.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+import '../../provider/key_provider.dart';
+import '../../tenorData.dart';
+import '../violinData.dart';
+
 enum Card {
   first,
   second,
@@ -73,7 +77,20 @@ class _ScaleQuestionState extends State<ScaleQuestion> {
   }
 
   Future<void> checkAnswer(Card userPickedAnswer)async{
-    final questionData = data[widget.progressPointNumber]?[widget.lectureNumber]?[widget.questionNumber];
+
+    final keyProvider = Provider.of<KeyProvider>(context, listen: false);
+
+    Map<String, String>? questionData;
+    if(keyProvider.key=="bass"){
+      questionData =
+      bassData[widget.progressPointNumber]?[widget.lectureNumber]?[widget.questionNumber];
+    } else if(keyProvider.key=="violin"){
+      questionData =
+      violinData[widget.progressPointNumber]?[widget.lectureNumber]?[widget.questionNumber];
+    } else if(keyProvider.key=="tenor"){
+      questionData =
+      tenorData[widget.progressPointNumber]?[widget.lectureNumber]?[widget.questionNumber];
+    }
 
     String correctAnswer = questionData?["note"] ?? questionData?["letter"] ?? "";
 

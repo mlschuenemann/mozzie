@@ -10,35 +10,10 @@ class SingleNoteCard extends StatelessWidget {
 
   final String note;
 
-  String NotePath() {
-    List<String> upNotes = ["F", "Fes", "G", "Gis", "A","Ais", "H","His", "c", "cis"];
-    List<String> downNotes = ["d","dis", "e","eis", "f","fis", "g","gis", "a","ais", "h", "his"];
 
-    if (upNotes.contains(note)) {
-      return "assets/note_graphics/notes/note_up.svg";
-    } else if (downNotes.contains(note)){
-      return "assets/note_graphics/notes/note_down.svg";
-    } else if (note=="C" || note=="Cis"){
-      return "assets/note_graphics/notes/note_up_on_line_2.svg";
-    } else if (note=="D" || note=="Dis"){
-      return "assets/note_graphics/notes/note_up_below_line_1.svg";
-    } else if (note=="E"|| note=="Eis"){
-      return "assets/note_graphics/notes/note_up_on_line_1.svg";
-    }
 
-    else if (note=="c\'"|| note=="cis\'"){
-      return "assets/note_graphics/notes/note_down_on_line_1.svg";
-    } else if (note=="d\'"|| note=="dis\'"){
-      return "assets/note_graphics/notes/note_down_above_line_1.svg";
-    } else if (note=="e\'" || note=="eis\'"){
-      return "assets/note_graphics/notes/note_down_on_line_2.svg";
-    } else {
-      return "";
-    }
-  }
-
-  List<String> sharp = ["Gis", "His", "Ais", "cis", "Fis", "Eis", "Dis", "Cis", "dis", "eis", "fis", "gis", "ais", "his", "cis\'", "dis\'"];
-  List<String> flat = ["Ges", "B", "As", "ces", "Fes", "Es", "Des", "Ces", "des", "es", "fes", "ges", "as", "b", "ces\'", "des\'"];
+  List<String> sharp = ["Gis", "His", "Ais", "cis", "Fis", "Eis", "Dis", "Cis", "dis", "eis", "fis", "gis", "ais", "his", "cis'", "dis'"];
+  List<String> flat = ["Ges", "B", "As", "ces", "Fes", "Es", "Des", "Ces", "des", "es", "fes", "ges", "as", "b", "ces'", "des'"];
 
    String getNoteAssetPath(String note) {
      if (sharp.contains(note)) {
@@ -54,6 +29,81 @@ class SingleNoteCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final keyProvider = Provider.of<KeyProvider>(context);
+
+    String NotePath() {
+
+      if(keyProvider.key=="bass"){
+        List<String> upNotes = ["F", "Fes", "G", "Gis", "A","Ais", "H","His", "c", "cis"];
+        List<String> downNotes = ["d","dis", "e","eis", "f","fis", "g","gis", "a","ais", "h", "his"];
+
+        if (upNotes.contains(note)) {
+          return "assets/note_graphics/notes/note_up.svg";
+        } else if (downNotes.contains(note)){
+          return "assets/note_graphics/notes/note_down.svg";
+        } else if (note=="C" || note=="Cis"){
+          return "assets/note_graphics/notes/note_up_on_line_2.svg";
+        } else if (note=="D" || note=="Dis"){
+          return "assets/note_graphics/notes/note_up_below_line_1.svg";
+        } else if (note=="E"|| note=="Eis"){
+          return "assets/note_graphics/notes/note_up_on_line_1.svg";
+        }
+
+        else if (note=="c'"|| note=="cis'"){
+          return "assets/note_graphics/notes/note_down_on_line_1.svg";
+        } else if (note=="d'"|| note=="dis'"){
+          return "assets/note_graphics/notes/note_down_above_line_1.svg";
+        } else if (note=="e'" || note=="eis'"){
+          return "assets/note_graphics/notes/note_down_on_line_2.svg";
+        } else {
+          return "";
+        }
+      }
+
+      if(keyProvider.key=="violin"){
+        List<String> upNotes = ["d'", "dis'", "e'", "eis'", "f'", "fis'", "g'", "gis'", "a'", "ais'"];
+        List<String> downNotes = ["h'", "his'", "c''", "cis''", "d''", "dis''", "e''", "eis''", "f''", "fis''", "g''", "gis''"];
+
+        if (upNotes.contains(note)) {
+          return "assets/note_graphics/notes/note_up.svg";
+        } else if (downNotes.contains(note)){
+          return "assets/note_graphics/notes/note_down.svg";
+        } else if (note=="a" || note=="ais"){
+          return "assets/note_graphics/notes/note_up_on_line_2.svg";
+        } else if (note=="h" || note=="his"){
+          return "assets/note_graphics/notes/note_up_below_line_1.svg";
+        } else if (note=="c'"|| note=="cis'"){
+          return "assets/note_graphics/notes/note_up_on_line_1.svg";
+        }
+
+        else if (note=="a''"|| note=="ais''"){
+          return "assets/note_graphics/notes/note_down_on_line_1.svg";
+        } else if (note=="h''"|| note=="his''"){
+          return "assets/note_graphics/notes/note_down_above_line_1.svg";
+        } else if (note=="c'''" || note=="cis'''"){
+          return "assets/note_graphics/notes/note_down_on_line_2.svg";
+        } else {
+          return "";
+        }
+      }
+
+      else{
+        return "";
+      }
+      
+    }
+
+    double? getNotePosition(note){
+      if(keyProvider.key=="bass"){
+        return bassPositionScaleCard[note];
+      }else if(keyProvider.key=="violin"){
+        return violinPositionScaleCard[note];
+      }else if (keyProvider.key=="tenor"){
+        return tenorPositionScaleCard[note];
+      }else{
+        return 0;
+      }
+    }
+
     return Container(
       margin: const EdgeInsets.only(left: 15, right: 15),
       height: 220,
@@ -73,7 +123,7 @@ class SingleNoteCard extends StatelessWidget {
           ),
           // Make sure positionCard[note] is within the bounds of the Container
           Positioned(
-            top: (bassPositionScaleCard[note]?? 0) - 9, // Adjust this value if needed
+            top: (getNotePosition(note)?? 0) - 9, // Adjust this value if needed
             left: 160, // Adjust this value if needed
             child: SvgPicture.asset(
               NotePath(),
