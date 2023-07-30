@@ -10,8 +10,6 @@ class SingleNoteCard extends StatelessWidget {
 
   final String note;
 
-
-
   List<String> sharp = ["Gis", "His", "Ais", "cis", "Fis", "Eis", "Dis", "Cis", "dis", "eis", "fis", "gis", "ais", "his", "cis'", "dis'"];
   List<String> flat = ["Ges", "B", "As", "ces", "Fes", "Es", "Des", "Ces", "des", "es", "fes", "ges", "as", "b", "ces'", "des'"];
 
@@ -24,7 +22,6 @@ class SingleNoteCard extends StatelessWidget {
        return ""; // Return an empty string or default asset path if needed
      }
    }
-
 
   @override
   Widget build(BuildContext context) {
@@ -86,10 +83,37 @@ class SingleNoteCard extends StatelessWidget {
         }
       }
 
+      if(keyProvider.key=="tenor"){
+        List<String> upNotes = ["c","cis","d","dis","e","eis","f","fis","g", "gis"];
+        List<String> downNotes = ["a", "ais", "h", "his", "c'", "cis'", "d'", "dis'","e'", "eis'", "f'", "fis'"];
+
+        if (upNotes.contains(note)) {
+          return "assets/note_graphics/notes/note_up.svg";
+        } else if (downNotes.contains(note)){
+          return "assets/note_graphics/notes/note_down.svg";
+        } else if (note=="G" || note=="Gis"){
+          return "assets/note_graphics/notes/note_up_on_line_2.svg";
+        } else if (note=="A" || note=="Ais"){
+          return "assets/note_graphics/notes/note_up_below_line_1.svg";
+        } else if (note=="H"|| note=="His"){
+          return "assets/note_graphics/notes/note_up_on_line_1.svg";
+        }
+
+        else if (note=="g'"|| note=="gis'"){
+          return "assets/note_graphics/notes/note_down_on_line_1.svg";
+        } else if (note=="a'"|| note=="ais'"){
+          return "assets/note_graphics/notes/note_down_above_line_1.svg";
+        } else if (note=="h'" || note=="his'"){
+          return "assets/note_graphics/notes/note_down_on_line_2.svg";
+        } else {
+          return "";
+        }
+      }
+
       else{
         return "";
       }
-      
+
     }
 
     double? getNotePosition(note){

@@ -79,10 +79,37 @@ class ScaleCard extends StatelessWidget {
             }
         }
 
+      }if(keyProvider.key=="tenor"){
+        List<String> upNotes = ["c","d","e","f","g"];
+        List<String> downNotes = ["a", "h", "c'", "d'", "e'", "f'"];
+
+        switch (note) {
+          case "empty":
+            return "assets/note_graphics/notes/empty_note.svg";
+          case "G":
+            return "assets/note_graphics/notes/note_up_on_line_2.svg";
+          case "A":
+            return "assets/note_graphics/notes/note_up_below_line_1.svg";
+          case "H":
+            return "assets/note_graphics/notes/note_up_on_line_1.svg";
+          case "g'":
+            return "assets/note_graphics/notes/note_down_on_line_1.svg";
+          case "a'":
+            return "assets/note_graphics/notes/note_down_above_line_1.svg";
+          case "h'":
+            return "assets/note_graphics/notes/note_down_on_line_2.svg";
+          default:
+            if (upNotes.contains(note)) {
+              return "assets/note_graphics/notes/note_up.svg";
+            } else if (downNotes.contains(note)) {
+              return "assets/note_graphics/notes/note_down.svg";
+            } else {
+              return "";
+            }
+        }
       }else{
         return "";
       }
-
 
     }
 

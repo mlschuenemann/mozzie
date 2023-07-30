@@ -79,6 +79,32 @@ class NoteChoiceCard extends StatelessWidget {
               return "";
             }
         }
+      }if(keyProvider.key=="tenor"){
+        List<String> upNotes = ["c","d","e","f","g"];
+        List<String> downNotes = ["a", "h", "c'", "d'", "e'", "f'"];
+
+        switch (note) {
+          case "G":
+            return "assets/note_graphics/notes/small/note_up_small_on_line_2.svg";
+          case "A":
+            return "assets/note_graphics/notes/small/note_up_small_below_line_1.svg";
+          case "H":
+            return "assets/note_graphics/notes/small/note_up_small_on_line_1.svg";
+          case "g'":
+            return "assets/note_graphics/notes/small/note_down_small_on_line_1.svg";
+          case "a'":
+            return "assets/note_graphics/notes/small/note_down_small_above_line_1.svg";
+          case "h'":
+            return "assets/note_graphics/notes/small/note_down_small_on_line_2.svg";
+          default:
+            if (upNotes.contains(note)) {
+              return "assets/note_graphics/notes/small/note_up_small.svg";
+            } else if (downNotes.contains(note)) {
+              return "assets/note_graphics/notes/small/note_down_small.svg";
+            } else {
+              return "";
+            }
+        }
       }else{
         return "";
       }
@@ -93,6 +119,16 @@ class NoteChoiceCard extends StatelessWidget {
         return tenorPositionChoiceCard[noteNumber];
       }else{
         return 0;
+      }
+    }
+
+    bool displayNote(){
+      if(keyProvider.key=="bass"){
+        return displayNoteName && !["C", "D", "E", "F"].contains(noteChoice);
+      }else if(keyProvider.key=="violin")  {
+        return displayNoteName && !["a","h","c'","d'"].contains(noteChoice);
+      }else{
+        return displayNoteName && !["G","A","A'","c"].contains(noteChoice);
       }
     }
 
@@ -128,7 +164,7 @@ class NoteChoiceCard extends StatelessWidget {
             Positioned(
                 top: 90,
                 child: Visibility(
-                  visible: displayNoteName && !["C", "D", "E", "F"].contains(noteChoice) && (keyProvider.key=="violin" && !["a","h","c'","d'"].contains(noteChoice)),
+                  visible: displayNote(),
                   child: Text(
                     noteChoice,
                     style: PAR2,

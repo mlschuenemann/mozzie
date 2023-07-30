@@ -15,7 +15,7 @@ import 'package:music_education/screens/question_pages/single_letter_question.da
 import 'package:music_education/screens/question_pages/single_note_question.dart';
 import 'package:music_education/data.dart';
 import 'package:music_education/screens/revision_page.dart';
-import 'package:music_education/screens/violinData.dart';
+import 'package:music_education/violinData.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:flutter/foundation.dart';
@@ -61,7 +61,6 @@ class _QuizzState extends State<Quizz> {
       questionData =
       tenorData[progressPointNumber]?[lectureNumber]?[questionNumber];
     }
-
 
     final questionType = questionData?["questionType"] ?? "";
     final note = questionData?["note"] ?? "";

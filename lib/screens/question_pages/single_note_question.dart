@@ -17,7 +17,7 @@ import 'package:audioplayers/audioplayers.dart';
 
 import '../../provider/key_provider.dart';
 import '../../tenorData.dart';
-import '../violinData.dart';
+import '../../violinData.dart';
 
 enum Card {
   first,
