@@ -1,7 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:music_education/constants/colors.dart';
-import 'package:music_education/data.dart';
+import 'package:music_education/data/data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
@@ -9,13 +9,13 @@ import 'package:music_education/constants/textstyle.dart';
 import 'package:music_education/components/main_cards/note_name_card.dart';
 import 'package:music_education/components/choice_cards/note_choice_card.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
-import 'package:music_education/screens/quizz.dart';
+import 'package:music_education/quizz.dart';
 import 'package:music_education/screens/question_pages/scale_question.dart';
 import 'package:music_education/screens/question_pages/single_letter_question.dart';
 import 'package:music_education/screens/question_pages/single_note_question.dart';
-import 'package:music_education/data.dart';
+import 'package:music_education/data/data.dart';
 import 'package:music_education/screens/revision_page.dart';
-import 'package:music_education/violinData.dart';
+import 'package:music_education/data/violin_data.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
 import 'package:flutter/foundation.dart';
@@ -24,8 +24,8 @@ import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/question_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 
-import '../provider/key_provider.dart';
-import '../tenorData.dart';
+import 'provider/key_provider.dart';
+import 'data/tenor_data.dart';
 
 class Quizz extends StatefulWidget {
   Quizz({Key? key}) : super(key: key);
@@ -125,11 +125,9 @@ class _QuizzState extends State<Quizz> {
       return ResultPage(); // Replace ResultPage with the actual result page widget
     } else if (questionNumber >= 13 &&
         questionProvider.incorrectQuestions.isNotEmpty) {
-
-      if (questionProvider.hasShownRevisionPage==false) {
-        return RevisionPage();
-
-      }else{
+        if (questionProvider.hasShownRevisionPage==false) {
+          return RevisionPage();
+      } else {
         questionProvider.activateRevisionMode();
         questionProvider.setToIncorrectQuestion();
         questionProvider.removeIncorrectQuestion();

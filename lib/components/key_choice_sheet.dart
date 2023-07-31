@@ -21,6 +21,19 @@ void key_choice_sheet(BuildContext context) {
     backgroundColor: Colors.transparent,
     builder: (BuildContext context) {
       final keyProvider = Provider.of<KeyProvider>(context);
+
+      String iconPath(){
+        if(keyProvider.key=="bass"){
+          return "assets/icons/mozart_icon.svg";
+        } else if(keyProvider.key=="violin"){
+          return "assets/icons/turner_icon.svg";
+        } else if(keyProvider=="tenor"){
+          return "assets/icons/elton_icon.svg";
+        } else{
+          return "assets/icons/elton_icon.svg";
+        }
+      }
+
       return StatefulBuilder(
         builder: (BuildContext context, StateSetter setState) {
           return Container(
@@ -33,6 +46,33 @@ void key_choice_sheet(BuildContext context) {
                 // Set the scroll direction to horizontal
                 child: Row(
                   children: [
+                    SizedBox(
+                      width: 20,
+                    ),
+                    SvgPicture.asset(iconPath(),
+                    height: 130,),
+                    Column(
+
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(bottom: 20,left: 10, top: 20),
+                          padding: const EdgeInsets.all(15),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            color: SECONDARY,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          height: 70,
+                          width: 150,
+                          child: const Text(
+                            'Wähle einen\n Notenschlüssel',
+                            style: PAR2,
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Icon(Icons.arrow_forward_ios_rounded, color: SECONDARY, size: 30,)
+                      ],
+                    ),
                     SizedBox(
                       width: 20,
                     ),

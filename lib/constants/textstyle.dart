@@ -8,6 +8,13 @@ const HEADING2 = TextStyle(
   fontWeight: FontWeight.w700,
 );
 
+final HEADING2DARK = TextStyle(
+  color: Colors.grey.shade600,
+  fontSize: 18,
+  fontFamily: 'Quicksand',
+  fontWeight: FontWeight.w500,
+);
+
 const HEADING3 = TextStyle(
   color: BACKGROUND,
   fontSize: 12,

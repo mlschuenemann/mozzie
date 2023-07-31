@@ -1,36 +1,24 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/components/progress_list.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
-import 'package:music_education/components/main_cards/note_name_card.dart';
-import 'package:music_education/components/choice_cards/note_choice_card.dart';
-import 'package:music_education/screens/quizz.dart';
+import 'package:music_education/quizz.dart';
 import 'package:music_education/provider/streak_provider.dart';
 import 'package:music_education/screens/revision_page.dart';
 import 'package:music_education/screens/support.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'components/fast_forward_button.dart';
 import 'components/key_choice_sheet.dart';
-import 'data.dart';
 import 'provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
-import 'package:music_education/components/progress_point.dart';
 import 'package:music_education/provider/question_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
-import 'package:music_education/components/level_card.dart';
 import 'package:music_education/components/achievement_card.dart';
 import 'package:music_education/screens/settings_page.dart';
 import 'package:music_education/screens/impressum.dart';
 import 'package:music_education/screens/privacy.dart';
 import 'package:music_education/provider/key_provider.dart';
-import 'dart:convert';
-
-
 
 void main() async {
 
@@ -39,7 +27,6 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -70,14 +57,14 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: 'home',
         routes: {
-          "home": (context) => MyHomePage(),
+          "home": (context) => const MyHomePage(),
           "quizz": (context) => Quizz(),
-          "result": (context) => ResultPage(),
-          "settings": (context) => Settings(),
-          "impressum": (context) => ImpressumPage(),
-          "privacy": (context) => PrivacyPage(),
-          "support": (context) => SupportPage(),
-          "revision": (context) => RevisionPage(),
+          "result": (context) => const ResultPage(),
+          "settings": (context) => const Settings(),
+          "impressum": (context) => const ImpressumPage(),
+          "privacy": (context) => const PrivacyPage(),
+          "support": (context) => const SupportPage(),
+          "revision": (context) => const RevisionPage(),
         },
         home: const MyHomePage(),
       ),
@@ -128,17 +115,29 @@ class _MyHomePageState extends State<MyHomePage> {
 
     scoreProvider = Provider.of<ScoreProvider>(context);
     scoreProvider.retrieveScore();
-    final int? currentScore = scoreProvider.xpPoints;
+    final int currentScore = scoreProvider.xpPoints;
 
     final streakProvider = Provider.of<StreakProvider>(context);
 
+
+    String iconPath(){
+      if(keyProvider.key=="bass"){
+        return "assets/icons/mozart_icon.svg";
+      } else if(keyProvider.key=="violin"){
+        return "assets/icons/turner_icon.svg";
+      } else if(keyProvider.key=="tenor"){
+        return "assets/icons/elton_icon.svg";
+      } else{
+        return "assets/icons/elton_icon.svg";
+      }
+    }
 
     int statusBarValue = lectureNumber;
 
     return Scaffold(
       backgroundColor: BACKGROUND,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(kToolbarHeight),
+        preferredSize: const Size.fromHeight(kToolbarHeight),
         child: AppBar(
           backgroundColor: BACKGROUND,
           surfaceTintColor: Colors.white,
@@ -149,12 +148,12 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: 20, left: 10),
+                    margin: const EdgeInsets.only(right: 20, left: 10),
                     child: SvgPicture.asset(
-                      "assets/icons/mozart_icon.svg",
+                      iconPath(),
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Noten lesen",
                     style: HEADING2,
                     textAlign: TextAlign.left,
@@ -162,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.settings,
                   color: Colors.white,
                 ),
@@ -177,7 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
@@ -188,9 +187,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   key_choice_sheet(context);
                 },
                 child: Container(
-                  padding: EdgeInsets.only(right: 10, left: 10, top: 5, bottom: 5),
+                  padding: const EdgeInsets.only(right: 10, left: 10, top: 5, bottom: 5),
                   height: 40,
-                  margin: EdgeInsets.only(bottom: 10),
+                  margin: const EdgeInsets.only(bottom: 10),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
@@ -200,10 +199,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       SvgPicture.asset(
                           "assets/note_graphics/signs/${keyProvider.key}_key.svg"),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
-                      Icon(Icons.arrow_drop_down)
+                      const Icon(Icons.arrow_drop_down)
                     ],
                   ),
                 ),
@@ -213,7 +212,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 text: "${streakProvider.currentStreak} Tage",
                 border: false,
               ),
-              AchievmentCard(
+              const AchievmentCard(
                 imagePath: "assets/icons/heart_icon.svg",
                 text: "∞",
                 border: false,
@@ -228,8 +227,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Expanded(
             child: ListView(
               children: [
-                buildLevelCard("Level 1", "Lerne deine ersten Noten (C bis c)"),
-                SizedBox(
+                buildLevelCard("Level 1", "Du lernst die wichtigsten Noten kennen"),
+                const SizedBox(
                   height: 20,
                 ),
                 buildProgressPointList(
@@ -237,12 +236,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     statusBarValue: statusBarValue,
                     itemCount: 3,
                     progressPointNumber: progressPointNumber),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 buildLevelCard(
-                    "Level 2", "Lerne über zwei Oktaven und erste Vorzeichen"),
-                SizedBox(
+                    "Level 2", "Lese alle Noten im Unfang von über zwei Oktaven"),
+                const SizedBox(
                   height: 20,
                 ),
                 buildProgressPointList(
@@ -250,11 +249,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     statusBarValue: statusBarValue,
                     itemCount: 5,
                     progressPointNumber: progressPointNumber),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                buildLevelCard("Level 3", "Lerne alle Vorzeichen"),
-                SizedBox(
+                buildLevelCard("Level 3", "Lese Noten mit verschiedenen Vorzeichen"),
+                const SizedBox(
                   height: 20,
                 ),
                 buildProgressPointList(
@@ -262,11 +261,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     statusBarValue: statusBarValue,
                     itemCount: 4,
                     progressPointNumber: progressPointNumber),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 buildLevelCard("Level 4", "Trainiere bis du Profi bist"),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 buildProgressPointList(

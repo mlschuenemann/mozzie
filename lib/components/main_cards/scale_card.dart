@@ -144,7 +144,7 @@ class ScaleCard extends StatelessWidget {
           ),
           Positioned(
             top: getNotePosition(firstNote),
-            left: firstNote == "empty" ? 130 : 110,
+            left: firstNote == "empty" ? 140 : 120,
             child: SvgPicture.asset(
               notePath(firstNote),
               height: firstNote == "empty" ? 90: 140,
@@ -152,7 +152,7 @@ class ScaleCard extends StatelessWidget {
           ),
           Positioned(
             top: getNotePosition(secondNote),
-            left: secondNote == "empty" ? 180 : 160,
+            left: secondNote == "empty" ? 190 : 170,
             child: SvgPicture.asset(
               notePath(secondNote),
               height: secondNote == "empty" ? 90: 140,
@@ -160,7 +160,7 @@ class ScaleCard extends StatelessWidget {
           ),
           Positioned(
             top: getNotePosition(thirdNote),
-            left: thirdNote == "empty" ? 230 : 210,
+            left: thirdNote == "empty" ? 240 : 220,
             child: SvgPicture.asset(
              notePath(thirdNote),
               height: thirdNote == "empty" ? 90: 140,
@@ -168,7 +168,7 @@ class ScaleCard extends StatelessWidget {
           ),
           Positioned(
             top: 205,
-            left: 140,
+            left: 150,
             child: firstNote == "empty"
                 ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
@@ -178,7 +178,7 @@ class ScaleCard extends StatelessWidget {
           ),
           Positioned(
             top: 205,
-            left: 190,
+            left: 200,
             child: secondNote == "empty"
                 ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
@@ -188,7 +188,7 @@ class ScaleCard extends StatelessWidget {
           ),
           Positioned(
             top: 205,
-            left: 240,
+            left: 250,
             child: thirdNote == "empty"
                 ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(

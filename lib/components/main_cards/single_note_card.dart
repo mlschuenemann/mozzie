@@ -148,7 +148,7 @@ class SingleNoteCard extends StatelessWidget {
           // Make sure positionCard[note] is within the bounds of the Container
           Positioned(
             top: (getNotePosition(note)?? 0) - 9, // Adjust this value if needed
-            left: 160, // Adjust this value if needed
+            left: 180, // Adjust this value if needed
             child: SvgPicture.asset(
               NotePath(),
               height: 140,
@@ -158,7 +158,7 @@ class SingleNoteCard extends StatelessWidget {
             visible: sharp.contains(note) || flat.contains(note) ? true : false,
             child: Positioned(
               top: (bassPositionScaleCard[note] ?? 0) + 41, // Adjust this value if needed
-              left: 150, // Adjust this value if needed
+              left: 170, // Adjust this value if needed
               child: SvgPicture.asset(
                 getNoteAssetPath(note),
                 height: 40,

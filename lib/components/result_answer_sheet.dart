@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
 import 'package:music_education/provider/score_provider.dart';
-import 'package:music_education/screens/quizz.dart';
-import 'package:music_education/data.dart';
+import 'package:music_education/quizz.dart';
+import 'package:music_education/data/data.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/provider/question_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
@@ -12,8 +12,8 @@ import 'package:flutter/services.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 import '../provider/key_provider.dart';
-import '../violinData.dart';
-import '../tenorData.dart';
+import '../data/violin_data.dart';
+import '../data/tenor_data.dart';
 
 class MyBottomSheet extends StatelessWidget {
   MyBottomSheet(
@@ -76,8 +76,8 @@ class MyBottomSheet extends StatelessWidget {
                   ),
             GestureDetector(
               onTap: () async {
-                if((questionNumber==12 && questionProvider.incorrectQuestions.isEmpty) ||
-                    (questionProvider.revisionMode && questionProvider.incorrectQuestions.isEmpty)
+                if((questionNumber==12 && questionProvider.incorrectQuestions.isEmpty && result) ||
+                    (questionProvider.revisionMode && questionProvider.incorrectQuestions.isEmpty && result)
                 ){
                 final player = AudioPlayer();
                 await player.play(

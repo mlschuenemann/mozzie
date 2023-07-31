@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
-import 'package:music_education/screens/quizz.dart';
+import 'package:music_education/quizz.dart';
 import 'package:provider/provider.dart';
 import 'package:confetti/confetti.dart';
 import 'package:music_education/provider/score_provider.dart';

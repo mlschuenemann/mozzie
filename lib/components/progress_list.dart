@@ -7,7 +7,6 @@ import 'package:music_education/components/level_card.dart';
 import 'package:provider/provider.dart';
 import '../provider/key_provider.dart';
 
-
 Widget buildProgressPointList({
   required int startPoint,
   required int statusBarValue,
@@ -55,7 +54,7 @@ Widget buildProgressPointList({
                 ),
               ],
             ),
-          if (point != startPoint )
+          if (point != startPoint)
             GestureDetector(
               onTap: (){
                 if(progressPointNumber==point){
@@ -69,6 +68,7 @@ Widget buildProgressPointList({
                 statusBarValue: statusBarValue,
               ),
             ),
+          SizedBox(height: 6,),
           if (index < itemCount - 1)
             SvgPicture.asset(
               index % 2 == 0
