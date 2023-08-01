@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:music_education/constants/colors.dart';
-import 'package:music_education/constants/textstyle.dart';
 
 class PrivacyPage extends StatelessWidget {
   const PrivacyPage({Key? key}) : super(key: key);
@@ -9,12 +8,12 @@ class PrivacyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Datenschutz'),
+        title: const Text('Datenschutz'),
         elevation: 0.0,
         backgroundColor: BACKGROUND,// Remove the shadow from AppBar
       ),
       backgroundColor: BACKGROUND,
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -112,12 +111,12 @@ class PrivacyPage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.only(left: 16, right: 16, top: 16 ,bottom: 40),
+        padding: const EdgeInsets.only(left: 16, right: 16, top: 16 ,bottom: 40),
         color: Colors.grey[800],
         child: Text(
           '© ${DateTime.now().year} Martin Schünemann. Alle Rechte vorbehalten.',
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
           ),
         ),

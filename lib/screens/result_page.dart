@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:music_education/components/achievement_card.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/provider/question_provider.dart';
@@ -6,13 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
-import 'package:music_education/quizz.dart';
 import 'package:provider/provider.dart';
 import 'package:confetti/confetti.dart';
 import 'package:music_education/provider/score_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/streak_provider.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 import '../provider/key_provider.dart';
 
@@ -32,7 +29,7 @@ class _ResultPageState extends State<ResultPage> {
     // TODO: implement initState
     super.initState();
     _controller.play();
-    Future.delayed(Duration(milliseconds: 200), () {
+    Future.delayed(const Duration(milliseconds: 200), () {
       _controller.stop();
     });
 
@@ -62,7 +59,7 @@ class _ResultPageState extends State<ResultPage> {
         //crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(child: SizedBox()),
+          const Expanded(child: SizedBox()),
           SvgPicture.asset("assets/instruments/group.svg"),
           ConfettiWidget(
             confettiController: _controller,
@@ -72,14 +69,14 @@ class _ResultPageState extends State<ResultPage> {
             emissionFrequency: 0.15,
             minBlastForce: 18,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          Text(
+          const Text(
             "Lektion abgeschlossen!",
             style: HEADING2,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Row(
@@ -90,13 +87,13 @@ class _ResultPageState extends State<ResultPage> {
                 text: "+ ${scoreProvider.score}",
                 border: true,
               ),
-              SizedBox(width: 10,),
-              AchievmentCard(
+              const SizedBox(width: 10,),
+              const AchievmentCard(
                 imagePath: "assets/icons/heart_icon.svg",
                 text: "∞",
                 border: true,
               ),
-              SizedBox(width: 10,),
+              const SizedBox(width: 10,),
               AchievmentCard(
                 imagePath: "assets/icons/flame_icon.svg",
                 text: "${streakProvider.currentStreak}",
@@ -104,7 +101,7 @@ class _ResultPageState extends State<ResultPage> {
               ),
             ],
           ),
-          Expanded(child: SizedBox()),
+          const Expanded(child: SizedBox()),
           GestureDetector(
             onTap: () async {
                 scoreProvider.updateXpPoints(scoreProvider.score);

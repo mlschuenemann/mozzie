@@ -68,7 +68,7 @@ Widget buildProgressPointList({
                 statusBarValue: statusBarValue,
               ),
             ),
-          SizedBox(height: 6,),
+          const SizedBox(height: 6,),
           if (index < itemCount - 1)
             SvgPicture.asset(
               index % 2 == 0

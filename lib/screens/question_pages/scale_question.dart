@@ -4,7 +4,6 @@ import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
 import 'package:music_education/components/main_cards/scale_card.dart';
 import 'package:music_education/components/choice_cards/note_choice_card.dart';
-import 'package:music_education/quizz.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/components/result_answer_sheet.dart';
 import 'package:music_education/data/data.dart';

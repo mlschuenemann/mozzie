@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
 import 'package:music_education/provider/score_provider.dart';
-import 'package:music_education/quizz.dart';
 import 'package:music_education/data/data.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/provider/question_provider.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
 import 'package:music_education/provider/lecture_provider.dart';
-import 'package:flutter/services.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 import '../provider/key_provider.dart';
@@ -16,7 +14,7 @@ import '../data/violin_data.dart';
 import '../data/tenor_data.dart';
 
 class MyBottomSheet extends StatelessWidget {
-  MyBottomSheet(
+  const MyBottomSheet(
       {super.key, required this.result, required this.questionNumber});
 
   final bool result;
@@ -47,7 +45,7 @@ class MyBottomSheet extends StatelessWidget {
     }
 
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: BACKGROUND,
       ),
       child: Container(
@@ -57,16 +55,16 @@ class MyBottomSheet extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             result
-                ? Text(
+                ? const Text(
                     "Ausgezeichnet!",
                     style: CORRECT,
                   )
-                : Text(
+                : const Text(
                     "Leider falsch",
                     style: FALSE,
                   ),
             result
-                ? Text(
+                ? const Text(
                     "Du hast die richtige Antwort ausgewählt.",
                     style: CORRECTS,
                   )
@@ -87,7 +85,7 @@ class MyBottomSheet extends StatelessWidget {
                 result ? scoreProvider.addOneXP() : null;
               },
               child: Container(
-                margin: EdgeInsets.only(bottom: 10),
+                margin: const EdgeInsets.only(bottom: 10),
                 alignment: Alignment.center,
                 height: 60,
                 decoration: BoxDecoration(

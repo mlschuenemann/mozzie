@@ -1,34 +1,22 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:music_education/constants/colors.dart';
 import 'package:music_education/data/data.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:music_education/constants/colors.dart';
 import 'package:music_education/constants/textstyle.dart';
-import 'package:music_education/components/main_cards/note_name_card.dart';
-import 'package:music_education/components/choice_cards/note_choice_card.dart';
 import 'package:music_education/provider/progress_point_provider.dart';
-import 'package:music_education/quizz.dart';
 import 'package:music_education/screens/question_pages/scale_question.dart';
 import 'package:music_education/screens/question_pages/single_letter_question.dart';
 import 'package:music_education/screens/question_pages/single_note_question.dart';
-import 'package:music_education/data/data.dart';
 import 'package:music_education/screens/revision_page.dart';
 import 'package:music_education/data/violin_data.dart';
 import 'package:provider/provider.dart';
 import 'package:music_education/screens/result_page.dart';
-import 'package:flutter/foundation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:music_education/provider/lecture_provider.dart';
 import 'package:music_education/provider/question_provider.dart';
-import 'package:music_education/provider/progress_point_provider.dart';
-
 import 'provider/key_provider.dart';
 import 'data/tenor_data.dart';
 
 class Quizz extends StatefulWidget {
-  Quizz({Key? key}) : super(key: key);
+  const Quizz({Key? key}) : super(key: key);
 
   @override
   State<Quizz> createState() => _QuizzState();
@@ -122,11 +110,11 @@ class _QuizzState extends State<Quizz> {
     if (questionNumber >= 13 && questionProvider.incorrectQuestions.isEmpty) {
       questionProvider.deactivateRevisionMode();
       // Display the result page
-      return ResultPage(); // Replace ResultPage with the actual result page widget
+      return const ResultPage(); // Replace ResultPage with the actual result page widget
     } else if (questionNumber >= 13 &&
         questionProvider.incorrectQuestions.isNotEmpty) {
         if (questionProvider.hasShownRevisionPage==false) {
-          return RevisionPage();
+          return const RevisionPage();
       } else {
         questionProvider.activateRevisionMode();
         questionProvider.setToIncorrectQuestion();
@@ -157,14 +145,14 @@ class _QuizzState extends State<Quizz> {
                   children: [
                     IconButton(
                         icon: questionProvider.revisionMode == false
-                            ? Icon(Icons.close)
-                            : Icon(Icons.refresh_rounded, color: Colors.yellow, size: 30,),
+                            ? const Icon(Icons.close)
+                            : const Icon(Icons.refresh_rounded, color: Colors.yellow, size: 30,),
                         onPressed: () {
                           questionProvider.revisionMode == false
                               ? Navigator.of(context).pop()
                               : null;
                         },
-                        color: Color(0xFF888D8F)),
+                        color: const Color(0xFF888D8F)),
                     const SizedBox(width: 15),
                     if (questionProvider.revisionMode == false)
                       Expanded(
@@ -178,7 +166,7 @@ class _QuizzState extends State<Quizz> {
                               height: 25,
                             ),
                             AnimatedContainer(
-                              duration: Duration(milliseconds: 500),
+                              duration: const Duration(milliseconds: 500),
                               curve: Curves.easeInOut,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -198,7 +186,7 @@ class _QuizzState extends State<Quizz> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               color: Colors.yellow),
-                          child: Text(
+                          child: const Text(
                             "Wiederholung",
                             style: HEADING3,
                           ),

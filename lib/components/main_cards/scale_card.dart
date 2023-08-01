@@ -170,7 +170,7 @@ class ScaleCard extends StatelessWidget {
             top: 205,
             left: 150,
             child: firstNote == "empty"
-                ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
+                ? const SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
               firstNote,
               style: PAR1,
@@ -180,7 +180,7 @@ class ScaleCard extends StatelessWidget {
             top: 205,
             left: 200,
             child: secondNote == "empty"
-                ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
+                ? const SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
               secondNote,
               style: PAR1,
@@ -190,7 +190,7 @@ class ScaleCard extends StatelessWidget {
             top: 205,
             left: 250,
             child: thirdNote == "empty"
-                ? SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
+                ? const SizedBox.shrink() // Hide the Text widget when the note is "C", "D", or "E"
                 : Text(
               thirdNote,
               style: PAR1,

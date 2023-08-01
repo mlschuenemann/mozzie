@@ -37,7 +37,7 @@ void key_choice_sheet(BuildContext context) {
       return StatefulBuilder(
         builder: (BuildContext context, StateSetter setState) {
           return Container(
-              padding: EdgeInsets.only(top: 30, bottom: 50),
+              padding: const EdgeInsets.only(top: 30, bottom: 50),
               color: BACKGROUND,
               height: MediaQuery.of(context).size.height * 0.3,
               child: SingleChildScrollView(
@@ -46,7 +46,7 @@ void key_choice_sheet(BuildContext context) {
                 // Set the scroll direction to horizontal
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
                     SvgPicture.asset(iconPath(),
@@ -70,10 +70,10 @@ void key_choice_sheet(BuildContext context) {
                             textAlign: TextAlign.center,
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios_rounded, color: SECONDARY, size: 30,)
+                        const Icon(Icons.arrow_forward_ios_rounded, color: SECONDARY, size: 30,)
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
                     GestureDetector(
@@ -91,7 +91,7 @@ void key_choice_sheet(BuildContext context) {
                         keyName: "BASSSCHLÜSSEL",
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
                     GestureDetector(
@@ -110,7 +110,7 @@ void key_choice_sheet(BuildContext context) {
                       ),
                     ),
 
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
                     GestureDetector(
@@ -129,7 +129,7 @@ void key_choice_sheet(BuildContext context) {
                       ),
                     ),
 
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
 
@@ -157,7 +157,7 @@ class KeyChoiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(15),
+      padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(25),
@@ -166,11 +166,11 @@ class KeyChoiceCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Expanded(child: SizedBox()),
+          const Expanded(child: SizedBox()),
           SvgPicture.asset(
             keyImage,
           ),
-          Expanded(child: SizedBox()),
+          const Expanded(child: SizedBox()),
           Text(
             keyName,
             style: TextStyle(

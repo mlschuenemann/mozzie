@@ -14,7 +14,7 @@ class AnimatedSvgIcon extends StatefulWidget {
   final Color endColor;
   final Duration animationDuration;
 
-  AnimatedSvgIcon({
+  const AnimatedSvgIcon({super.key,
     required this.svgPath,
     required this.startColor,
     required this.endColor,
