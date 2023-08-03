@@ -65,17 +65,7 @@ class SupportPage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: Container(
-        padding: const EdgeInsets.only(left: 16, right: 16, top: 16 ,bottom: 40),
-        color: Colors.grey[800],
-        child: Text(
-          '© ${DateTime.now().year} Martin Schünemann. Alle Rechte vorbehalten.',
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            color: Colors.white,
-          ),
-        ),
-      ),
+
     );
   }
 }

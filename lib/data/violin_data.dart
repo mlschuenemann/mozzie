@@ -15,8 +15,8 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "cis",
-        "firstChoice": "cis",
+        "note": "a'",
+        "firstChoice": "a'",
         "secondChoice": "g'",
         "thirdChoice": "e'",
         "fourthChoice": "f'",
@@ -2600,10 +2600,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
     2: {
       1: {
         "questionType": "single_note",
-        "note": "fis",
+        "note": "dis''",
         "firstChoice": "e'",
         "secondChoice": "f'",
-        "thirdChoice": "fis",
+        "thirdChoice": "dis''",
         "fourthChoice": "g'",
         "instrument": "piano"
       },
@@ -2663,11 +2663,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       7: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
+        "note": "dis''",
+        "firstChoice": "ais'",
         "secondChoice": "f'",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       8: {
@@ -2719,10 +2719,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
     3: {
       1: {
         "questionType": "single_note",
-        "note": "fis",
+        "note": "dis''",
         "firstChoice": "e'",
         "secondChoice": "f'",
-        "thirdChoice": "fis",
+        "thirdChoice": "dis''",
         "fourthChoice": "g'",
         "instrument": "piano"
       },
@@ -2764,11 +2764,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
+        "note": "dis''",
+        "firstChoice": "ais'",
         "secondChoice": "f'",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       7: {
@@ -2904,11 +2904,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       7: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "gis",
-        "thirdChoice": "eis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "eis''",
+        "thirdChoice": "cis''",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       8: {
@@ -3032,11 +3032,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "gis",
-        "thirdChoice": "eis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "eis''",
+        "thirdChoice": "cis''",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       9: {
@@ -3331,11 +3331,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
     3: {
       1: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "gis",
-        "secondChoice": "dis",
-        "thirdChoice": "fis",
-        "fourthChoice": "cis",
+        "note": "dis''",
+        "firstChoice": "eis''",
+        "secondChoice": "his'",
+        "thirdChoice": "dis''",
+        "fourthChoice": "ais'",
         "instrument": "piano"
       },
       2: {
@@ -3379,11 +3379,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       7: {
@@ -3459,11 +3459,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       3: {
@@ -3522,11 +3522,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "gis",
-        "secondChoice": "dis",
-        "thirdChoice": "fis",
-        "fourthChoice": "cis",
+        "note": "dis''",
+        "firstChoice": "eis''",
+        "secondChoice": "his'",
+        "thirdChoice": "dis''",
+        "fourthChoice": "ais'",
         "instrument": "piano"
       },
       9: {
@@ -3638,11 +3638,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "dis",
-        "secondChoice": "gis",
+        "note": "dis''",
+        "firstChoice": "his'",
+        "secondChoice": "eis''",
         "thirdChoice": "c''",
-        "fourthChoice": "fis",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       9: {
@@ -3744,10 +3744,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis'",
+        "note": "ais''",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "cis'",
+        "thirdChoice": "ais''",
         "fourthChoice": "f''",
         "instrument": "piano"
       },
@@ -3795,11 +3795,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       11: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       12: {
@@ -3824,10 +3824,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis'",
+        "note": "ais''",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "cis'",
+        "thirdChoice": "ais''",
         "fourthChoice": "f''",
         "instrument": "piano"
       },
@@ -3857,11 +3857,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       6: {
@@ -3985,19 +3985,19 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       7: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "ais''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
         "fourthChoice": "g''",
         "instrument": "piano"
       },
@@ -4095,10 +4095,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "ais''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
         "fourthChoice": "g''",
         "instrument": "piano"
       },
@@ -4122,11 +4122,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       9: {
@@ -4187,10 +4187,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis'",
+        "note": "ais''",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "cis'",
+        "thirdChoice": "ais''",
         "fourthChoice": "f''",
         "instrument": "piano"
       },
@@ -4244,11 +4244,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       9: {
@@ -4350,10 +4350,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis'",
+        "note": "ais''",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "cis'",
+        "thirdChoice": "ais''",
         "fourthChoice": "f''",
         "instrument": "piano"
       },
@@ -4401,11 +4401,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       11: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       12: {
@@ -4430,10 +4430,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis'",
+        "note": "ais''",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "cis'",
+        "thirdChoice": "ais''",
         "fourthChoice": "f''",
         "instrument": "piano"
       },
@@ -4463,11 +4463,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       6: {
@@ -4591,19 +4591,19 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       7: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "ais''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
         "fourthChoice": "g''",
         "instrument": "piano"
       },
@@ -4701,10 +4701,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "ais''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
         "fourthChoice": "g''",
         "instrument": "piano"
       },
@@ -4728,11 +4728,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       9: {
@@ -4793,10 +4793,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis'",
+        "note": "ais''",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "cis'",
+        "thirdChoice": "ais''",
         "fourthChoice": "f''",
         "instrument": "piano"
       },
@@ -4850,11 +4850,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       9: {
@@ -4905,11 +4905,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
     1: {
       1: {
         "questionType": "single_note",
-        "note": "GIS",
+        "note": "eis'",
         "firstChoice": "a'",
-        "secondChoice": "AIS",
-        "thirdChoice": "GIS",
-        "fourthChoice": "FIS",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis'",
+        "fourthChoice": "dis'",
         "instrument": "piano"
       },
       2: {
@@ -4956,11 +4956,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "HIS",
-        "firstChoice": "dis'",
+        "note": "gis'",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "HIS",
-        "fourthChoice": "AIS",
+        "thirdChoice": "gis'",
+        "fourthChoice": "fis'",
         "instrument": "piano"
       },
       7: {
@@ -5007,11 +5007,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       11: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       12: {
@@ -5036,11 +5036,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "AIS'",
-        "firstChoice": "dis'",
-        "secondChoice": "GIS",
-        "thirdChoice": "cis'",
-        "fourthChoice": "AIS",
+        "note": "Ais'",
+        "firstChoice": "his''",
+        "secondChoice": "eis'",
+        "thirdChoice": "ais''",
+        "fourthChoice": "fis'",
         "instrument": "piano"
       },
       3: {
@@ -5069,11 +5069,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       6: {
@@ -5138,11 +5138,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       12: {
         "questionType": "single_note",
-        "note": "AIS",
+        "note": "fis'",
         "firstChoice": "a'",
-        "secondChoice": "AIS",
-        "thirdChoice": "dis",
-        "fourthChoice": "FIS",
+        "secondChoice": "fis'",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis'",
         "instrument": "piano"
       },
     },
@@ -5158,11 +5158,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "FIS",
+        "note": "dis'",
         "firstChoice": "a'",
-        "secondChoice": "AIS",
-        "thirdChoice": "FIS",
-        "fourthChoice": "HIS",
+        "secondChoice": "fis'",
+        "thirdChoice": "dis'",
+        "fourthChoice": "gis'",
         "instrument": "piano"
       },
       3: {
@@ -5197,19 +5197,19 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       7: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "ais''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
         "fourthChoice": "g''",
         "instrument": "piano"
       },
@@ -5307,10 +5307,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "ais''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
         "fourthChoice": "g''",
         "instrument": "piano"
       },
@@ -5334,11 +5334,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
         "instrument": "piano"
       },
       9: {
@@ -5399,11 +5399,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "dis'",
-        "firstChoice": "dis'",
-        "secondChoice": "gis",
-        "thirdChoice": "cis'",
-        "fourthChoice": "ais",
+        "note": "his''",
+        "firstChoice": "his''",
+        "secondChoice": "eis''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "fis''",
         "instrument": "piano"
       },
       3: {
@@ -5426,11 +5426,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "eis",
-        "firstChoice": "cis",
-        "secondChoice": "ais",
-        "thirdChoice": "dis",
-        "fourthChoice": "eis",
+        "note": "cis''",
+        "firstChoice": "ais'",
+        "secondChoice": "fis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "cis''",
         "instrument": "piano"
       },
       6: {
@@ -5456,11 +5456,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "dis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "his''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       9: {
@@ -5511,32 +5511,29 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
     1: {
       1: {
         "questionType": "single_note",
-        "note": "GIS",
-        "firstChoice": "a'",
-        "secondChoice": "AIS",
-        "thirdChoice": "GIS",
-        "fourthChoice": "FIS",
+        "note": "dis''",
+        "firstChoice": "dis''",
+        "secondChoice": "eis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "gis''",
         "instrument": "piano"
       },
       2: {
-        "questionType": "single_letter",
-        "letter": "d''",
-        "firstChoice": "c''",
-        "secondChoice": "h'",
-        "thirdChoice": "d''",
-        "fourthChoice": "e''",
-        "instrument": "sax"
+        "questionType": "single_note",
+        "note": "eis''",
+        "firstChoice": "his'",
+        "secondChoice": "dis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "fis''",
+        "instrument": "piano"
       },
       3: {
-        "questionType": "scale",
-        "note": "e''",
-        "firstNote": "d''",
-        "secondNote": "empty",
-        "thirdNote": "f''",
-        "firstChoice": "c''",
-        "secondChoice": "d''",
-        "thirdChoice": "e''",
-        "fourthChoice": "f''",
+        "questionType": "single_note",
+        "note": "cis''",
+        "firstChoice": "ais'",
+        "secondChoice": "dis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "cis''",
         "instrument": "piano"
       },
       4: {
@@ -5562,11 +5559,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "HIS",
-        "firstChoice": "dis'",
+        "note": "gis'",
+        "firstChoice": "his''",
         "secondChoice": "e''",
-        "thirdChoice": "HIS",
-        "fourthChoice": "AIS",
+        "thirdChoice": "gis'",
+        "fourthChoice": "fis'",
         "instrument": "piano"
       },
       7: {
@@ -5613,11 +5610,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       11: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       12: {
@@ -5642,11 +5639,608 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "AIS'",
-        "firstChoice": "dis'",
-        "secondChoice": "GIS",
-        "thirdChoice": "cis'",
-        "fourthChoice": "AIS",
+        "note": "Ais'",
+        "firstChoice": "his''",
+        "secondChoice": "eis'",
+        "thirdChoice": "ais''",
+        "fourthChoice": "fis'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_note",
+        "note": "eis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis'",
+        "fourthChoice": "dis'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "fis''",
+        "firstChoice": "ais'",
+        "secondChoice": "fis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "gis''",
+        "firstChoice": "gis''",
+        "secondChoice": "dis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "his'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_note",
+        "note": "his'",
+        "firstChoice": "his'",
+        "secondChoice": "ais'",
+        "thirdChoice": "gis''",
+        "fourthChoice": "cis''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "fis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis'",
+        "instrument": "piano"
+      },
+    },
+    3: {
+      1: {
+        "questionType": "single_note",
+        "note": "h''",
+        "firstChoice": "a''",
+        "secondChoice": "f''",
+        "thirdChoice": "h''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "dis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "dis'",
+        "fourthChoice": "gis'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "ais''",
+        "secondChoice": "gis''",
+        "thirdChoice": "fis''",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "his''",
+        "firstChoice": "ais'",
+        "secondChoice": "fis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "his''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "e''",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "g''",
+        "fourthChoice": "e''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+    },
+    4: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "cis'''",
+        "firstChoice": "cis'''",
+        "secondChoice": "ais''",
+        "thirdChoice": "gis''",
+        "fourthChoice": "his'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "d''",
+        "secondChoice": "e''",
+        "thirdChoice": "g''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "f'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "his''",
+        "firstChoice": "dis''",
+        "secondChoice": "his''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "cis''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "f''",
+        "firstNote": "e''",
+        "secondNote": "empty",
+        "thirdNote": "g''",
+        "firstChoice": "f''",
+        "secondChoice": "e''",
+        "thirdChoice": "d''",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    5: {
+      1: {
+        "questionType": "single_note",
+        "note": "eis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis'",
+        "fourthChoice": "dis'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "his''",
+        "firstChoice": "his''",
+        "secondChoice": "eis''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "fis''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      4: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "ais''",
+        "thirdChoice": "gis''",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "cis''",
+        "firstChoice": "ais'",
+        "secondChoice": "fis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "cis''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "ais'",
+        "firstChoice": "cis''",
+        "secondChoice": "his'",
+        "thirdChoice": "ais'",
+        "fourthChoice": "fis'",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "dis''",
+        "thirdChoice": "cis''",
+        "fourthChoice": "eis''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+    },
+  },
+  11: {
+    1: {
+      1: {
+        "questionType": "single_note",
+        "note": "GeS",
+        "firstChoice": "a'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es'",
+        "fourthChoice": "des'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "ges'",
+        "firstChoice": "b''",
+        "secondChoice": "e''",
+        "thirdChoice": "ges'",
+        "fourthChoice": "fes'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "as''",
+        "firstChoice": "b'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es''",
+        "fourthChoice": "as''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+    },
+    2: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "fes'",
+        "firstChoice": "b''",
+        "secondChoice": "es'",
+        "thirdChoice": "as''",
+        "fourthChoice": "fes'",
         "instrument": "piano"
       },
       3: {
@@ -5675,11 +6269,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "note": "as''",
+        "firstChoice": "b'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es''",
+        "fourthChoice": "as''",
         "instrument": "piano"
       },
       6: {
@@ -5744,11 +6338,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       12: {
         "questionType": "single_note",
-        "note": "AIS",
+        "note": "fes'",
         "firstChoice": "a'",
-        "secondChoice": "AIS",
-        "thirdChoice": "dis",
-        "fourthChoice": "FIS",
+        "secondChoice": "fes'",
+        "thirdChoice": "b'",
+        "fourthChoice": "des'",
         "instrument": "piano"
       },
     },
@@ -5764,11 +6358,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "FIS",
+        "note": "des'",
         "firstChoice": "a'",
-        "secondChoice": "AIS",
-        "thirdChoice": "FIS",
-        "fourthChoice": "HIS",
+        "secondChoice": "fes'",
+        "thirdChoice": "des'",
+        "fourthChoice": "ges'",
         "instrument": "piano"
       },
       3: {
@@ -5803,20 +6397,20 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       6: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "des''",
+        "firstChoice": "as'",
+        "secondChoice": "ces''",
+        "thirdChoice": "b'",
+        "fourthChoice": "des''",
         "instrument": "piano"
       },
       7: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "as''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
-        "fourthChoice": "g''",
+        "secondChoice": "as''",
+        "thirdChoice": "des''",
+        "fourthChoice": "ges''",
         "instrument": "piano"
       },
       8: {
@@ -5913,10 +6507,10 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "cis'",
+        "note": "as''",
         "firstChoice": "d''",
-        "secondChoice": "cis'",
-        "thirdChoice": "fis",
+        "secondChoice": "as''",
+        "thirdChoice": "des''",
         "fourthChoice": "g''",
         "instrument": "piano"
       },
@@ -5940,11 +6534,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
-        "note": "fis",
-        "firstChoice": "cis",
-        "secondChoice": "eis",
-        "thirdChoice": "dis",
-        "fourthChoice": "fis",
+        "note": "des''",
+        "firstChoice": "as'",
+        "secondChoice": "ces''",
+        "thirdChoice": "b'",
+        "fourthChoice": "des''",
         "instrument": "piano"
       },
       9: {
@@ -6005,11 +6599,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       2: {
         "questionType": "single_note",
-        "note": "dis'",
-        "firstChoice": "dis'",
-        "secondChoice": "gis",
-        "thirdChoice": "cis'",
-        "fourthChoice": "ais",
+        "note": "b''",
+        "firstChoice": "b''",
+        "secondChoice": "es''",
+        "thirdChoice": "as''",
+        "fourthChoice": "fes''",
         "instrument": "piano"
       },
       3: {
@@ -6032,11 +6626,11 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       5: {
         "questionType": "single_note",
-        "note": "eis",
-        "firstChoice": "cis",
-        "secondChoice": "ais",
-        "thirdChoice": "dis",
-        "fourthChoice": "eis",
+        "note": "ces''",
+        "firstChoice": "as'",
+        "secondChoice": "fes''",
+        "thirdChoice": "b'",
+        "fourthChoice": "ces''",
         "instrument": "piano"
       },
       6: {
@@ -6062,11 +6656,3035 @@ Map<int, Map<int, Map<int, Map<String, String>>>> violinData = {
       },
       8: {
         "questionType": "single_note",
+        "note": "b''",
+        "firstChoice": "b'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es''",
+        "fourthChoice": "as''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+    },
+  },
+  12: {
+    1: {
+      1: {
+        "questionType": "single_note",
+        "note": "des''",
+        "firstChoice": "des''",
+        "secondChoice": "es''",
+        "thirdChoice": "b'",
+        "fourthChoice": "ges''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "es''",
+        "firstChoice": "b'",
+        "secondChoice": "des''",
+        "thirdChoice": "es''",
+        "fourthChoice": "fes''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "ces''",
+        "firstChoice": "as'",
+        "secondChoice": "des''",
+        "thirdChoice": "es''",
+        "fourthChoice": "ces''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "ges'",
+        "firstChoice": "b''",
+        "secondChoice": "e''",
+        "thirdChoice": "ges'",
+        "fourthChoice": "fes'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "as''",
+        "firstChoice": "b'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es''",
+        "fourthChoice": "as''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+    },
+    2: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "fes'",
+        "firstChoice": "b''",
+        "secondChoice": "es'",
+        "thirdChoice": "as''",
+        "fourthChoice": "fes'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_note",
+        "note": "es'",
+        "firstChoice": "a'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es'",
+        "fourthChoice": "des'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "as''",
+        "firstChoice": "b'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es''",
+        "fourthChoice": "as''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "fes''",
+        "firstChoice": "as'",
+        "secondChoice": "fes''",
+        "thirdChoice": "es''",
+        "fourthChoice": "des''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "ges''",
+        "firstChoice": "ges''",
+        "secondChoice": "des''",
+        "thirdChoice": "es''",
+        "fourthChoice": "b'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_note",
+        "note": "b'",
+        "firstChoice": "b'",
+        "secondChoice": "as'",
+        "thirdChoice": "ges''",
+        "fourthChoice": "ces''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "fes'",
+        "firstChoice": "ces''",
+        "secondChoice": "fes'",
+        "thirdChoice": "b'",
+        "fourthChoice": "des'",
+        "instrument": "piano"
+      },
+    },
+    3: {
+      1: {
+        "questionType": "single_note",
+        "note": "h''",
+        "firstChoice": "a''",
+        "secondChoice": "f''",
+        "thirdChoice": "h''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "des'",
+        "firstChoice": "es'",
+        "secondChoice": "fes'",
+        "thirdChoice": "des'",
+        "fourthChoice": "ges'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "as''",
+        "firstChoice": "as''",
+        "secondChoice": "ges''",
+        "thirdChoice": "fes''",
+        "fourthChoice": "des''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "des''",
+        "firstChoice": "as'",
+        "secondChoice": "ces''",
+        "thirdChoice": "b'",
+        "fourthChoice": "des''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "as''",
+        "firstChoice": "d''",
+        "secondChoice": "as''",
+        "thirdChoice": "des''",
+        "fourthChoice": "ges''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "b''",
+        "firstChoice": "as'",
+        "secondChoice": "fes''",
+        "thirdChoice": "es''",
+        "fourthChoice": "b''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "e''",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "g''",
+        "fourthChoice": "e''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+    },
+    4: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "ces'''",
+        "firstChoice": "ces'''",
+        "secondChoice": "as''",
+        "thirdChoice": "ges''",
+        "fourthChoice": "b'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "d''",
+        "secondChoice": "e''",
+        "thirdChoice": "g''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "as''",
+        "firstChoice": "d''",
+        "secondChoice": "as''",
+        "thirdChoice": "des''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "f'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "des''",
+        "firstChoice": "as'",
+        "secondChoice": "ces''",
+        "thirdChoice": "b'",
+        "fourthChoice": "des''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "b''",
+        "firstChoice": "des''",
+        "secondChoice": "b''",
+        "thirdChoice": "as''",
+        "fourthChoice": "ces''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "f''",
+        "firstNote": "e''",
+        "secondNote": "empty",
+        "thirdNote": "g''",
+        "firstChoice": "f''",
+        "secondChoice": "e''",
+        "thirdChoice": "d''",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    5: {
+      1: {
+        "questionType": "single_note",
+        "note": "es'",
+        "firstChoice": "a'",
+        "secondChoice": "fes'",
+        "thirdChoice": "es'",
+        "fourthChoice": "des'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "b''",
+        "firstChoice": "b''",
+        "secondChoice": "es''",
+        "thirdChoice": "as''",
+        "fourthChoice": "fes''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      4: {
+        "questionType": "single_note",
+        "note": "as''",
+        "firstChoice": "b''",
+        "secondChoice": "as''",
+        "thirdChoice": "ges''",
+        "fourthChoice": "des''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ces''",
+        "firstChoice": "as'",
+        "secondChoice": "fes''",
+        "thirdChoice": "b'",
+        "fourthChoice": "ces''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "as'",
+        "firstChoice": "ces''",
+        "secondChoice": "b'",
+        "thirdChoice": "as'",
+        "fourthChoice": "AS",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "des''",
+        "firstChoice": "as'",
+        "secondChoice": "des''",
+        "thirdChoice": "ces''",
+        "fourthChoice": "es''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+    },
+  },
+  13: {
+    1: {
+      1: {
+        "questionType": "scale",
+        "note": "h'",
+        "firstNote": "g'",
+        "secondNote": "a'",
+        "thirdNote": "empty",
+        "firstChoice": "h'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "h'",
+        "firstChoice": "a'",
+        "secondChoice": "h'",
+        "thirdChoice": "e'",
+        "fourthChoice": "f'",
+        "instrument": "sax"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "g'",
+        "secondChoice": "h'",
+        "thirdChoice": "a'",
+        "fourthChoice": "e'",
+        "instrument": "cello"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "scale",
+        "note": "c'",
+        "firstNote": "empty",
+        "secondNote": "d'",
+        "thirdNote": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "c'",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "scale",
+        "note": "a'",
+        "firstNote": "f'",
+        "secondNote": "g'",
+        "thirdNote": "empty",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "h'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "h",
+        "firstChoice": "a'",
+        "secondChoice": "c'",
+        "thirdChoice": "h",
+        "fourthChoice": "d'",
+        "instrument": "cello"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "c'",
+        "secondNote": "empty",
+        "thirdNote": "e'",
+        "firstChoice": "h",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_letter",
+        "letter": "h",
+        "firstChoice": "h",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "h'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    2: {
+      1: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "h'",
+        "firstChoice": "a'",
+        "secondChoice": "h'",
+        "thirdChoice": "e'",
+        "fourthChoice": "f'",
+        "instrument": "sax"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "g'",
+        "secondChoice": "h'",
+        "thirdChoice": "a'",
+        "fourthChoice": "e'",
+        "instrument": "cello"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "c'",
+        "secondNote": "empty",
+        "thirdNote": "e'",
+        "firstChoice": "h",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "scale",
+        "note": "c'",
+        "firstNote": "empty",
+        "secondNote": "d'",
+        "thirdNote": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "c'",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "scale",
+        "note": "a'",
+        "firstNote": "f'",
+        "secondNote": "g'",
+        "thirdNote": "empty",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "h",
+        "firstChoice": "a'",
+        "secondChoice": "c'",
+        "thirdChoice": "h",
+        "fourthChoice": "d'",
+        "instrument": "cello"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "h'",
+        "firstNote": "g'",
+        "secondNote": "a'",
+        "thirdNote": "empty",
+        "firstChoice": "h'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_note",
+        "note": "h'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "h'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    3: {
+      1: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "a'",
+        "secondNote": "h'",
+        "thirdNote": "empty",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "a'",
+        "secondChoice": "h'",
+        "thirdChoice": "c''",
+        "fourthChoice": "f'",
+        "instrument": "sax"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "c''",
+        "firstChoice": "h'",
+        "secondChoice": "f'",
+        "thirdChoice": "c''",
+        "fourthChoice": "e'",
+        "instrument": "cello"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "f'",
+        "firstNote": "empty",
+        "secondNote": "g'",
+        "thirdNote": "a'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "scale",
+        "note": "h'",
+        "firstNote": "a'",
+        "secondNote": "empty",
+        "thirdNote": "c''",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "h",
+        "firstChoice": "c'",
+        "secondChoice": "f'",
+        "thirdChoice": "h",
+        "fourthChoice": "g'",
+        "instrument": "cello"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "e'",
+        "secondChoice": "h'",
+        "thirdChoice": "a'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "a'",
+        "firstNote": "f'",
+        "secondNote": "g'",
+        "thirdNote": "empty",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "sax"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "e'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "g'",
+        "fourthChoice": "e'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "a",
+        "firstChoice": "e'",
+        "secondChoice": "d'",
+        "thirdChoice": "a'",
+        "fourthChoice": "a",
+        "instrument": "cello"
+      },
+      11: {
+        "questionType": "single_letter",
+        "letter": "c'",
+        "firstChoice": "e'",
+        "secondChoice": "d'",
+        "thirdChoice": "c'",
+        "fourthChoice": "g'",
+        "instrument": "sax"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "f'",
+        "secondNote": "empty",
+        "thirdNote": "a'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    4: {
+      1: {
+        "questionType": "scale",
+        "note": "f'",
+        "firstNote": "empty",
+        "secondNote": "g'",
+        "thirdNote": "a'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "a'",
+        "secondNote": "h'",
+        "thirdNote": "empty",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "e'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "g'",
+        "fourthChoice": "e'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "e'",
+        "secondChoice": "h'",
+        "thirdChoice": "a'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "scale",
+        "note": "a'",
+        "firstNote": "f'",
+        "secondNote": "g'",
+        "thirdNote": "empty",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "sax"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "h",
+        "firstChoice": "c'",
+        "secondChoice": "f'",
+        "thirdChoice": "h",
+        "fourthChoice": "g'",
+        "instrument": "cello"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "a",
+        "firstChoice": "e'",
+        "secondChoice": "d'",
+        "thirdChoice": "a'",
+        "fourthChoice": "a",
+        "instrument": "cello"
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "c'",
+        "firstChoice": "e'",
+        "secondChoice": "d'",
+        "thirdChoice": "c'",
+        "fourthChoice": "g'",
+        "instrument": "sax"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "f'",
+        "secondNote": "empty",
+        "thirdNote": "a'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "scale",
+        "note": "h'",
+        "firstNote": "a'",
+        "secondNote": "empty",
+        "thirdNote": "c''",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "c''",
+        "firstChoice": "h'",
+        "secondChoice": "f'",
+        "thirdChoice": "c''",
+        "fourthChoice": "e'",
+        "instrument": "cello"
+      },
+      12: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "a'",
+        "secondChoice": "h'",
+        "thirdChoice": "c''",
+        "fourthChoice": "f'",
+        "instrument": "sax"
+      }
+    },
+    5: {
+      1: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "h'",
+        "secondNote": "c''",
+        "thirdNote": "empty",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "d'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "e'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "cello"
+      },
+      4: {
+        "questionType": "single_note",
+        "note": "a",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "c'",
+        "fourthChoice": "a",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "d'",
+        "secondChoice": "a",
+        "thirdChoice": "e'",
+        "fourthChoice": "f'",
+        "instrument": "sax"
+      },
+      6: {
+        "questionType": "scale",
+        "note": "c'",
+        "firstNote": "empty",
+        "secondNote": "d'",
+        "thirdNote": "e'",
+        "firstChoice": "d'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "c'",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "scale",
+        "note": "a'",
+        "firstNote": "empty",
+        "secondNote": "h'",
+        "thirdNote": "c''",
+        "firstChoice": "e'",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "g'",
+        "firstChoice": "d'",
+        "secondChoice": "h'",
+        "thirdChoice": "c'",
+        "fourthChoice": "g'",
+        "instrument": "sax"
+      },
+      9: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "a'",
+        "firstChoice": "h'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "f'",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+  },
+  14: {
+    1: {
+      1: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "e''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+    },
+    2: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "e''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+    },
+    3: {
+      1: {
+        "questionType": "single_note",
+        "note": "h''",
+        "firstChoice": "a''",
+        "secondChoice": "f''",
+        "thirdChoice": "h''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "f'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "d''",
+        "secondChoice": "e''",
+        "thirdChoice": "g''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "f''",
+        "firstNote": "e''",
+        "secondNote": "empty",
+        "thirdNote": "g''",
+        "firstChoice": "f''",
+        "secondChoice": "e''",
+        "thirdChoice": "d''",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "e''",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "g''",
+        "fourthChoice": "e''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+    },
+    4: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "e''",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "g''",
+        "fourthChoice": "e''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "d''",
+        "secondChoice": "e''",
+        "thirdChoice": "g''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "f'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "f''",
+        "firstNote": "e''",
+        "secondNote": "empty",
+        "thirdNote": "g''",
+        "firstChoice": "f''",
+        "secondChoice": "e''",
+        "thirdChoice": "d''",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    5: {
+      1: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "e''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+    },
+  },
+  15: {
+    1: {
+      1: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "dis''",
+        "secondChoice": "eis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "gis''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "eis''",
+        "firstChoice": "his'",
+        "secondChoice": "dis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "fis''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "cis''",
+        "firstChoice": "ais'",
+        "secondChoice": "dis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "cis''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "gis'",
+        "firstChoice": "his''",
+        "secondChoice": "e''",
+        "thirdChoice": "gis'",
+        "fourthChoice": "fis'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+    },
+    2: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "Ais'",
+        "firstChoice": "his''",
+        "secondChoice": "eis'",
+        "thirdChoice": "ais''",
+        "fourthChoice": "fis'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_note",
+        "note": "eis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis'",
+        "fourthChoice": "dis'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "fis''",
+        "firstChoice": "ais'",
+        "secondChoice": "fis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "gis''",
+        "firstChoice": "gis''",
+        "secondChoice": "dis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "his'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_note",
+        "note": "his'",
+        "firstChoice": "his'",
+        "secondChoice": "ais'",
+        "thirdChoice": "gis''",
+        "fourthChoice": "cis''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "fis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis'",
+        "instrument": "piano"
+      },
+    },
+    3: {
+      1: {
+        "questionType": "single_note",
+        "note": "h''",
+        "firstChoice": "a''",
+        "secondChoice": "f''",
+        "thirdChoice": "h''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
         "note": "dis'",
-        "firstChoice": "dis",
-        "secondChoice": "Ais",
-        "thirdChoice": "gis",
-        "fourthChoice": "cis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "dis'",
+        "fourthChoice": "gis'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "ais''",
+        "secondChoice": "gis''",
+        "thirdChoice": "fis''",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "his''",
+        "firstChoice": "ais'",
+        "secondChoice": "fis''",
+        "thirdChoice": "eis''",
+        "fourthChoice": "his''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "e''",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "g''",
+        "fourthChoice": "e''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+    },
+    4: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "cis'''",
+        "firstChoice": "cis'''",
+        "secondChoice": "ais''",
+        "thirdChoice": "gis''",
+        "fourthChoice": "his'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "d''",
+        "secondChoice": "e''",
+        "thirdChoice": "g''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "f'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "his''",
+        "firstChoice": "dis''",
+        "secondChoice": "his''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "cis''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "f''",
+        "firstNote": "e''",
+        "secondNote": "empty",
+        "thirdNote": "g''",
+        "firstChoice": "f''",
+        "secondChoice": "e''",
+        "thirdChoice": "d''",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    5: {
+      1: {
+        "questionType": "single_note",
+        "note": "eis'",
+        "firstChoice": "a'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis'",
+        "fourthChoice": "dis'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "his''",
+        "firstChoice": "his''",
+        "secondChoice": "eis''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "fis''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      4: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "ais''",
+        "thirdChoice": "gis''",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "cis''",
+        "firstChoice": "ais'",
+        "secondChoice": "fis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "cis''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "ais'",
+        "firstChoice": "cis''",
+        "secondChoice": "his'",
+        "thirdChoice": "ais'",
+        "fourthChoice": "fis'",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "dis''",
+        "thirdChoice": "cis''",
+        "fourthChoice": "eis''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+    },
+  },
+  16: {
+    1: {
+      1: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "e''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+    },
+    2: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "e''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "scale",
+        "note": "d''",
+        "firstNote": "empty",
+        "secondNote": "e''",
+        "thirdNote": "f''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "sax"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "d''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "e''",
+        "firstNote": "d''",
+        "secondNote": "empty",
+        "thirdNote": "f''",
+        "firstChoice": "c''",
+        "secondChoice": "d''",
+        "thirdChoice": "e''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_letter",
+        "letter": "d'",
+        "firstChoice": "h",
+        "secondChoice": "c''",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+    },
+    3: {
+      1: {
+        "questionType": "single_note",
+        "note": "h''",
+        "firstChoice": "a''",
+        "secondChoice": "f''",
+        "thirdChoice": "h''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "f'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "d''",
+        "secondChoice": "e''",
+        "thirdChoice": "g''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "scale",
+        "note": "f''",
+        "firstNote": "e''",
+        "secondNote": "empty",
+        "thirdNote": "g''",
+        "firstChoice": "f''",
+        "secondChoice": "e''",
+        "thirdChoice": "d''",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "single_note",
+        "note": "e''",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "g''",
+        "fourthChoice": "e''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+    },
+    4: {
+      1: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "c''",
+        "fourthChoice": "a''",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "scale",
+        "note": "h''",
+        "firstNote": "g''",
+        "secondNote": "a''",
+        "thirdNote": "empty",
+        "firstChoice": "e''",
+        "secondChoice": "g''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_note",
+        "note": "e''",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "g''",
+        "fourthChoice": "e''",
+        "instrument": "piano"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "d''",
+        "secondChoice": "e''",
+        "thirdChoice": "g''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "d''",
+        "secondChoice": "ais''",
+        "thirdChoice": "dis''",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_note",
+        "note": "f'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      7: {
+        "questionType": "single_letter",
+        "letter": "g''",
+        "firstChoice": "g''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "g''",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "dis''",
+        "firstChoice": "ais'",
+        "secondChoice": "cis''",
+        "thirdChoice": "his'",
+        "fourthChoice": "dis''",
+        "instrument": "piano"
+      },
+      9: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "d''",
+        "secondChoice": "a'",
+        "thirdChoice": "h'",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      10: {
+        "questionType": "single_letter",
+        "letter": "h'",
+        "firstChoice": "e'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "h'",
+        "instrument": "piano"
+      },
+      11: {
+        "questionType": "scale",
+        "note": "f''",
+        "firstNote": "e''",
+        "secondNote": "empty",
+        "thirdNote": "g''",
+        "firstChoice": "f''",
+        "secondChoice": "e''",
+        "thirdChoice": "d''",
+        "fourthChoice": "c''",
+        "instrument": "piano"
+      },
+      12: {
+        "questionType": "scale",
+        "note": "d'",
+        "firstNote": "empty",
+        "secondNote": "e'",
+        "thirdNote": "f'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+    },
+    5: {
+      1: {
+        "questionType": "scale",
+        "note": "g'",
+        "firstNote": "empty",
+        "secondNote": "a'",
+        "thirdNote": "h'",
+        "firstChoice": "e''",
+        "secondChoice": "d''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      2: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his''",
+        "secondChoice": "e''",
+        "thirdChoice": "ais''",
+        "fourthChoice": "f''",
+        "instrument": "piano"
+      },
+      3: {
+        "questionType": "single_letter",
+        "letter": "d''",
+        "firstChoice": "c''",
+        "secondChoice": "h'",
+        "thirdChoice": "d''",
+        "fourthChoice": "e''",
+        "instrument": "sax"
+      },
+      4: {
+        "questionType": "single_letter",
+        "letter": "c''",
+        "firstChoice": "d''",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "f''",
+        "instrument": "cello"
+      },
+      5: {
+        "questionType": "single_note",
+        "note": "a'",
+        "firstChoice": "a'",
+        "secondChoice": "f'",
+        "thirdChoice": "h'",
+        "fourthChoice": "d'",
+        "instrument": "piano"
+      },
+      6: {
+        "questionType": "single_letter",
+        "letter": "e'",
+        "firstChoice": "e'",
+        "secondChoice": "f'",
+        "thirdChoice": "d'",
+        "fourthChoice": "c''",
+        "instrument": "sax"
+      },
+      7: {
+        "questionType": "scale",
+        "note": "c''",
+        "firstNote": "h'",
+        "secondNote": "empty",
+        "thirdNote": "d''",
+        "firstChoice": "h'",
+        "secondChoice": "c''",
+        "thirdChoice": "a'",
+        "fourthChoice": "g'",
+        "instrument": "piano"
+      },
+      8: {
+        "questionType": "single_note",
+        "note": "ais''",
+        "firstChoice": "his'",
+        "secondChoice": "fis'",
+        "thirdChoice": "eis''",
+        "fourthChoice": "ais''",
         "instrument": "piano"
       },
       9: {
